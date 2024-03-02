@@ -1,0 +1,15 @@
+D:\DB\FYP-Management-System\FYPManagement\bin\Debug\FYPManagement.exe.config
+D:\DB\FYP-Management-System\FYPManagement\bin\Debug\FYPManagement.exe
+D:\DB\FYP-Management-System\FYPManagement\bin\Debug\FYPManagement.pdb
+D:\DB\FYP-Management-System\FYPManagement\bin\Debug\Guna.UI2.dll
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.csproj.AssemblyReference.cache
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.AdvisorForm.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.Properties.Resources.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.csproj.GenerateResource.cache
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.csproj.CoreCompileInputs.cache
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.csproj.CopyComplete
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.exe
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.pdb
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.AdminMenuUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageStudentsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageAdvisorsUC.resources
