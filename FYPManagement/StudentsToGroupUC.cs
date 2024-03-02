@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace FYPManagement
 {
-    public partial class ViewStudentsUC : UserControl
+    public partial class StudentsToGroupUC : UserControl
     {
         AdvisorForm form;
-        public ViewStudentsUC(AdvisorForm f)
+        public StudentsToGroupUC(AdvisorForm form)
         {
             InitializeComponent();
-            form = f;
+            this.form = form;
         }
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
             form.addStudentsControl();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

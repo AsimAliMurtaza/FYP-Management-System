@@ -13,3 +13,8 @@ D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.pdb
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.AdminMenuUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageStudentsUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageAdvisorsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewStudentsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateStudentUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.CreateGroupUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.StudentsToGroupUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewGroupsUC.resources
