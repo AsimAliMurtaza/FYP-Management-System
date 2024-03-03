@@ -20,6 +20,8 @@ namespace FYPManagement
         CreateGroupUC CreateGroupUC;
         StudentsToGroupUC studentsToGroupUC;
         ViewGroupsUC viewGroupsUC;
+        ViewAdvisorsUC advisorViewUC;
+        UpdateAdvisorUC UpdateAdvisorUC;
         public AdvisorForm()
         {
             InitializeComponent();
@@ -31,6 +33,8 @@ namespace FYPManagement
             CreateGroupUC = new CreateGroupUC(this) { Dock = DockStyle.Fill };
             studentsToGroupUC = new StudentsToGroupUC(this) { Dock = DockStyle.Fill };
             viewGroupsUC = new ViewGroupsUC(this) { Dock = DockStyle.Fill };
+            advisorViewUC = new ViewAdvisorsUC(this) { Dock = DockStyle.Fill };
+            UpdateAdvisorUC = new UpdateAdvisorUC(this) { Dock = DockStyle.Fill };
 
         }
 
@@ -75,6 +79,17 @@ namespace FYPManagement
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(studentsToGroupUC);
+        }
+        public void addAdvisorViewControls()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(advisorViewUC);
+        }
+
+        public void addAdvisorUpdateControlUC()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(UpdateAdvisorUC);
         }
 
 

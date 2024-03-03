@@ -18,3 +18,5 @@ D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateStudentU
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.CreateGroupUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.StudentsToGroupUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewGroupsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewAdvisorsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateAdvisorUC.resources

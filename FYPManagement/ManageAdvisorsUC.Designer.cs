@@ -29,302 +29,304 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.FirstName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.DoB = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.BackBtn = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.designations = new System.Windows.Forms.ComboBox();
+            this.EmailTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.FNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.SalaryTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.GenderCB = new System.Windows.Forms.ComboBox();
+            this.BackBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.viewAdvBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.updateAdvbtn = new Guna.UI2.WinForms.Guna2Button();
+            this.LNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ContactTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.DOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.designationsCB = new System.Windows.Forms.ComboBox();
+            this.addAdvBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(27)))));
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel1.Controls.Add(this.FirstName, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox6, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox7, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox8, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.DoB, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 6);
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.12121F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.12121F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.25253F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.25253F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.25253F));
+            this.tableLayoutPanel1.Controls.Add(this.EmailTxt, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.FNameTxt, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.SalaryTxt, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.GenderCB, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.BackBtn, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button3, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox1, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.designations, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.viewAdvBtn, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.updateAdvbtn, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LNameTxt, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ContactTxt, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.DOB, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.designationsCB, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.addAdvBtn, 3, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.tableLayoutPanel1.RowCount = 8;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1117, 519);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // FirstName
+            // EmailTxt
             // 
-            this.FirstName.BorderRadius = 10;
-            this.FirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.FirstName.DefaultText = "";
-            this.FirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.FirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.FirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.FirstName.DisabledState.Parent = this.FirstName;
-            this.FirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.FirstName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FirstName.FocusedState.Parent = this.FirstName;
-            this.FirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FirstName.HoverState.Parent = this.FirstName;
-            this.FirstName.Location = new System.Drawing.Point(377, 58);
-            this.FirstName.Margin = new System.Windows.Forms.Padding(5);
-            this.FirstName.Name = "FirstName";
-            this.FirstName.PasswordChar = '\0';
-            this.FirstName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.FirstName.PlaceholderText = "First Name";
-            this.FirstName.SelectedText = "";
-            this.FirstName.ShadowDecoration.Parent = this.FirstName;
-            this.FirstName.Size = new System.Drawing.Size(362, 43);
-            this.FirstName.TabIndex = 4;
+            this.EmailTxt.BorderRadius = 12;
+            this.EmailTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.EmailTxt.DefaultText = "";
+            this.EmailTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.EmailTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.EmailTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTxt.DisabledState.Parent = this.EmailTxt;
+            this.EmailTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmailTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTxt.FocusedState.Parent = this.EmailTxt;
+            this.EmailTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.EmailTxt.HoverState.Parent = this.EmailTxt;
+            this.EmailTxt.Location = new System.Drawing.Point(275, 197);
+            this.EmailTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.EmailTxt.Name = "EmailTxt";
+            this.EmailTxt.PasswordChar = '\0';
+            this.EmailTxt.PlaceholderText = "Email";
+            this.EmailTxt.SelectedText = "";
+            this.EmailTxt.ShadowDecoration.Parent = this.EmailTxt;
+            this.EmailTxt.Size = new System.Drawing.Size(272, 54);
+            this.EmailTxt.TabIndex = 6;
             // 
-            // guna2TextBox6
+            // FNameTxt
             // 
-            this.guna2TextBox6.BorderRadius = 12;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(377, 111);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "Last Name";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(362, 43);
-            this.guna2TextBox6.TabIndex = 5;
+            this.FNameTxt.BorderRadius = 10;
+            this.FNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.FNameTxt.DefaultText = "";
+            this.FNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.FNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.FNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FNameTxt.DisabledState.Parent = this.FNameTxt;
+            this.FNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FNameTxt.FocusedState.Parent = this.FNameTxt;
+            this.FNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.FNameTxt.HoverState.Parent = this.FNameTxt;
+            this.FNameTxt.Location = new System.Drawing.Point(275, 133);
+            this.FNameTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.FNameTxt.Name = "FNameTxt";
+            this.FNameTxt.PasswordChar = '\0';
+            this.FNameTxt.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.FNameTxt.PlaceholderText = "First Name";
+            this.FNameTxt.SelectedText = "";
+            this.FNameTxt.ShadowDecoration.Parent = this.FNameTxt;
+            this.FNameTxt.Size = new System.Drawing.Size(272, 54);
+            this.FNameTxt.TabIndex = 4;
             // 
-            // guna2TextBox7
+            // SalaryTxt
             // 
-            this.guna2TextBox7.BorderRadius = 12;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(377, 164);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "Email";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Size = new System.Drawing.Size(362, 43);
-            this.guna2TextBox7.TabIndex = 6;
+            this.SalaryTxt.BorderRadius = 12;
+            this.SalaryTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SalaryTxt.DefaultText = "";
+            this.SalaryTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.SalaryTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.SalaryTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SalaryTxt.DisabledState.Parent = this.SalaryTxt;
+            this.SalaryTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SalaryTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SalaryTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SalaryTxt.FocusedState.Parent = this.SalaryTxt;
+            this.SalaryTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SalaryTxt.HoverState.Parent = this.SalaryTxt;
+            this.SalaryTxt.Location = new System.Drawing.Point(275, 261);
+            this.SalaryTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.SalaryTxt.Name = "SalaryTxt";
+            this.SalaryTxt.PasswordChar = '\0';
+            this.SalaryTxt.PlaceholderText = "Salary";
+            this.SalaryTxt.SelectedText = "";
+            this.SalaryTxt.ShadowDecoration.Parent = this.SalaryTxt;
+            this.SalaryTxt.Size = new System.Drawing.Size(272, 54);
+            this.SalaryTxt.TabIndex = 0;
             // 
-            // guna2TextBox8
+            // GenderCB
             // 
-            this.guna2TextBox8.BorderRadius = 12;
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.FocusedState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Location = new System.Drawing.Point(377, 217);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "Contact";
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.ShadowDecoration.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Size = new System.Drawing.Size(362, 43);
-            this.guna2TextBox8.TabIndex = 7;
-            // 
-            // DoB
-            // 
-            this.DoB.BorderRadius = 12;
-            this.DoB.CheckedState.Parent = this.DoB;
-            this.DoB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DoB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.DoB.HoverState.Parent = this.DoB;
-            this.DoB.Location = new System.Drawing.Point(376, 269);
-            this.DoB.Margin = new System.Windows.Forms.Padding(4);
-            this.DoB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DoB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DoB.Name = "DoB";
-            this.DoB.ShadowDecoration.Parent = this.DoB;
-            this.DoB.Size = new System.Drawing.Size(364, 45);
-            this.DoB.TabIndex = 8;
-            this.DoB.Value = new System.DateTime(2024, 3, 2, 12, 56, 47, 890);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.GenderCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GenderCB.FormattingEnabled = true;
+            this.GenderCB.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(376, 322);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(364, 24);
-            this.comboBox1.TabIndex = 9;
+            this.GenderCB.Location = new System.Drawing.Point(274, 324);
+            this.GenderCB.Margin = new System.Windows.Forms.Padding(4);
+            this.GenderCB.Name = "GenderCB";
+            this.GenderCB.Size = new System.Drawing.Size(274, 24);
+            this.GenderCB.TabIndex = 9;
             // 
             // BackBtn
             // 
+            this.BackBtn.BorderRadius = 10;
             this.BackBtn.CheckedState.Parent = this.BackBtn;
             this.BackBtn.CustomImages.Parent = this.BackBtn;
-            this.BackBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.BackBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.BackBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BackBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(41)))));
             this.BackBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BackBtn.ForeColor = System.Drawing.Color.White;
             this.BackBtn.HoverState.Parent = this.BackBtn;
-            this.BackBtn.Location = new System.Drawing.Point(4, 375);
+            this.BackBtn.Location = new System.Drawing.Point(4, 452);
             this.BackBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.BackBtn.ShadowDecoration.Parent = this.BackBtn;
-            this.BackBtn.Size = new System.Drawing.Size(49, 45);
-            this.BackBtn.TabIndex = 13;
+            this.BackBtn.Size = new System.Drawing.Size(127, 63);
+            this.BackBtn.TabIndex = 25;
             this.BackBtn.Text = "Back";
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
-            // guna2Button2
+            // viewAdvBtn
             // 
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(4, 57);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(364, 45);
-            this.guna2Button2.TabIndex = 11;
-            this.guna2Button2.Text = "View Advisors";
+            this.viewAdvBtn.BorderRadius = 10;
+            this.viewAdvBtn.CheckedState.Parent = this.viewAdvBtn;
+            this.viewAdvBtn.CustomImages.Parent = this.viewAdvBtn;
+            this.viewAdvBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewAdvBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.viewAdvBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.viewAdvBtn.ForeColor = System.Drawing.Color.White;
+            this.viewAdvBtn.HoverState.Parent = this.viewAdvBtn;
+            this.viewAdvBtn.Location = new System.Drawing.Point(274, 4);
+            this.viewAdvBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.viewAdvBtn.Name = "viewAdvBtn";
+            this.viewAdvBtn.ShadowDecoration.Parent = this.viewAdvBtn;
+            this.viewAdvBtn.Size = new System.Drawing.Size(274, 56);
+            this.viewAdvBtn.TabIndex = 11;
+            this.viewAdvBtn.Text = "View Advisors";
+            this.viewAdvBtn.Click += new System.EventHandler(this.viewAdvBtn_Click);
             // 
-            // guna2Button1
+            // updateAdvbtn
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(4, 163);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(364, 45);
-            this.guna2Button1.TabIndex = 10;
-            this.guna2Button1.Text = "Update Advisor";
+            this.updateAdvbtn.BorderRadius = 10;
+            this.updateAdvbtn.CheckedState.Parent = this.updateAdvbtn;
+            this.updateAdvbtn.CustomImages.Parent = this.updateAdvbtn;
+            this.updateAdvbtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updateAdvbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.updateAdvbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.updateAdvbtn.ForeColor = System.Drawing.Color.White;
+            this.updateAdvbtn.HoverState.Parent = this.updateAdvbtn;
+            this.updateAdvbtn.Location = new System.Drawing.Point(556, 4);
+            this.updateAdvbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.updateAdvbtn.Name = "updateAdvbtn";
+            this.updateAdvbtn.ShadowDecoration.Parent = this.updateAdvbtn;
+            this.updateAdvbtn.Size = new System.Drawing.Size(274, 56);
+            this.updateAdvbtn.TabIndex = 10;
+            this.updateAdvbtn.Text = "Update Advisor";
+            this.updateAdvbtn.Click += new System.EventHandler(this.updateAdvbtn_Click);
             // 
-            // guna2Button3
+            // LNameTxt
             // 
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(376, 478);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(364, 37);
-            this.guna2Button3.TabIndex = 12;
-            this.guna2Button3.Text = "Add Advisor";
+            this.LNameTxt.BorderRadius = 12;
+            this.LNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LNameTxt.DefaultText = "";
+            this.LNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.LNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.LNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LNameTxt.DisabledState.Parent = this.LNameTxt;
+            this.LNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LNameTxt.FocusedState.Parent = this.LNameTxt;
+            this.LNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LNameTxt.HoverState.Parent = this.LNameTxt;
+            this.LNameTxt.Location = new System.Drawing.Point(557, 133);
+            this.LNameTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.LNameTxt.Name = "LNameTxt";
+            this.LNameTxt.PasswordChar = '\0';
+            this.LNameTxt.PlaceholderText = "Last Name";
+            this.LNameTxt.SelectedText = "";
+            this.LNameTxt.ShadowDecoration.Parent = this.LNameTxt;
+            this.LNameTxt.Size = new System.Drawing.Size(272, 54);
+            this.LNameTxt.TabIndex = 5;
             // 
-            // guna2TextBox1
+            // ContactTxt
             // 
-            this.guna2TextBox1.BorderRadius = 12;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(377, 429);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Salary";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(362, 40);
-            this.guna2TextBox1.TabIndex = 0;
+            this.ContactTxt.BorderRadius = 12;
+            this.ContactTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ContactTxt.DefaultText = "";
+            this.ContactTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.ContactTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.ContactTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ContactTxt.DisabledState.Parent = this.ContactTxt;
+            this.ContactTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ContactTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContactTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ContactTxt.FocusedState.Parent = this.ContactTxt;
+            this.ContactTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ContactTxt.HoverState.Parent = this.ContactTxt;
+            this.ContactTxt.Location = new System.Drawing.Point(557, 197);
+            this.ContactTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.ContactTxt.Name = "ContactTxt";
+            this.ContactTxt.PasswordChar = '\0';
+            this.ContactTxt.PlaceholderText = "Contact";
+            this.ContactTxt.SelectedText = "";
+            this.ContactTxt.ShadowDecoration.Parent = this.ContactTxt;
+            this.ContactTxt.Size = new System.Drawing.Size(272, 54);
+            this.ContactTxt.TabIndex = 7;
             // 
-            // designations
+            // DOB
             // 
-            this.designations.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.designations.FormattingEnabled = true;
-            this.designations.Items.AddRange(new object[] {
+            this.DOB.BorderRadius = 12;
+            this.DOB.CheckedState.Parent = this.DOB;
+            this.DOB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DOB.HoverState.Parent = this.DOB;
+            this.DOB.Location = new System.Drawing.Point(556, 260);
+            this.DOB.Margin = new System.Windows.Forms.Padding(4);
+            this.DOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DOB.Name = "DOB";
+            this.DOB.ShadowDecoration.Parent = this.DOB;
+            this.DOB.Size = new System.Drawing.Size(274, 56);
+            this.DOB.TabIndex = 8;
+            this.DOB.Value = new System.DateTime(2024, 3, 2, 12, 56, 47, 890);
+            // 
+            // designationsCB
+            // 
+            this.designationsCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.designationsCB.FormattingEnabled = true;
+            this.designationsCB.Items.AddRange(new object[] {
             "Professor",
             "Associate Professor",
             "Assistant Professor",
             "Lecturer"});
-            this.designations.Location = new System.Drawing.Point(376, 375);
-            this.designations.Margin = new System.Windows.Forms.Padding(4);
-            this.designations.Name = "designations";
-            this.designations.Size = new System.Drawing.Size(364, 24);
-            this.designations.TabIndex = 14;
+            this.designationsCB.Location = new System.Drawing.Point(556, 324);
+            this.designationsCB.Margin = new System.Windows.Forms.Padding(4);
+            this.designationsCB.Name = "designationsCB";
+            this.designationsCB.Size = new System.Drawing.Size(274, 24);
+            this.designationsCB.TabIndex = 14;
+            // 
+            // addAdvBtn
+            // 
+            this.addAdvBtn.BorderRadius = 10;
+            this.addAdvBtn.CheckedState.Parent = this.addAdvBtn;
+            this.addAdvBtn.CustomImages.Parent = this.addAdvBtn;
+            this.addAdvBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addAdvBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.addAdvBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addAdvBtn.ForeColor = System.Drawing.Color.White;
+            this.addAdvBtn.HoverState.Parent = this.addAdvBtn;
+            this.addAdvBtn.Location = new System.Drawing.Point(556, 388);
+            this.addAdvBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.addAdvBtn.Name = "addAdvBtn";
+            this.addAdvBtn.ShadowDecoration.Parent = this.addAdvBtn;
+            this.addAdvBtn.Size = new System.Drawing.Size(274, 56);
+            this.addAdvBtn.TabIndex = 12;
+            this.addAdvBtn.Text = "Add Advisor";
+            this.addAdvBtn.Click += new System.EventHandler(this.addAdvBtn_Click);
             // 
             // ManageAdvisorsUC
             // 
@@ -342,17 +344,17 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2TextBox FirstName;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DoB;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Guna.UI2.WinForms.Guna2CircleButton BackBtn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.ComboBox designations;
+        private Guna.UI2.WinForms.Guna2TextBox FNameTxt;
+        private Guna.UI2.WinForms.Guna2TextBox LNameTxt;
+        private Guna.UI2.WinForms.Guna2TextBox EmailTxt;
+        private Guna.UI2.WinForms.Guna2TextBox ContactTxt;
+        private Guna.UI2.WinForms.Guna2TextBox SalaryTxt;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DOB;
+        private System.Windows.Forms.ComboBox GenderCB;
+        private Guna.UI2.WinForms.Guna2Button addAdvBtn;
+        private Guna.UI2.WinForms.Guna2Button viewAdvBtn;
+        private Guna.UI2.WinForms.Guna2Button updateAdvbtn;
+        private System.Windows.Forms.ComboBox designationsCB;
+        private Guna.UI2.WinForms.Guna2Button BackBtn;
     }
 }

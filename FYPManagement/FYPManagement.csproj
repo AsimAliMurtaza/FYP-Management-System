@@ -57,6 +57,7 @@
     <Compile Include="AdminMenuUC.Designer.cs">
       <DependentUpon>AdminMenuUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Advisor.cs" />
     <Compile Include="AdvisorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +89,7 @@
     <Compile Include="ManageStudentsUC.Designer.cs">
       <DependentUpon>ManageStudentsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
@@ -103,11 +105,23 @@
     <Compile Include="StudentsToGroupUC.Designer.cs">
       <DependentUpon>StudentsToGroupUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateAdvisorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateAdvisorUC.Designer.cs">
+      <DependentUpon>UpdateAdvisorUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateStudentUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UpdateStudentUC.Designer.cs">
       <DependentUpon>UpdateStudentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdvisorsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewAdvisorsUC.Designer.cs">
+      <DependentUpon>ViewAdvisorsUC.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewGroupsUC.cs">
       <SubType>UserControl</SubType>
@@ -148,8 +162,14 @@
     <EmbeddedResource Include="StudentsToGroupUC.resx">
       <DependentUpon>StudentsToGroupUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAdvisorUC.resx">
+      <DependentUpon>UpdateAdvisorUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateStudentUC.resx">
       <DependentUpon>UpdateStudentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdvisorsUC.resx">
+      <DependentUpon>ViewAdvisorsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewGroupsUC.resx">
       <DependentUpon>ViewGroupsUC.cs</DependentUpon>
