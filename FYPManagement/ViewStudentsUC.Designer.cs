@@ -32,8 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.BackBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.BackBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -42,9 +42,9 @@
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(27)))));
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.08502F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.91498F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Controls.Add(this.BackBtn, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.guna2DataGridView1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -52,35 +52,11 @@
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.80753F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.96653F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.01674F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.29894F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.20061F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.50045F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(988, 478);
             this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // BackBtn
-            // 
-            this.BackBtn.CheckedState.Parent = this.BackBtn;
-            this.BackBtn.CustomImages.Parent = this.BackBtn;
-            this.BackBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.BackBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.BackBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BackBtn.ForeColor = System.Drawing.Color.White;
-            this.BackBtn.HoverState.Parent = this.BackBtn;
-            this.BackBtn.Location = new System.Drawing.Point(4, 414);
-            this.BackBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.BackBtn.Name = "BackBtn";
-            this.BackBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.BackBtn.ShadowDecoration.Parent = this.BackBtn;
-            this.BackBtn.Size = new System.Drawing.Size(57, 60);
-            this.BackBtn.TabIndex = 13;
-            this.BackBtn.Text = "Back";
-            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // guna2DataGridView1
             // 
@@ -112,14 +88,14 @@
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(68, 69);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(101, 66);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(854, 338);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(784, 343);
             this.guna2DataGridView1.TabIndex = 14;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -144,6 +120,25 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // BackBtn
+            // 
+            this.BackBtn.BorderRadius = 10;
+            this.BackBtn.CheckedState.Parent = this.BackBtn;
+            this.BackBtn.CustomImages.Parent = this.BackBtn;
+            this.BackBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BackBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(41)))));
+            this.BackBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BackBtn.ForeColor = System.Drawing.Color.White;
+            this.BackBtn.HoverState.Parent = this.BackBtn;
+            this.BackBtn.Location = new System.Drawing.Point(4, 416);
+            this.BackBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.ShadowDecoration.Parent = this.BackBtn;
+            this.BackBtn.Size = new System.Drawing.Size(90, 58);
+            this.BackBtn.TabIndex = 21;
+            this.BackBtn.Text = "Back";
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // ViewStudentsUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -161,7 +156,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2CircleButton BackBtn;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2Button BackBtn;
     }
 }

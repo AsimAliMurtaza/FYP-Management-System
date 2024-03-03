@@ -152,17 +152,6 @@ namespace FYPManagement
             }
         }
 
-        private void RemStdBtn_Click(object sender, EventArgs e)
-        {
-            if (guna2DataGridView1.SelectedRows.Count > 0)
-            {
-                string RegisterationNo = guna2DataGridView1.SelectedRows[0].Cells["RegistrationNo"].Value.ToString();
-
-                RemoveStudentFromGroup(RegisterationNo);
-
-                DisplayGroupStudents();
-            }
-        }
         private void DisplayGroupStudents()
         {
             var con = Configuration.getInstance().getConnection();
@@ -206,35 +195,57 @@ namespace FYPManagement
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        private void RemoveStudentFromGroup(string RegisterationNo)
+        private void RemStdBtn_Click(object sender, EventArgs e)
         {
-            var con = Configuration.getInstance().getConnection();
-            if (con.State == ConnectionState.Closed)
-            {
-                con.Open();
-            }
             try
             {
-                    SqlCommand cmd = new SqlCommand("UPDATE GroupStudent SET Status = @Status WHERE RegistrationNo = @RegistrationNo", con);
-                    cmd.Parameters.AddWithValue("@Status", GetStatusId("InActive", con));
-                    cmd.Parameters.AddWithValue("@RegistrationNo", RegisterationNo);
-                    int rowsAffected = cmd.ExecuteNonQuery();
-
-                    if (rowsAffected > 0)
-                    {
-                        MessageBox.Show("Student removed from group successfully and status set to Inactive.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed to remove student from group.");
-                    }
+                if (remStdCB.SelectedItem != null)
+                {
+                    string registrationNo = remStdCB.SelectedValue.ToString();
+                    RemoveStudentFromGroup(registrationNo);
+                    DisplayGroupStudents();
+                }
+                else
+                {
+                    MessageBox.Show("Please select a student registration number.");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void RemoveStudentFromGroup(string registrationNo)
+        {
+            try
+            {
+                var con = Configuration.getInstance().getConnection();
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+
+                SqlCommand cmd = new SqlCommand("UPDATE GroupStudent SET Status = @Status WHERE StudentId = (SELECT Id FROM Student WHERE RegistrationNo = @RegistrationNo)", con);
+                cmd.Parameters.AddWithValue("@Status", GetStatusId("InActive", con));
+                cmd.Parameters.AddWithValue("@RegistrationNo", registrationNo);
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Student removed from group successfully and status set to Inactive.");
+                }
+                else
+                {
+                    MessageBox.Show("Failed to remove student from group.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
 
         private void dataGridViewGroupStudents_SelectionChanged(object sender, EventArgs e)
         {

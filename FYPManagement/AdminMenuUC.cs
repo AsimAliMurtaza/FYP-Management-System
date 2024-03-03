@@ -19,12 +19,13 @@ namespace FYPManagement
             form = f;
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+
+        private void mngStdBtn_Click(object sender, EventArgs e)
         {
             form.addStudentsControl();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void mngAdvBtn_Click(object sender, EventArgs e)
         {
             form.addAdvisorsControl();
         }
