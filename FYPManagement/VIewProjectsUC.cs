@@ -1,33 +1,27 @@
-﻿using System;
-using Lab1;
+﻿using Lab1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace FYPManagement
 {
-    public partial class ViewGroupsUC : UserControl
+    public partial class VIewProjectsUC : UserControl
     {
         AdvisorForm form;
-        public ViewGroupsUC(AdvisorForm form)
+        public VIewProjectsUC(AdvisorForm form)
         {
             InitializeComponent();
             this.form = form;
-            displayGroups();
+            displayProjects();
         }
-
-        private void BackBtn_Click(object sender, EventArgs e)
-        {
-            form.addStudentsControl();
-        }
-
-        private void displayGroups()
+        private void displayProjects()
         {
             var con = Configuration.getInstance().getConnection();
             if (con.State == ConnectionState.Closed)
@@ -36,7 +30,7 @@ namespace FYPManagement
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM [Group]", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Project", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -48,15 +42,9 @@ namespace FYPManagement
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void BackBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            form.addGroupControlUC();
         }
     }
 }

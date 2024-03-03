@@ -30,10 +30,10 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.mngStdBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.mngAdvBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.logOutBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.mngAdvBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.ManageProjectsBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             this.tableLayoutPanel1.Controls.Add(this.mngStdBtn, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.logOutBtn, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.mngAdvBtn, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button3, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.ManageProjectsBtn, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.guna2Button4, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -82,6 +82,24 @@
             this.mngStdBtn.Text = "Manage Students";
             this.mngStdBtn.Click += new System.EventHandler(this.mngStdBtn_Click);
             // 
+            // logOutBtn
+            // 
+            this.logOutBtn.BorderRadius = 20;
+            this.logOutBtn.CheckedState.Parent = this.logOutBtn;
+            this.logOutBtn.CustomImages.Parent = this.logOutBtn;
+            this.logOutBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logOutBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(41)))));
+            this.logOutBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.logOutBtn.ForeColor = System.Drawing.Color.White;
+            this.logOutBtn.HoverState.Parent = this.logOutBtn;
+            this.logOutBtn.Location = new System.Drawing.Point(4, 409);
+            this.logOutBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.logOutBtn.Name = "logOutBtn";
+            this.logOutBtn.ShadowDecoration.Parent = this.logOutBtn;
+            this.logOutBtn.Size = new System.Drawing.Size(252, 73);
+            this.logOutBtn.TabIndex = 4;
+            this.logOutBtn.Text = "Log Out";
+            // 
             // mngAdvBtn
             // 
             this.mngAdvBtn.BorderRadius = 20;
@@ -101,23 +119,24 @@
             this.mngAdvBtn.Text = "Manage Advisors";
             this.mngAdvBtn.Click += new System.EventHandler(this.mngAdvBtn_Click);
             // 
-            // guna2Button3
+            // ManageProjectsBtn
             // 
-            this.guna2Button3.BorderRadius = 20;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(264, 247);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(513, 73);
-            this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = "Manage Projects";
+            this.ManageProjectsBtn.BorderRadius = 20;
+            this.ManageProjectsBtn.CheckedState.Parent = this.ManageProjectsBtn;
+            this.ManageProjectsBtn.CustomImages.Parent = this.ManageProjectsBtn;
+            this.ManageProjectsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ManageProjectsBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.ManageProjectsBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ManageProjectsBtn.ForeColor = System.Drawing.Color.White;
+            this.ManageProjectsBtn.HoverState.Parent = this.ManageProjectsBtn;
+            this.ManageProjectsBtn.Location = new System.Drawing.Point(264, 247);
+            this.ManageProjectsBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ManageProjectsBtn.Name = "ManageProjectsBtn";
+            this.ManageProjectsBtn.ShadowDecoration.Parent = this.ManageProjectsBtn;
+            this.ManageProjectsBtn.Size = new System.Drawing.Size(513, 73);
+            this.ManageProjectsBtn.TabIndex = 2;
+            this.ManageProjectsBtn.Text = "Manage Projects";
+            this.ManageProjectsBtn.Click += new System.EventHandler(this.ManageProjectsBtn_Click);
             // 
             // guna2Button4
             // 
@@ -137,24 +156,6 @@
             this.guna2Button4.TabIndex = 3;
             this.guna2Button4.Text = "Manage Evaluations";
             // 
-            // logOutBtn
-            // 
-            this.logOutBtn.BorderRadius = 20;
-            this.logOutBtn.CheckedState.Parent = this.logOutBtn;
-            this.logOutBtn.CustomImages.Parent = this.logOutBtn;
-            this.logOutBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.logOutBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(41)))));
-            this.logOutBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.logOutBtn.ForeColor = System.Drawing.Color.White;
-            this.logOutBtn.HoverState.Parent = this.logOutBtn;
-            this.logOutBtn.Location = new System.Drawing.Point(4, 409);
-            this.logOutBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.logOutBtn.Name = "logOutBtn";
-            this.logOutBtn.ShadowDecoration.Parent = this.logOutBtn;
-            this.logOutBtn.Size = new System.Drawing.Size(252, 73);
-            this.logOutBtn.TabIndex = 4;
-            this.logOutBtn.Text = "Log Out";
-            // 
             // AdminMenuUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -172,7 +173,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2Button mngStdBtn;
         private Guna.UI2.WinForms.Guna2Button mngAdvBtn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button ManageProjectsBtn;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button logOutBtn;
     }

@@ -83,6 +83,12 @@
     <Compile Include="ManageAdvisorsUC.Designer.cs">
       <DependentUpon>ManageAdvisorsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageProjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManageProjects.Designer.cs">
+      <DependentUpon>ManageProjects.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageStudentsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +135,12 @@
     <Compile Include="ViewGroupsUC.Designer.cs">
       <DependentUpon>ViewGroupsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIewProjectsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VIewProjectsUC.Designer.cs">
+      <DependentUpon>VIewProjectsUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewStudentsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -146,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageAdvisorsUC.resx">
       <DependentUpon>ManageAdvisorsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageProjects.resx">
+      <DependentUpon>ManageProjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageStudentsUC.resx">
       <DependentUpon>ManageStudentsUC.cs</DependentUpon>
@@ -173,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewGroupsUC.resx">
       <DependentUpon>ViewGroupsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIewProjectsUC.resx">
+      <DependentUpon>VIewProjectsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewStudentsUC.resx">
       <DependentUpon>ViewStudentsUC.cs</DependentUpon>

@@ -1,7 +1,6 @@
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\FYPManagement.exe.config
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\FYPManagement.exe
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\FYPManagement.pdb
-D:\DB\FYP-Management-System\FYPManagement\bin\Debug\Guna.UI2.dll
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.csproj.AssemblyReference.cache
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.AdvisorForm.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.Properties.Resources.resources
@@ -20,3 +19,5 @@ D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.StudentsToGrou
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewGroupsUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewAdvisorsUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateAdvisorUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageProjects.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.VIewProjectsUC.resources

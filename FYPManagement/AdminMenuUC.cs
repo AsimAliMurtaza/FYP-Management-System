@@ -29,5 +29,10 @@ namespace FYPManagement
         {
             form.addAdvisorsControl();
         }
+
+        private void ManageProjectsBtn_Click(object sender, EventArgs e)
+        {
+            form.addGroupControlUC();
+        }
     }
 }

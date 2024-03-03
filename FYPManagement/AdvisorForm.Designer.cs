@@ -43,12 +43,11 @@
             this.MainTableLayout.Controls.Add(this.adminHeader, 0, 0);
             this.MainTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainTableLayout.Location = new System.Drawing.Point(0, 0);
-            this.MainTableLayout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainTableLayout.Margin = new System.Windows.Forms.Padding(4);
             this.MainTableLayout.Name = "MainTableLayout";
-            this.MainTableLayout.RowCount = 3;
+            this.MainTableLayout.RowCount = 2;
             this.MainTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.6776F));
             this.MainTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.3224F));
-            this.MainTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.MainTableLayout.Size = new System.Drawing.Size(1067, 554);
             this.MainTableLayout.TabIndex = 0;
             // 
@@ -56,11 +55,11 @@
             // 
             this.MainPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainPanel.Location = new System.Drawing.Point(4, 106);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainPanel.Location = new System.Drawing.Point(4, 129);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(4);
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.ShadowDecoration.Parent = this.MainPanel;
-            this.MainPanel.Size = new System.Drawing.Size(1059, 341);
+            this.MainPanel.Size = new System.Drawing.Size(1059, 421);
             this.MainPanel.TabIndex = 0;
             // 
             // adminHeader
@@ -72,10 +71,11 @@
             this.adminHeader.Location = new System.Drawing.Point(4, 0);
             this.adminHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.adminHeader.Name = "adminHeader";
-            this.adminHeader.Size = new System.Drawing.Size(1059, 102);
+            this.adminHeader.Size = new System.Drawing.Size(1059, 125);
             this.adminHeader.TabIndex = 1;
-            this.adminHeader.Text = "ADMIN";
+            this.adminHeader.Text = "ADMIN ki DASH mein BOARD";
             this.adminHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.adminHeader.Click += new System.EventHandler(this.adminHeader_Click);
             // 
             // AdvisorForm
             // 
@@ -83,7 +83,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.MainTableLayout);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdvisorForm";
             this.Text = "AdvisorForm";
             this.Load += new System.EventHandler(this.AdvisorForm_Load);
