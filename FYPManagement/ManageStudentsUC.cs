@@ -24,13 +24,68 @@ namespace FYPManagement
             setComboBox();
         }
 
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            form.addAdminDashboardControl();
+        }
+        private void AddToGrpBtn_Click(object sender, EventArgs e)
+        {
+            form.addStudentsToGroupControls();
+        }
+        private void updateStdBtn_Click(object sender, EventArgs e)
+        {
+            form.addStudentUpdateControls();
+        }
+        private void viewStdBtn_Click(object sender, EventArgs e)
+        {
+            form.addStudentViewControls();
+        }
+        private void createGrpBtn_Click(object sender, EventArgs e)
+        {
+            form.addCreateGroupControls();
+        }
+
+        private void addStdBtn_Click(object sender, EventArgs e)
+        {
+            string dob = DoB.Value.ToString("yyyy-MM-dd");
+            string regNo = RegNoTxt.Text;
+            Student student = new Student(regNo, fNameTxt.Text, LNameTxt.Text, ContactTxt.Text, emailTxt.Text, dob, int.Parse(genderCB.SelectedValue.ToString()));
+            addStudent(student);
+        }
+
+        private void addStudent(Student student)
+        {
+            var con = Configuration.getInstance().getConnection();
+
+            SqlCommand cmd = new SqlCommand("INSERT INTO Person (FirstName, LastName, Contact, Email, DateOfBirth, Gender) VALUES (@FirstName, @LastName, @Contact, @Email, @DateOfBirth, @Gender)", con);
+            cmd.Parameters.AddWithValue("@FirstName", student.FirstName);
+            cmd.Parameters.AddWithValue("@LastName", student.LastName);
+            cmd.Parameters.AddWithValue("@Contact", student.Contact);
+            cmd.Parameters.AddWithValue("@Email", student.Email);
+            cmd.Parameters.AddWithValue("@DateOfBirth", student.dob);
+            cmd.Parameters.AddWithValue("@Gender", student.gender);
+            cmd.ExecuteNonQuery();
+
+            SqlCommand cmd3 = new SqlCommand("SELECT Id FROM Person Where FirstName = @FirstName AND LastName = @LastName AND Email = @Email AND Contact = @Contact", con);
+            cmd3.Parameters.AddWithValue("@FirstName", student.FirstName);
+            cmd3.Parameters.AddWithValue("@LastName", student.LastName);
+            cmd3.Parameters.AddWithValue("@Contact", student.Contact);
+            cmd3.Parameters.AddWithValue("@Email", student.Email);
+            int personId = (int)cmd3.ExecuteScalar();
+
+            SqlCommand cmd2 = new SqlCommand("INSERT INTO Student VALUES (@personId, @RegistrationNo)", con);
+            cmd2.Parameters.AddWithValue("@RegistrationNo", student.RegistrationNumber);
+            cmd2.Parameters.AddWithValue("@personId", personId);
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Successfully saved");
+        }
+
         void setComboBox()
         {
             genderCB.DataSource = new BindingSource(getGenderKeyValuePair("GENDER"), null);
             genderCB.DisplayMember = "Value";
             genderCB.ValueMember = "Key";
         }
-
         private Dictionary<int, string> getGenderKeyValuePair(string category)
         {
             Dictionary<int, string> keyValuePairs = new Dictionary<int, string>();
@@ -49,67 +104,9 @@ namespace FYPManagement
 
         }
 
-        private void BackBtn_Click(object sender, EventArgs e)
+        private void viewGrpsBtn_Click(object sender, EventArgs e)
         {
-            form.addAdminDashboardControl();
-        }
-
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-            form.addStudentViewControls();
-        }
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            form.addStudentUpdateControls();
-        }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            form.addCreateGroupControls();
-        }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-            form.addStudentsToGroupControls();
-        }
-
-        private void addStdBtn_Click(object sender, EventArgs e)
-        {
-            string dob = DoB.Value.ToString("yyyy-MM-dd");
-            string regNo = RegNoTxt.Text;
-            Student student = new Student(regNo, fNameTxt.Text, LNameTxt.Text, ContactTxt.Text, emailTxt.Text, dob, int.Parse(genderCB.SelectedValue.ToString()));
-            addStudent(student);
-        }
-
-        private void addStudent(Student student)
-        {
-                var con = Configuration.getInstance().getConnection();
-
-                SqlCommand cmd = new SqlCommand("INSERT INTO Person (FirstName, LastName, Contact, Email, DateOfBirth, Gender) VALUES (@FirstName, @LastName, @Contact, @Email, @DateOfBirth, @Gender)", con);
-                cmd.Parameters.AddWithValue("@FirstName", student.FirstName);
-                cmd.Parameters.AddWithValue("@LastName", student.LastName);
-                cmd.Parameters.AddWithValue("@Contact", student.Contact);
-                cmd.Parameters.AddWithValue("@Email", student.Email);
-                cmd.Parameters.AddWithValue("@DateOfBirth", student.dob);
-                cmd.Parameters.AddWithValue("@Gender", student.gender);
-                cmd.ExecuteNonQuery();
-
-            SqlCommand cmd3 = new SqlCommand("SELECT Id FROM Person Where FirstName = @FirstName AND LastName = @LastName AND Email = @Email AND Contact = @Contact", con);
-            cmd3.Parameters.AddWithValue("@FirstName", student.FirstName);
-            cmd3.Parameters.AddWithValue("@LastName", student.LastName);
-            cmd3.Parameters.AddWithValue("@Contact", student.Contact);
-            cmd3.Parameters.AddWithValue("@Email", student.Email);
-            int personId = (int)cmd3.ExecuteScalar();
-
-
-
-                SqlCommand cmd2 = new SqlCommand("INSERT INTO Student VALUES (@personId, @RegistrationNo)", con);
-                cmd2.Parameters.AddWithValue("@RegistrationNo", student.RegistrationNumber);
-                cmd2.Parameters.AddWithValue("@personId", personId);
-                cmd2.ExecuteNonQuery();
-                MessageBox.Show("Successfully saved");
+            form.addGroupsViewUC();
         }
     }
 }
