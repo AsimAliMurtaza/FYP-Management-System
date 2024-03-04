@@ -115,6 +115,7 @@
             this.FNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.FNameTxt.DisabledState.Parent = this.FNameTxt;
             this.FNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.FNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.FNameTxt.FocusedState.Parent = this.FNameTxt;
             this.FNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -126,7 +127,7 @@
             this.FNameTxt.PlaceholderText = "First Name";
             this.FNameTxt.SelectedText = "";
             this.FNameTxt.ShadowDecoration.Parent = this.FNameTxt;
-            this.FNameTxt.Size = new System.Drawing.Size(116, 32);
+            this.FNameTxt.Size = new System.Drawing.Size(116, 37);
             this.FNameTxt.TabIndex = 5;
             this.FNameTxt.TextChanged += new System.EventHandler(this.FNameTxt_TextChanged);
             // 
@@ -140,6 +141,7 @@
             this.LNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.LNameTxt.DisabledState.Parent = this.LNameTxt;
             this.LNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LNameTxt.FocusedState.Parent = this.LNameTxt;
             this.LNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -151,7 +153,7 @@
             this.LNameTxt.PlaceholderText = "Last Name";
             this.LNameTxt.SelectedText = "";
             this.LNameTxt.ShadowDecoration.Parent = this.LNameTxt;
-            this.LNameTxt.Size = new System.Drawing.Size(116, 32);
+            this.LNameTxt.Size = new System.Drawing.Size(116, 37);
             this.LNameTxt.TabIndex = 6;
             this.LNameTxt.TextChanged += new System.EventHandler(this.LNameTxt_TextChanged);
             // 
@@ -165,6 +167,7 @@
             this.EmailTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.EmailTxt.DisabledState.Parent = this.EmailTxt;
             this.EmailTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.EmailTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmailTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EmailTxt.FocusedState.Parent = this.EmailTxt;
             this.EmailTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -176,7 +179,7 @@
             this.EmailTxt.PlaceholderText = "Email";
             this.EmailTxt.SelectedText = "";
             this.EmailTxt.ShadowDecoration.Parent = this.EmailTxt;
-            this.EmailTxt.Size = new System.Drawing.Size(116, 32);
+            this.EmailTxt.Size = new System.Drawing.Size(116, 37);
             this.EmailTxt.TabIndex = 7;
             this.EmailTxt.TextChanged += new System.EventHandler(this.EmailTxt_TextChanged);
             // 
@@ -190,6 +193,7 @@
             this.ContactTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.ContactTxt.DisabledState.Parent = this.ContactTxt;
             this.ContactTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.ContactTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContactTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ContactTxt.FocusedState.Parent = this.ContactTxt;
             this.ContactTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -201,7 +205,7 @@
             this.ContactTxt.PlaceholderText = "Contact";
             this.ContactTxt.SelectedText = "";
             this.ContactTxt.ShadowDecoration.Parent = this.ContactTxt;
-            this.ContactTxt.Size = new System.Drawing.Size(116, 32);
+            this.ContactTxt.Size = new System.Drawing.Size(116, 37);
             this.ContactTxt.TabIndex = 0;
             this.ContactTxt.TextChanged += new System.EventHandler(this.ContactTxt_TextChanged);
             // 
@@ -209,6 +213,7 @@
             // 
             this.DOB.BorderRadius = 12;
             this.DOB.CheckedState.Parent = this.DOB;
+            this.DOB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DOB.HoverState.Parent = this.DOB;
             this.DOB.Location = new System.Drawing.Point(129, 239);
@@ -217,13 +222,14 @@
             this.DOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DOB.Name = "DOB";
             this.DOB.ShadowDecoration.Parent = this.DOB;
-            this.DOB.Size = new System.Drawing.Size(118, 34);
+            this.DOB.Size = new System.Drawing.Size(118, 39);
             this.DOB.TabIndex = 8;
             this.DOB.Value = new System.DateTime(2024, 3, 2, 12, 56, 47, 890);
             this.DOB.ValueChanged += new System.EventHandler(this.DOB_ValueChanged);
             // 
             // GenderCB
             // 
+            this.GenderCB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GenderCB.FormattingEnabled = true;
             this.GenderCB.Items.AddRange(new object[] {
             "Male",
@@ -240,6 +246,7 @@
             this.UpdateBtn.BorderRadius = 10;
             this.UpdateBtn.CheckedState.Parent = this.UpdateBtn;
             this.UpdateBtn.CustomImages.Parent = this.UpdateBtn;
+            this.UpdateBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
             this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.UpdateBtn.ForeColor = System.Drawing.Color.White;
@@ -248,13 +255,14 @@
             this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
-            this.UpdateBtn.Size = new System.Drawing.Size(119, 34);
+            this.UpdateBtn.Size = new System.Drawing.Size(119, 39);
             this.UpdateBtn.TabIndex = 12;
             this.UpdateBtn.Text = "Update Advisor";
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // designationsCB
             // 
+            this.designationsCB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.designationsCB.FormattingEnabled = true;
             this.designationsCB.Items.AddRange(new object[] {
             "Male",
@@ -276,6 +284,7 @@
             this.SalaryTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.SalaryTxt.DisabledState.Parent = this.SalaryTxt;
             this.SalaryTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SalaryTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SalaryTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.SalaryTxt.FocusedState.Parent = this.SalaryTxt;
             this.SalaryTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -287,7 +296,7 @@
             this.SalaryTxt.PlaceholderText = "Salary";
             this.SalaryTxt.SelectedText = "";
             this.SalaryTxt.ShadowDecoration.Parent = this.SalaryTxt;
-            this.SalaryTxt.Size = new System.Drawing.Size(116, 32);
+            this.SalaryTxt.Size = new System.Drawing.Size(116, 37);
             this.SalaryTxt.TabIndex = 21;
             this.SalaryTxt.TextChanged += new System.EventHandler(this.SalaryTxt_TextChanged);
             // 

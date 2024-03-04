@@ -70,5 +70,10 @@ namespace FYPManagement
         {
             form.addUpdateEvaluationControl();
         }
+
+        private void doEvalBtn_Click(object sender, EventArgs e)
+        {
+            form.addEvaluateGroupsControl();
+        }
     }
 }

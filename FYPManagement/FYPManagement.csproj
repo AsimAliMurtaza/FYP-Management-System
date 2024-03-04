@@ -83,6 +83,12 @@
     <Compile Include="CreateGroupUC.Designer.cs">
       <DependentUpon>CreateGroupUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="EvaluateGroupsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EvaluateGroupsUC.Designer.cs">
+      <DependentUpon>EvaluateGroupsUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateGroupUC.resx">
       <DependentUpon>CreateGroupUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvaluateGroupsUC.resx">
+      <DependentUpon>EvaluateGroupsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageAdvisorsUC.resx">
       <DependentUpon>ManageAdvisorsUC.cs</DependentUpon>

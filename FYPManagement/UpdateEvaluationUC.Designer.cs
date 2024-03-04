@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.weightageUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.evalNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.marksUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.evalNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.marksUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.weightageUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.marksUD)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marksUD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -56,7 +56,7 @@
             this.tableLayoutPanel1.Controls.Add(this.evalNameTxt, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.marksUD, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 1, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -76,23 +76,51 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 495);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
-            // UpdateBtn
+            // weightageUD
             // 
-            this.UpdateBtn.BorderRadius = 10;
-            this.UpdateBtn.CheckedState.Parent = this.UpdateBtn;
-            this.UpdateBtn.CustomImages.Parent = this.UpdateBtn;
-            this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
-            this.UpdateBtn.HoverState.Parent = this.UpdateBtn;
-            this.UpdateBtn.Location = new System.Drawing.Point(192, 347);
-            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
-            this.UpdateBtn.Size = new System.Drawing.Size(119, 41);
-            this.UpdateBtn.TabIndex = 12;
-            this.UpdateBtn.Text = "Update Evaluation";
-            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            this.weightageUD.BackColor = System.Drawing.Color.Transparent;
+            this.weightageUD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.weightageUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.weightageUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.weightageUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.weightageUD.DisabledState.Parent = this.weightageUD;
+            this.weightageUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.weightageUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.weightageUD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weightageUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.weightageUD.FocusedState.Parent = this.weightageUD;
+            this.weightageUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weightageUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.weightageUD.Location = new System.Drawing.Point(191, 199);
+            this.weightageUD.Name = "weightageUD";
+            this.weightageUD.ShadowDecoration.Parent = this.weightageUD;
+            this.weightageUD.Size = new System.Drawing.Size(184, 43);
+            this.weightageUD.TabIndex = 21;
+            // 
+            // evalNameTxt
+            // 
+            this.evalNameTxt.BorderRadius = 12;
+            this.evalNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.evalNameTxt.DefaultText = "";
+            this.evalNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.evalNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.evalNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.evalNameTxt.DisabledState.Parent = this.evalNameTxt;
+            this.evalNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.evalNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.evalNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.evalNameTxt.FocusedState.Parent = this.evalNameTxt;
+            this.evalNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.evalNameTxt.HoverState.Parent = this.evalNameTxt;
+            this.evalNameTxt.Location = new System.Drawing.Point(193, 103);
+            this.evalNameTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.evalNameTxt.Name = "evalNameTxt";
+            this.evalNameTxt.PasswordChar = '\0';
+            this.evalNameTxt.PlaceholderText = "Type of Evaluation";
+            this.evalNameTxt.SelectedText = "";
+            this.evalNameTxt.ShadowDecoration.Parent = this.evalNameTxt;
+            this.evalNameTxt.Size = new System.Drawing.Size(180, 39);
+            this.evalNameTxt.TabIndex = 5;
             // 
             // guna2Button1
             // 
@@ -113,6 +141,46 @@
             this.guna2Button1.Text = "Back";
             this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
             // 
+            // marksUD
+            // 
+            this.marksUD.BackColor = System.Drawing.Color.Transparent;
+            this.marksUD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.marksUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.marksUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.marksUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.marksUD.DisabledState.Parent = this.marksUD;
+            this.marksUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.marksUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.marksUD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.marksUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.marksUD.FocusedState.Parent = this.marksUD;
+            this.marksUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.marksUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.marksUD.Location = new System.Drawing.Point(191, 150);
+            this.marksUD.Name = "marksUD";
+            this.marksUD.ShadowDecoration.Parent = this.marksUD;
+            this.marksUD.Size = new System.Drawing.Size(184, 43);
+            this.marksUD.TabIndex = 20;
+            // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.BorderRadius = 10;
+            this.UpdateBtn.CheckedState.Parent = this.UpdateBtn;
+            this.UpdateBtn.CustomImages.Parent = this.UpdateBtn;
+            this.UpdateBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.UpdateBtn.HoverState.Parent = this.UpdateBtn;
+            this.UpdateBtn.Location = new System.Drawing.Point(192, 298);
+            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
+            this.UpdateBtn.Size = new System.Drawing.Size(182, 41);
+            this.UpdateBtn.TabIndex = 12;
+            this.UpdateBtn.Text = "Update Evaluation";
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -129,31 +197,31 @@
             // guna2DataGridView1
             // 
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 20;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -189,71 +257,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // evalNameTxt
-            // 
-            this.evalNameTxt.BorderRadius = 12;
-            this.evalNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.evalNameTxt.DefaultText = "";
-            this.evalNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.evalNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.evalNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.evalNameTxt.DisabledState.Parent = this.evalNameTxt;
-            this.evalNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.evalNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.evalNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.evalNameTxt.FocusedState.Parent = this.evalNameTxt;
-            this.evalNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.evalNameTxt.HoverState.Parent = this.evalNameTxt;
-            this.evalNameTxt.Location = new System.Drawing.Point(193, 103);
-            this.evalNameTxt.Margin = new System.Windows.Forms.Padding(5);
-            this.evalNameTxt.Name = "evalNameTxt";
-            this.evalNameTxt.PasswordChar = '\0';
-            this.evalNameTxt.PlaceholderText = "Type of Evaluation";
-            this.evalNameTxt.SelectedText = "";
-            this.evalNameTxt.ShadowDecoration.Parent = this.evalNameTxt;
-            this.evalNameTxt.Size = new System.Drawing.Size(180, 39);
-            this.evalNameTxt.TabIndex = 5;
-            // 
-            // marksUD
-            // 
-            this.marksUD.BackColor = System.Drawing.Color.Transparent;
-            this.marksUD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.marksUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.marksUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.marksUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.marksUD.DisabledState.Parent = this.marksUD;
-            this.marksUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.marksUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.marksUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.marksUD.FocusedState.Parent = this.marksUD;
-            this.marksUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.marksUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.marksUD.Location = new System.Drawing.Point(191, 150);
-            this.marksUD.Name = "marksUD";
-            this.marksUD.ShadowDecoration.Parent = this.marksUD;
-            this.marksUD.Size = new System.Drawing.Size(100, 36);
-            this.marksUD.TabIndex = 20;
-            // 
-            // weightageUD
-            // 
-            this.weightageUD.BackColor = System.Drawing.Color.Transparent;
-            this.weightageUD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.weightageUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.weightageUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.weightageUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.weightageUD.DisabledState.Parent = this.weightageUD;
-            this.weightageUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.weightageUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.weightageUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.weightageUD.FocusedState.Parent = this.weightageUD;
-            this.weightageUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightageUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.weightageUD.Location = new System.Drawing.Point(191, 199);
-            this.weightageUD.Name = "weightageUD";
-            this.weightageUD.ShadowDecoration.Parent = this.weightageUD;
-            this.weightageUD.Size = new System.Drawing.Size(100, 36);
-            this.weightageUD.TabIndex = 21;
-            // 
             // UpdateEvaluationUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -263,10 +266,10 @@
             this.Name = "UpdateEvaluationUC";
             this.Size = new System.Drawing.Size(764, 495);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.marksUD)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.marksUD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).EndInit();
             this.ResumeLayout(false);
 
         }

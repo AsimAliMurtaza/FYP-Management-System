@@ -59,6 +59,7 @@
             this.createGrpBtn.BorderRadius = 10;
             this.createGrpBtn.CheckedState.Parent = this.createGrpBtn;
             this.createGrpBtn.CustomImages.Parent = this.createGrpBtn;
+            this.createGrpBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.createGrpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
             this.createGrpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.createGrpBtn.ForeColor = System.Drawing.Color.White;
@@ -67,7 +68,7 @@
             this.createGrpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.createGrpBtn.Name = "createGrpBtn";
             this.createGrpBtn.ShadowDecoration.Parent = this.createGrpBtn;
-            this.createGrpBtn.Size = new System.Drawing.Size(179, 36);
+            this.createGrpBtn.Size = new System.Drawing.Size(179, 58);
             this.createGrpBtn.TabIndex = 14;
             this.createGrpBtn.Text = "Create Student Group";
             this.createGrpBtn.Click += new System.EventHandler(this.createGrpBtn_Click);
@@ -105,6 +106,7 @@
             this.viewGrpsBtn.BorderRadius = 10;
             this.viewGrpsBtn.CheckedState.Parent = this.viewGrpsBtn;
             this.viewGrpsBtn.CustomImages.Parent = this.viewGrpsBtn;
+            this.viewGrpsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.viewGrpsBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
             this.viewGrpsBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.viewGrpsBtn.ForeColor = System.Drawing.Color.White;
@@ -113,7 +115,7 @@
             this.viewGrpsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewGrpsBtn.Name = "viewGrpsBtn";
             this.viewGrpsBtn.ShadowDecoration.Parent = this.viewGrpsBtn;
-            this.viewGrpsBtn.Size = new System.Drawing.Size(179, 36);
+            this.viewGrpsBtn.Size = new System.Drawing.Size(179, 58);
             this.viewGrpsBtn.TabIndex = 16;
             this.viewGrpsBtn.Text = "View Groups";
             this.viewGrpsBtn.Click += new System.EventHandler(this.viewGrpsBtn_Click);
@@ -123,6 +125,7 @@
             this.AddToGrpBtn.BorderRadius = 10;
             this.AddToGrpBtn.CheckedState.Parent = this.AddToGrpBtn;
             this.AddToGrpBtn.CustomImages.Parent = this.AddToGrpBtn;
+            this.AddToGrpBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddToGrpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
             this.AddToGrpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.AddToGrpBtn.ForeColor = System.Drawing.Color.White;
@@ -131,7 +134,7 @@
             this.AddToGrpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AddToGrpBtn.Name = "AddToGrpBtn";
             this.AddToGrpBtn.ShadowDecoration.Parent = this.AddToGrpBtn;
-            this.AddToGrpBtn.Size = new System.Drawing.Size(179, 36);
+            this.AddToGrpBtn.Size = new System.Drawing.Size(179, 58);
             this.AddToGrpBtn.TabIndex = 15;
             this.AddToGrpBtn.Text = "Add Student to Group";
             this.AddToGrpBtn.Click += new System.EventHandler(this.AddToGrpBtn_Click);

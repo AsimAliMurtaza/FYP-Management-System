@@ -31,6 +31,7 @@ namespace FYPManagement
         ManageEvaluationsUC manageEvaluationsUC;
         ViewEvaluationsUC viewEvaluationsUC;
         UpdateEvaluationUC updateEvaluationUC;
+        EvaluateGroupsUC evaluateGroupsUC;
         public AdvisorForm()
         {
             InitializeComponent();
@@ -53,6 +54,7 @@ namespace FYPManagement
             manageEvaluationsUC = new ManageEvaluationsUC(this) { Dock = DockStyle.Fill };
             viewEvaluationsUC = new ViewEvaluationsUC(this) { Dock = DockStyle.Fill };
             updateEvaluationUC = new UpdateEvaluationUC(this) { Dock = DockStyle.Fill };
+            evaluateGroupsUC = new EvaluateGroupsUC(this) { Dock = DockStyle.Fill };
 
         }
 
@@ -168,6 +170,12 @@ namespace FYPManagement
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(updateEvaluationUC);
+        }
+
+        public void addEvaluateGroupsControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(evaluateGroupsUC);
         }
 
         private void AdvisorForm_Load(object sender, EventArgs e)
