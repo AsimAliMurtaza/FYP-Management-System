@@ -27,6 +27,7 @@ namespace FYPManagement
         ManageGroupsUC manageGroupsUC;
         UpdateProject updateProject;
         AssignProjects assignProjects;
+        AssignAdvisors assignAdvisorsUC;
         public AdvisorForm()
         {
             InitializeComponent();
@@ -45,6 +46,7 @@ namespace FYPManagement
             manageGroupsUC = new ManageGroupsUC(this) { Dock = DockStyle.Fill };
             updateProject = new UpdateProject(this) { Dock = DockStyle.Fill };
             assignProjects = new AssignProjects(this) { Dock = DockStyle.Fill };
+            assignAdvisorsUC = new AssignAdvisors(this) { Dock = DockStyle.Fill };
 
         }
 
@@ -138,6 +140,11 @@ namespace FYPManagement
             MainPanel.Controls.Add(updateProject);
         }
 
+        public void addAssignAdvisorsControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(assignAdvisorsUC);
+        }
 
         private void AdvisorForm_Load(object sender, EventArgs e)
         {

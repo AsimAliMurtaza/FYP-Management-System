@@ -77,5 +77,10 @@ namespace FYPManagement
         {
             form.addAssignProjectsControl();
         }
+
+        private void assignAdvBtn_Click(object sender, EventArgs e)
+        {
+            form.addAssignAdvisorsControl();
+        }
     }
 }
