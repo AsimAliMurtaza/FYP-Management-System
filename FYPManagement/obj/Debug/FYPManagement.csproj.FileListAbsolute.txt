@@ -25,3 +25,6 @@ D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageGroupsUC
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateProject.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.AssignProjects.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.AssignAdvisors.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageEvaluationsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewEvaluationsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateEvaluationUC.resources

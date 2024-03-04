@@ -12,24 +12,24 @@ using System.Windows.Forms;
 
 namespace FYPManagement
 {
-    public partial class UpdateProject : UserControl
+    public partial class UpdateEvaluationUC : UserControl
     {
-        AdvisorForm form;
         int id;
-        public UpdateProject(AdvisorForm form)
+        AdvisorForm form;
+        public UpdateEvaluationUC(AdvisorForm form)
         {
             InitializeComponent();
             this.form = form;
-            displayProjects();
+            displayEvaluations();
             guna2DataGridView1.SelectionChanged += DataGridView1_SelectionChanged;
         }
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            updateProject();
+            updateEvaluation();
         }
 
-        private void updateProject()
+        private void updateEvaluation()
         {
             var con = Configuration.getInstance().getConnection();
             if (con.State == ConnectionState.Closed)
@@ -38,17 +38,18 @@ namespace FYPManagement
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("UPDATE Project SET Description = @Description, Title = @Title WHERE Id = @Id", con);
-                cmd.Parameters.AddWithValue("@Description", Descriptiontxt.Text);
-                cmd.Parameters.AddWithValue("@Title", TitleTxt.Text);
+                SqlCommand cmd = new SqlCommand("UPDATE Evaluation SET Name = @Name, TotalMarks = @TotalMarks, TotalWeightage = @TotalWeightage WHERE Id = @Id", con);
+                cmd.Parameters.AddWithValue("@Name", evalNameTxt.Text);
+                cmd.Parameters.AddWithValue("@TotalMarks", marksUD.Value);
+                cmd.Parameters.AddWithValue("@TotalWeightage", weightageUD.Value);
                 cmd.Parameters.AddWithValue("@Id", id);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Project Updated Successfully");
-                displayProjects();
+                MessageBox.Show("Evaluation Updated Successfully");
+                displayEvaluations();
             }
-            catch (Exception)
+            catch (Exception er)
             {
-
+                MessageBox.Show("Error: " + er.Message);
             }
         }
 
@@ -58,12 +59,12 @@ namespace FYPManagement
             {
                 DataGridViewRow selectedRow = guna2DataGridView1.SelectedRows[0];
                 id = (int)selectedRow.Cells["Id"].Value;
-                Descriptiontxt.Text = selectedRow.Cells["Description"].Value.ToString();
-                TitleTxt.Text = selectedRow.Cells["Title"].Value.ToString();
+                evalNameTxt.Text = selectedRow.Cells["Name"].Value.ToString();
+                marksUD.Value = (int)selectedRow.Cells["TotalMarks"].Value;
+                weightageUD.Value = (int)selectedRow.Cells["TotalWeightage"].Value;
             }
         }
-
-        private void displayProjects()
+        private void displayEvaluations()
         {
             var con = Configuration.getInstance().getConnection();
             if (con.State == ConnectionState.Closed)
@@ -72,46 +73,21 @@ namespace FYPManagement
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Project", con);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Evaluation", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
-
                 guna2DataGridView1.DataSource = dt;
             }
-            catch (Exception ex)
+            catch (Exception er)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error: " + er.Message);
             }
         }
+
         private void BackBtn_Click(object sender, EventArgs e)
         {
-            form.addGroupControlUC();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TitleTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Descriptiontxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            form.addManageEvaluationsControl();
         }
     }
 }

@@ -95,6 +95,12 @@
     <Compile Include="ManageAdvisorsUC.Designer.cs">
       <DependentUpon>ManageAdvisorsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageEvaluationsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManageEvaluationsUC.Designer.cs">
+      <DependentUpon>ManageEvaluationsUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageGroupsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,12 @@
     <Compile Include="UpdateAdvisorUC.Designer.cs">
       <DependentUpon>UpdateAdvisorUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateEvaluationUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateEvaluationUC.Designer.cs">
+      <DependentUpon>UpdateEvaluationUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateProject.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     </Compile>
     <Compile Include="ViewAdvisorsUC.Designer.cs">
       <DependentUpon>ViewAdvisorsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEvaluationsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewEvaluationsUC.Designer.cs">
+      <DependentUpon>ViewEvaluationsUC.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewGroupsUC.cs">
       <SubType>UserControl</SubType>
@@ -189,6 +207,9 @@
     <EmbeddedResource Include="ManageAdvisorsUC.resx">
       <DependentUpon>ManageAdvisorsUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageEvaluationsUC.resx">
+      <DependentUpon>ManageEvaluationsUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageGroupsUC.resx">
       <DependentUpon>ManageGroupsUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +234,9 @@
     <EmbeddedResource Include="UpdateAdvisorUC.resx">
       <DependentUpon>UpdateAdvisorUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEvaluationUC.resx">
+      <DependentUpon>UpdateEvaluationUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateProject.resx">
       <DependentUpon>UpdateProject.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAdvisorsUC.resx">
       <DependentUpon>ViewAdvisorsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEvaluationsUC.resx">
+      <DependentUpon>ViewEvaluationsUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewGroupsUC.resx">
       <DependentUpon>ViewGroupsUC.cs</DependentUpon>

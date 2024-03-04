@@ -32,7 +32,7 @@
             this.mngStdBtn = new Guna.UI2.WinForms.Guna2Button();
             this.mngAdvBtn = new Guna.UI2.WinForms.Guna2Button();
             this.ManageProjectsBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.ManageEvalBtn = new Guna.UI2.WinForms.Guna2Button();
             this.logOutBtn = new Guna.UI2.WinForms.Guna2Button();
             this.manageGroupsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -48,7 +48,7 @@
             this.tableLayoutPanel1.Controls.Add(this.mngStdBtn, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.mngAdvBtn, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.ManageProjectsBtn, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button4, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.ManageEvalBtn, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.logOutBtn, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.manageGroupsBtn, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -123,23 +123,24 @@
             this.ManageProjectsBtn.Text = "Manage Projects";
             this.ManageProjectsBtn.Click += new System.EventHandler(this.ManageProjectsBtn_Click);
             // 
-            // guna2Button4
+            // ManageEvalBtn
             // 
-            this.guna2Button4.BorderRadius = 20;
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(264, 280);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(513, 61);
-            this.guna2Button4.TabIndex = 3;
-            this.guna2Button4.Text = "Manage Evaluations";
+            this.ManageEvalBtn.BorderRadius = 20;
+            this.ManageEvalBtn.CheckedState.Parent = this.ManageEvalBtn;
+            this.ManageEvalBtn.CustomImages.Parent = this.ManageEvalBtn;
+            this.ManageEvalBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ManageEvalBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.ManageEvalBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ManageEvalBtn.ForeColor = System.Drawing.Color.White;
+            this.ManageEvalBtn.HoverState.Parent = this.ManageEvalBtn;
+            this.ManageEvalBtn.Location = new System.Drawing.Point(264, 280);
+            this.ManageEvalBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ManageEvalBtn.Name = "ManageEvalBtn";
+            this.ManageEvalBtn.ShadowDecoration.Parent = this.ManageEvalBtn;
+            this.ManageEvalBtn.Size = new System.Drawing.Size(513, 61);
+            this.ManageEvalBtn.TabIndex = 3;
+            this.ManageEvalBtn.Text = "Manage Evaluations";
+            this.ManageEvalBtn.Click += new System.EventHandler(this.ManageEvalBtn_Click);
             // 
             // logOutBtn
             // 
@@ -195,7 +196,7 @@
         private Guna.UI2.WinForms.Guna2Button mngStdBtn;
         private Guna.UI2.WinForms.Guna2Button mngAdvBtn;
         private Guna.UI2.WinForms.Guna2Button ManageProjectsBtn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button ManageEvalBtn;
         private Guna.UI2.WinForms.Guna2Button logOutBtn;
         private Guna.UI2.WinForms.Guna2Button manageGroupsBtn;
     }

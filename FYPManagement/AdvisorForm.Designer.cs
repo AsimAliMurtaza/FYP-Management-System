@@ -73,7 +73,7 @@
             this.adminHeader.Name = "adminHeader";
             this.adminHeader.Size = new System.Drawing.Size(1059, 125);
             this.adminHeader.TabIndex = 1;
-            this.adminHeader.Text = "ADMIN ki DASH mein BOARD";
+            this.adminHeader.Text = "ADMIN\'S Dashboard";
             this.adminHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.adminHeader.Click += new System.EventHandler(this.adminHeader_Click);
             // 

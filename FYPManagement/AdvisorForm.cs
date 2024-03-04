@@ -28,6 +28,9 @@ namespace FYPManagement
         UpdateProject updateProject;
         AssignProjects assignProjects;
         AssignAdvisors assignAdvisorsUC;
+        ManageEvaluationsUC manageEvaluationsUC;
+        ViewEvaluationsUC viewEvaluationsUC;
+        UpdateEvaluationUC updateEvaluationUC;
         public AdvisorForm()
         {
             InitializeComponent();
@@ -47,6 +50,9 @@ namespace FYPManagement
             updateProject = new UpdateProject(this) { Dock = DockStyle.Fill };
             assignProjects = new AssignProjects(this) { Dock = DockStyle.Fill };
             assignAdvisorsUC = new AssignAdvisors(this) { Dock = DockStyle.Fill };
+            manageEvaluationsUC = new ManageEvaluationsUC(this) { Dock = DockStyle.Fill };
+            viewEvaluationsUC = new ViewEvaluationsUC(this) { Dock = DockStyle.Fill };
+            updateEvaluationUC = new UpdateEvaluationUC(this) { Dock = DockStyle.Fill };
 
         }
 
@@ -144,6 +150,24 @@ namespace FYPManagement
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(assignAdvisorsUC);
+        }
+
+        public void addManageEvaluationsControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(manageEvaluationsUC);
+        }
+
+        public void addViewEvaluationsControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(viewEvaluationsUC);
+        }
+
+        public void addUpdateEvaluationControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(updateEvaluationUC);
         }
 
         private void AdvisorForm_Load(object sender, EventArgs e)

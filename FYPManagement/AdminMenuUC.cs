@@ -39,5 +39,10 @@ namespace FYPManagement
         {
             form.addManageGroupsControl();
         }
+
+        private void ManageEvalBtn_Click(object sender, EventArgs e)
+        {
+            form.addManageEvaluationsControl();
+        }
     }
 }
