@@ -32,9 +32,6 @@
             this.backBtn = new Guna.UI2.WinForms.Guna2Button();
             this.viewStdBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateStdBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.createGrpBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.viewGrpsBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.AddToGrpBtn = new Guna.UI2.WinForms.Guna2Button();
             this.LNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.RegNoTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.fNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -43,6 +40,7 @@
             this.DoB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.genderCB = new System.Windows.Forms.ComboBox();
             this.addStdBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.deleteStdBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,19 +54,17 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.backBtn, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.viewStdBtn, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.updateStdBtn, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.createGrpBtn, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.viewGrpsBtn, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.AddToGrpBtn, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.LNameTxt, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.RegNoTxt, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.fNameTxt, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.emailTxt, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.ContactTxt, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.DoB, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.genderCB, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.addStdBtn, 3, 8);
+            this.tableLayoutPanel1.Controls.Add(this.RegNoTxt, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.genderCB, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.LNameTxt, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.fNameTxt, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.emailTxt, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.ContactTxt, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.DoB, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.addStdBtn, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.deleteStdBtn, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.viewStdBtn, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.updateStdBtn, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -116,7 +112,7 @@
             this.viewStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.viewStdBtn.ForeColor = System.Drawing.Color.White;
             this.viewStdBtn.HoverState.Parent = this.viewStdBtn;
-            this.viewStdBtn.Location = new System.Drawing.Point(4, 4);
+            this.viewStdBtn.Location = new System.Drawing.Point(390, 48);
             this.viewStdBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewStdBtn.Name = "viewStdBtn";
             this.viewStdBtn.ShadowDecoration.Parent = this.viewStdBtn;
@@ -135,7 +131,7 @@
             this.updateStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.updateStdBtn.ForeColor = System.Drawing.Color.White;
             this.updateStdBtn.HoverState.Parent = this.updateStdBtn;
-            this.updateStdBtn.Location = new System.Drawing.Point(197, 4);
+            this.updateStdBtn.Location = new System.Drawing.Point(197, 48);
             this.updateStdBtn.Margin = new System.Windows.Forms.Padding(4);
             this.updateStdBtn.Name = "updateStdBtn";
             this.updateStdBtn.ShadowDecoration.Parent = this.updateStdBtn;
@@ -143,63 +139,6 @@
             this.updateStdBtn.TabIndex = 10;
             this.updateStdBtn.Text = "Update Student";
             this.updateStdBtn.Click += new System.EventHandler(this.updateStdBtn_Click);
-            // 
-            // createGrpBtn
-            // 
-            this.createGrpBtn.BorderRadius = 10;
-            this.createGrpBtn.CheckedState.Parent = this.createGrpBtn;
-            this.createGrpBtn.CustomImages.Parent = this.createGrpBtn;
-            this.createGrpBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.createGrpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.createGrpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.createGrpBtn.ForeColor = System.Drawing.Color.White;
-            this.createGrpBtn.HoverState.Parent = this.createGrpBtn;
-            this.createGrpBtn.Location = new System.Drawing.Point(390, 4);
-            this.createGrpBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.createGrpBtn.Name = "createGrpBtn";
-            this.createGrpBtn.ShadowDecoration.Parent = this.createGrpBtn;
-            this.createGrpBtn.Size = new System.Drawing.Size(185, 36);
-            this.createGrpBtn.TabIndex = 14;
-            this.createGrpBtn.Text = "Create Student Group";
-            this.createGrpBtn.Click += new System.EventHandler(this.createGrpBtn_Click);
-            // 
-            // viewGrpsBtn
-            // 
-            this.viewGrpsBtn.BorderRadius = 10;
-            this.viewGrpsBtn.CheckedState.Parent = this.viewGrpsBtn;
-            this.viewGrpsBtn.CustomImages.Parent = this.viewGrpsBtn;
-            this.viewGrpsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewGrpsBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.viewGrpsBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.viewGrpsBtn.ForeColor = System.Drawing.Color.White;
-            this.viewGrpsBtn.HoverState.Parent = this.viewGrpsBtn;
-            this.viewGrpsBtn.Location = new System.Drawing.Point(583, 4);
-            this.viewGrpsBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.viewGrpsBtn.Name = "viewGrpsBtn";
-            this.viewGrpsBtn.ShadowDecoration.Parent = this.viewGrpsBtn;
-            this.viewGrpsBtn.Size = new System.Drawing.Size(185, 36);
-            this.viewGrpsBtn.TabIndex = 16;
-            this.viewGrpsBtn.Text = "View Groups";
-            this.viewGrpsBtn.Click += new System.EventHandler(this.viewGrpsBtn_Click);
-            // 
-            // AddToGrpBtn
-            // 
-            this.AddToGrpBtn.BorderRadius = 10;
-            this.AddToGrpBtn.CheckedState.Parent = this.AddToGrpBtn;
-            this.AddToGrpBtn.CustomImages.Parent = this.AddToGrpBtn;
-            this.AddToGrpBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddToGrpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.AddToGrpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.AddToGrpBtn.ForeColor = System.Drawing.Color.White;
-            this.AddToGrpBtn.HoverState.Parent = this.AddToGrpBtn;
-            this.AddToGrpBtn.Location = new System.Drawing.Point(776, 4);
-            this.AddToGrpBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.AddToGrpBtn.Name = "AddToGrpBtn";
-            this.AddToGrpBtn.ShadowDecoration.Parent = this.AddToGrpBtn;
-            this.AddToGrpBtn.Size = new System.Drawing.Size(185, 36);
-            this.AddToGrpBtn.TabIndex = 15;
-            this.AddToGrpBtn.Text = "Add Student to Group";
-            this.AddToGrpBtn.Click += new System.EventHandler(this.AddToGrpBtn_Click);
             // 
             // LNameTxt
             // 
@@ -216,7 +155,7 @@
             this.LNameTxt.FocusedState.Parent = this.LNameTxt;
             this.LNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LNameTxt.HoverState.Parent = this.LNameTxt;
-            this.LNameTxt.Location = new System.Drawing.Point(391, 181);
+            this.LNameTxt.Location = new System.Drawing.Point(198, 225);
             this.LNameTxt.Margin = new System.Windows.Forms.Padding(5);
             this.LNameTxt.Name = "LNameTxt";
             this.LNameTxt.PasswordChar = '\0';
@@ -241,7 +180,7 @@
             this.RegNoTxt.FocusedState.Parent = this.RegNoTxt;
             this.RegNoTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.RegNoTxt.HoverState.Parent = this.RegNoTxt;
-            this.RegNoTxt.Location = new System.Drawing.Point(391, 137);
+            this.RegNoTxt.Location = new System.Drawing.Point(198, 137);
             this.RegNoTxt.Margin = new System.Windows.Forms.Padding(5);
             this.RegNoTxt.Name = "RegNoTxt";
             this.RegNoTxt.PasswordChar = '\0';
@@ -267,7 +206,7 @@
             this.fNameTxt.FocusedState.Parent = this.fNameTxt;
             this.fNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fNameTxt.HoverState.Parent = this.fNameTxt;
-            this.fNameTxt.Location = new System.Drawing.Point(391, 93);
+            this.fNameTxt.Location = new System.Drawing.Point(198, 181);
             this.fNameTxt.Margin = new System.Windows.Forms.Padding(5);
             this.fNameTxt.Name = "fNameTxt";
             this.fNameTxt.PasswordChar = '\0';
@@ -292,7 +231,7 @@
             this.emailTxt.FocusedState.Parent = this.emailTxt;
             this.emailTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTxt.HoverState.Parent = this.emailTxt;
-            this.emailTxt.Location = new System.Drawing.Point(391, 225);
+            this.emailTxt.Location = new System.Drawing.Point(198, 269);
             this.emailTxt.Margin = new System.Windows.Forms.Padding(5);
             this.emailTxt.Name = "emailTxt";
             this.emailTxt.PasswordChar = '\0';
@@ -317,7 +256,7 @@
             this.ContactTxt.FocusedState.Parent = this.ContactTxt;
             this.ContactTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ContactTxt.HoverState.Parent = this.ContactTxt;
-            this.ContactTxt.Location = new System.Drawing.Point(391, 269);
+            this.ContactTxt.Location = new System.Drawing.Point(391, 137);
             this.ContactTxt.Margin = new System.Windows.Forms.Padding(5);
             this.ContactTxt.Name = "ContactTxt";
             this.ContactTxt.PasswordChar = '\0';
@@ -335,7 +274,7 @@
             this.DoB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
             this.DoB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DoB.HoverState.Parent = this.DoB;
-            this.DoB.Location = new System.Drawing.Point(390, 312);
+            this.DoB.Location = new System.Drawing.Point(390, 180);
             this.DoB.Margin = new System.Windows.Forms.Padding(4);
             this.DoB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DoB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -349,7 +288,7 @@
             // 
             this.genderCB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.genderCB.FormattingEnabled = true;
-            this.genderCB.Location = new System.Drawing.Point(390, 362);
+            this.genderCB.Location = new System.Drawing.Point(390, 230);
             this.genderCB.Margin = new System.Windows.Forms.Padding(4, 10, 4, 4);
             this.genderCB.Name = "genderCB";
             this.genderCB.Size = new System.Drawing.Size(185, 24);
@@ -365,7 +304,7 @@
             this.addStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addStdBtn.ForeColor = System.Drawing.Color.White;
             this.addStdBtn.HoverState.Parent = this.addStdBtn;
-            this.addStdBtn.Location = new System.Drawing.Point(583, 356);
+            this.addStdBtn.Location = new System.Drawing.Point(390, 312);
             this.addStdBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addStdBtn.Name = "addStdBtn";
             this.addStdBtn.ShadowDecoration.Parent = this.addStdBtn;
@@ -373,6 +312,24 @@
             this.addStdBtn.TabIndex = 12;
             this.addStdBtn.Text = "Add Student";
             this.addStdBtn.Click += new System.EventHandler(this.addStdBtn_Click);
+            // 
+            // deleteStdBtn
+            // 
+            this.deleteStdBtn.BorderRadius = 10;
+            this.deleteStdBtn.CheckedState.Parent = this.deleteStdBtn;
+            this.deleteStdBtn.CustomImages.Parent = this.deleteStdBtn;
+            this.deleteStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.deleteStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.deleteStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.deleteStdBtn.ForeColor = System.Drawing.Color.White;
+            this.deleteStdBtn.HoverState.Parent = this.deleteStdBtn;
+            this.deleteStdBtn.Location = new System.Drawing.Point(583, 48);
+            this.deleteStdBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteStdBtn.Name = "deleteStdBtn";
+            this.deleteStdBtn.ShadowDecoration.Parent = this.deleteStdBtn;
+            this.deleteStdBtn.Size = new System.Drawing.Size(185, 36);
+            this.deleteStdBtn.TabIndex = 18;
+            this.deleteStdBtn.Text = "Delete Student";
             // 
             // ManageStudentsUC
             // 
@@ -398,11 +355,9 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker DoB;
         private System.Windows.Forms.ComboBox genderCB;
         private Guna.UI2.WinForms.Guna2Button updateStdBtn;
-        private Guna.UI2.WinForms.Guna2Button addStdBtn;
         private Guna.UI2.WinForms.Guna2Button viewStdBtn;
-        private Guna.UI2.WinForms.Guna2Button createGrpBtn;
-        private Guna.UI2.WinForms.Guna2Button AddToGrpBtn;
-        private Guna.UI2.WinForms.Guna2Button viewGrpsBtn;
         private Guna.UI2.WinForms.Guna2Button backBtn;
+        private Guna.UI2.WinForms.Guna2Button addStdBtn;
+        private Guna.UI2.WinForms.Guna2Button deleteStdBtn;
     }
 }

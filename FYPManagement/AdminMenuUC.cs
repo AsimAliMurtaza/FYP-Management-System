@@ -34,5 +34,10 @@ namespace FYPManagement
         {
             form.addGroupControlUC();
         }
+
+        private void manageGroupsBtn_Click(object sender, EventArgs e)
+        {
+            form.addManageGroupsControl();
+        }
     }
 }

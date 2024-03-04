@@ -21,3 +21,5 @@ D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewAdvisorsUC
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateAdvisorUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageProjects.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.VIewProjectsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageGroupsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateProject.resources

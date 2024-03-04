@@ -83,6 +83,12 @@
     <Compile Include="ManageAdvisorsUC.Designer.cs">
       <DependentUpon>ManageAdvisorsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageGroupsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManageGroupsUC.Designer.cs">
+      <DependentUpon>ManageGroupsUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManageProjects.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     </Compile>
     <Compile Include="UpdateAdvisorUC.Designer.cs">
       <DependentUpon>UpdateAdvisorUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateProject.Designer.cs">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateStudentUC.cs">
       <SubType>UserControl</SubType>
@@ -159,6 +171,9 @@
     <EmbeddedResource Include="ManageAdvisorsUC.resx">
       <DependentUpon>ManageAdvisorsUC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageGroupsUC.resx">
+      <DependentUpon>ManageGroupsUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageProjects.resx">
       <DependentUpon>ManageProjects.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateAdvisorUC.resx">
       <DependentUpon>UpdateAdvisorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProject.resx">
+      <DependentUpon>UpdateProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateStudentUC.resx">
       <DependentUpon>UpdateStudentUC.cs</DependentUpon>

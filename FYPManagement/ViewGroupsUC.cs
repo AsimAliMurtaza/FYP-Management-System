@@ -24,7 +24,7 @@ namespace FYPManagement
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-            form.addStudentsControl();
+            form.addManageGroupsControl();
         }
 
         private void displayGroups()

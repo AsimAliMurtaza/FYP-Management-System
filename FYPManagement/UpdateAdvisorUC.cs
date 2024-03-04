@@ -169,5 +169,60 @@ namespace FYPManagement
         {
             form.addAdvisorsControl();
         }
+
+        private void FNameTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LNameTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmailTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ContactTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DOB_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GenderCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void designationsCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SalaryTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

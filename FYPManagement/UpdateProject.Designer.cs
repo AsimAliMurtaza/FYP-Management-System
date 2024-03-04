@@ -1,6 +1,6 @@
 ﻿namespace FYPManagement
 {
-    partial class StudentsToGroupUC
+    partial class UpdateProject
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,12 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TitleTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Descriptiontxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.remStdCB = new System.Windows.Forms.ComboBox();
-            this.RemStdBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.studentCB = new System.Windows.Forms.ComboBox();
-            this.groupCB = new System.Windows.Forms.ComboBox();
-            this.addToGrpBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
@@ -50,31 +48,98 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(27)))));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.remStdCB, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.RemStdBtn, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.studentCB, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.groupCB, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.addToGrpBtn, 1, 2);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel1.Controls.Add(this.TitleTxt, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.Descriptiontxt, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(497, 491);
-            this.tableLayoutPanel1.TabIndex = 4;
+            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 456);
+            this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // TitleTxt
+            // 
+            this.TitleTxt.BorderRadius = 12;
+            this.TitleTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TitleTxt.DefaultText = "";
+            this.TitleTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TitleTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TitleTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TitleTxt.DisabledState.Parent = this.TitleTxt;
+            this.TitleTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TitleTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TitleTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TitleTxt.FocusedState.Parent = this.TitleTxt;
+            this.TitleTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TitleTxt.HoverState.Parent = this.TitleTxt;
+            this.TitleTxt.Location = new System.Drawing.Point(130, 95);
+            this.TitleTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.TitleTxt.Name = "TitleTxt";
+            this.TitleTxt.PasswordChar = '\0';
+            this.TitleTxt.PlaceholderText = "Title";
+            this.TitleTxt.SelectedText = "";
+            this.TitleTxt.ShadowDecoration.Parent = this.TitleTxt;
+            this.TitleTxt.Size = new System.Drawing.Size(116, 35);
+            this.TitleTxt.TabIndex = 5;
+            // 
+            // Descriptiontxt
+            // 
+            this.Descriptiontxt.BorderRadius = 12;
+            this.Descriptiontxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Descriptiontxt.DefaultText = "";
+            this.Descriptiontxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Descriptiontxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Descriptiontxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Descriptiontxt.DisabledState.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Descriptiontxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Descriptiontxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Descriptiontxt.FocusedState.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Descriptiontxt.HoverState.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.Location = new System.Drawing.Point(130, 140);
+            this.Descriptiontxt.Margin = new System.Windows.Forms.Padding(5);
+            this.Descriptiontxt.Name = "Descriptiontxt";
+            this.Descriptiontxt.PasswordChar = '\0';
+            this.Descriptiontxt.PlaceholderText = "Description";
+            this.Descriptiontxt.SelectedText = "";
+            this.Descriptiontxt.ShadowDecoration.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.Size = new System.Drawing.Size(116, 35);
+            this.Descriptiontxt.TabIndex = 6;
+            // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.BorderRadius = 10;
+            this.UpdateBtn.CheckedState.Parent = this.UpdateBtn;
+            this.UpdateBtn.CustomImages.Parent = this.UpdateBtn;
+            this.UpdateBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.UpdateBtn.HoverState.Parent = this.UpdateBtn;
+            this.UpdateBtn.Location = new System.Drawing.Point(255, 319);
+            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
+            this.UpdateBtn.Size = new System.Drawing.Size(119, 37);
+            this.UpdateBtn.TabIndex = 12;
+            this.UpdateBtn.Text = "Update Project";
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // guna2Button1
             // 
@@ -86,101 +151,27 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(4, 436);
+            this.guna2Button1.Location = new System.Drawing.Point(4, 409);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(157, 51);
-            this.guna2Button1.TabIndex = 18;
+            this.guna2Button1.Size = new System.Drawing.Size(117, 43);
+            this.guna2Button1.TabIndex = 19;
             this.guna2Button1.Text = "Back";
             this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
-            // 
-            // remStdCB
-            // 
-            this.remStdCB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.remStdCB.DropDownHeight = 110;
-            this.remStdCB.FormattingEnabled = true;
-            this.remStdCB.IntegralHeight = false;
-            this.remStdCB.Location = new System.Drawing.Point(4, 274);
-            this.remStdCB.Margin = new System.Windows.Forms.Padding(4);
-            this.remStdCB.Name = "remStdCB";
-            this.remStdCB.Size = new System.Drawing.Size(157, 24);
-            this.remStdCB.TabIndex = 16;
-            // 
-            // RemStdBtn
-            // 
-            this.RemStdBtn.BorderRadius = 10;
-            this.RemStdBtn.CheckedState.Parent = this.RemStdBtn;
-            this.RemStdBtn.CustomImages.Parent = this.RemStdBtn;
-            this.RemStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RemStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.RemStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.RemStdBtn.ForeColor = System.Drawing.Color.White;
-            this.RemStdBtn.HoverState.Parent = this.RemStdBtn;
-            this.RemStdBtn.Location = new System.Drawing.Point(169, 274);
-            this.RemStdBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.RemStdBtn.Name = "RemStdBtn";
-            this.RemStdBtn.ShadowDecoration.Parent = this.RemStdBtn;
-            this.RemStdBtn.Size = new System.Drawing.Size(157, 46);
-            this.RemStdBtn.TabIndex = 15;
-            this.RemStdBtn.Text = "Remove Student";
-            this.RemStdBtn.Click += new System.EventHandler(this.RemStdBtn_Click);
-            // 
-            // studentCB
-            // 
-            this.studentCB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.studentCB.DropDownHeight = 110;
-            this.studentCB.FormattingEnabled = true;
-            this.studentCB.IntegralHeight = false;
-            this.studentCB.Location = new System.Drawing.Point(4, 112);
-            this.studentCB.Margin = new System.Windows.Forms.Padding(4);
-            this.studentCB.Name = "studentCB";
-            this.studentCB.Size = new System.Drawing.Size(157, 24);
-            this.studentCB.TabIndex = 9;
-            // 
-            // groupCB
-            // 
-            this.groupCB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupCB.DropDownHeight = 110;
-            this.groupCB.FormattingEnabled = true;
-            this.groupCB.IntegralHeight = false;
-            this.groupCB.Location = new System.Drawing.Point(4, 166);
-            this.groupCB.Margin = new System.Windows.Forms.Padding(4);
-            this.groupCB.Name = "groupCB";
-            this.groupCB.Size = new System.Drawing.Size(157, 24);
-            this.groupCB.TabIndex = 14;
-            // 
-            // addToGrpBtn
-            // 
-            this.addToGrpBtn.BorderRadius = 10;
-            this.addToGrpBtn.CheckedState.Parent = this.addToGrpBtn;
-            this.addToGrpBtn.CustomImages.Parent = this.addToGrpBtn;
-            this.addToGrpBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addToGrpBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.addToGrpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.addToGrpBtn.ForeColor = System.Drawing.Color.White;
-            this.addToGrpBtn.HoverState.Parent = this.addToGrpBtn;
-            this.addToGrpBtn.Location = new System.Drawing.Point(169, 112);
-            this.addToGrpBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.addToGrpBtn.Name = "addToGrpBtn";
-            this.addToGrpBtn.ShadowDecoration.Parent = this.addToGrpBtn;
-            this.addToGrpBtn.Size = new System.Drawing.Size(157, 46);
-            this.addToGrpBtn.TabIndex = 12;
-            this.addToGrpBtn.Text = "Add Student";
-            this.addToGrpBtn.Click += new System.EventHandler(this.addToGrpBtn_Click);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.guna2DataGridView1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(497, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(378, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(516, 491);
-            this.tableLayoutPanel2.TabIndex = 5;
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(456, 456);
+            this.tableLayoutPanel2.TabIndex = 8;
             // 
             // guna2DataGridView1
             // 
@@ -219,7 +210,7 @@
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(510, 485);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(450, 450);
             this.guna2DataGridView1.TabIndex = 0;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -243,16 +234,15 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.SelectionChanged += new System.EventHandler(this.dataGridViewGroupStudents_SelectionChanged);
             // 
-            // StudentsToGroupUC
+            // UpdateProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "StudentsToGroupUC";
-            this.Size = new System.Drawing.Size(1013, 491);
+            this.Name = "UpdateProject";
+            this.Size = new System.Drawing.Size(834, 456);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
@@ -263,13 +253,11 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ComboBox studentCB;
-        private System.Windows.Forms.ComboBox groupCB;
-        private Guna.UI2.WinForms.Guna2Button addToGrpBtn;
-        private Guna.UI2.WinForms.Guna2Button RemStdBtn;
-        private System.Windows.Forms.ComboBox remStdCB;
+        private Guna.UI2.WinForms.Guna2TextBox TitleTxt;
+        private Guna.UI2.WinForms.Guna2TextBox Descriptiontxt;
+        private Guna.UI2.WinForms.Guna2Button UpdateBtn;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -129,6 +129,7 @@
             this.updatePrjBtn.Size = new System.Drawing.Size(242, 35);
             this.updatePrjBtn.TabIndex = 10;
             this.updatePrjBtn.Text = "Update Project";
+            this.updatePrjBtn.Click += new System.EventHandler(this.updatePrjBtn_Click);
             // 
             // assignPrjBtn
             // 

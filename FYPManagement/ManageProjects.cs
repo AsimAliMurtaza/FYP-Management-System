@@ -67,5 +67,10 @@ namespace FYPManagement
         {
             form.addAdminDashboardControl();
         }
+
+        private void updatePrjBtn_Click(object sender, EventArgs e)
+        {
+            form.addUpdateProjectControl();
+        }
     }
 }
