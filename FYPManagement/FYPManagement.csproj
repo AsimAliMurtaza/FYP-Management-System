@@ -64,6 +64,12 @@
     <Compile Include="AdvisorForm.Designer.cs">
       <DependentUpon>AdvisorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssignProjects.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssignProjects.Designer.cs">
+      <DependentUpon>AssignProjects.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuration.cs" />
     <Compile Include="CreateGroupUC.cs">
       <SubType>UserControl</SubType>
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdvisorForm.resx">
       <DependentUpon>AdvisorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignProjects.resx">
+      <DependentUpon>AssignProjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateGroupUC.resx">
       <DependentUpon>CreateGroupUC.cs</DependentUpon>

@@ -148,6 +148,7 @@
             this.assignPrjBtn.Size = new System.Drawing.Size(242, 35);
             this.assignPrjBtn.TabIndex = 14;
             this.assignPrjBtn.Text = "Assign Projects";
+            this.assignPrjBtn.Click += new System.EventHandler(this.assignPrjBtn_Click);
             // 
             // assignAdvBtn
             // 

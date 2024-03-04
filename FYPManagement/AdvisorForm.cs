@@ -26,6 +26,7 @@ namespace FYPManagement
         VIewProjectsUC viewProjectsUC;
         ManageGroupsUC manageGroupsUC;
         UpdateProject updateProject;
+        AssignProjects assignProjects;
         public AdvisorForm()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace FYPManagement
             viewProjectsUC = new VIewProjectsUC(this) { Dock = DockStyle.Fill };
             manageGroupsUC = new ManageGroupsUC(this) { Dock = DockStyle.Fill };
             updateProject = new UpdateProject(this) { Dock = DockStyle.Fill };
+            assignProjects = new AssignProjects(this) { Dock = DockStyle.Fill };
 
         }
 
@@ -105,6 +107,12 @@ namespace FYPManagement
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(manageProjects);
         }
+        public void addManageProjectControlUC()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(manageProjects);
+        }
+
 
         public void viewProjectsControl()
         {
@@ -116,6 +124,12 @@ namespace FYPManagement
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(manageGroupsUC);
+        }
+
+        public void addAssignProjectsControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(assignProjects);
         }
 
         public void addUpdateProjectControl()

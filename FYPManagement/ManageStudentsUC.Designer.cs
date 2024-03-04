@@ -30,17 +30,17 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.backBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.viewStdBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.updateStdBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.LNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.RegNoTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.genderCB = new System.Windows.Forms.ComboBox();
+            this.LNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.fNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.ContactTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.DoB = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.genderCB = new System.Windows.Forms.ComboBox();
             this.addStdBtn = new Guna.UI2.WinForms.Guna2Button();
             this.deleteStdBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.viewStdBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.updateStdBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,69 +102,6 @@
             this.backBtn.Text = "Back";
             this.backBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
-            // viewStdBtn
-            // 
-            this.viewStdBtn.BorderRadius = 10;
-            this.viewStdBtn.CheckedState.Parent = this.viewStdBtn;
-            this.viewStdBtn.CustomImages.Parent = this.viewStdBtn;
-            this.viewStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.viewStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.viewStdBtn.ForeColor = System.Drawing.Color.White;
-            this.viewStdBtn.HoverState.Parent = this.viewStdBtn;
-            this.viewStdBtn.Location = new System.Drawing.Point(390, 48);
-            this.viewStdBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.viewStdBtn.Name = "viewStdBtn";
-            this.viewStdBtn.ShadowDecoration.Parent = this.viewStdBtn;
-            this.viewStdBtn.Size = new System.Drawing.Size(185, 36);
-            this.viewStdBtn.TabIndex = 11;
-            this.viewStdBtn.Text = "View Students";
-            this.viewStdBtn.Click += new System.EventHandler(this.viewStdBtn_Click);
-            // 
-            // updateStdBtn
-            // 
-            this.updateStdBtn.BorderRadius = 10;
-            this.updateStdBtn.CheckedState.Parent = this.updateStdBtn;
-            this.updateStdBtn.CustomImages.Parent = this.updateStdBtn;
-            this.updateStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updateStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.updateStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.updateStdBtn.ForeColor = System.Drawing.Color.White;
-            this.updateStdBtn.HoverState.Parent = this.updateStdBtn;
-            this.updateStdBtn.Location = new System.Drawing.Point(197, 48);
-            this.updateStdBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.updateStdBtn.Name = "updateStdBtn";
-            this.updateStdBtn.ShadowDecoration.Parent = this.updateStdBtn;
-            this.updateStdBtn.Size = new System.Drawing.Size(185, 36);
-            this.updateStdBtn.TabIndex = 10;
-            this.updateStdBtn.Text = "Update Student";
-            this.updateStdBtn.Click += new System.EventHandler(this.updateStdBtn_Click);
-            // 
-            // LNameTxt
-            // 
-            this.LNameTxt.BorderRadius = 12;
-            this.LNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.LNameTxt.DefaultText = "";
-            this.LNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.LNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.LNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.LNameTxt.DisabledState.Parent = this.LNameTxt;
-            this.LNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.LNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LNameTxt.FocusedState.Parent = this.LNameTxt;
-            this.LNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LNameTxt.HoverState.Parent = this.LNameTxt;
-            this.LNameTxt.Location = new System.Drawing.Point(198, 225);
-            this.LNameTxt.Margin = new System.Windows.Forms.Padding(5);
-            this.LNameTxt.Name = "LNameTxt";
-            this.LNameTxt.PasswordChar = '\0';
-            this.LNameTxt.PlaceholderText = "Last Name";
-            this.LNameTxt.SelectedText = "";
-            this.LNameTxt.ShadowDecoration.Parent = this.LNameTxt;
-            this.LNameTxt.Size = new System.Drawing.Size(183, 34);
-            this.LNameTxt.TabIndex = 6;
-            // 
             // RegNoTxt
             // 
             this.RegNoTxt.BorderRadius = 10;
@@ -190,6 +127,41 @@
             this.RegNoTxt.ShadowDecoration.Parent = this.RegNoTxt;
             this.RegNoTxt.Size = new System.Drawing.Size(183, 34);
             this.RegNoTxt.TabIndex = 4;
+            // 
+            // genderCB
+            // 
+            this.genderCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.genderCB.FormattingEnabled = true;
+            this.genderCB.Location = new System.Drawing.Point(390, 230);
+            this.genderCB.Margin = new System.Windows.Forms.Padding(4, 10, 4, 4);
+            this.genderCB.Name = "genderCB";
+            this.genderCB.Size = new System.Drawing.Size(185, 24);
+            this.genderCB.TabIndex = 9;
+            // 
+            // LNameTxt
+            // 
+            this.LNameTxt.BorderRadius = 12;
+            this.LNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LNameTxt.DefaultText = "";
+            this.LNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.LNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.LNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LNameTxt.DisabledState.Parent = this.LNameTxt;
+            this.LNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.LNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LNameTxt.FocusedState.Parent = this.LNameTxt;
+            this.LNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.LNameTxt.HoverState.Parent = this.LNameTxt;
+            this.LNameTxt.Location = new System.Drawing.Point(198, 225);
+            this.LNameTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.LNameTxt.Name = "LNameTxt";
+            this.LNameTxt.PasswordChar = '\0';
+            this.LNameTxt.PlaceholderText = "Last Name";
+            this.LNameTxt.SelectedText = "";
+            this.LNameTxt.ShadowDecoration.Parent = this.LNameTxt;
+            this.LNameTxt.Size = new System.Drawing.Size(183, 34);
+            this.LNameTxt.TabIndex = 6;
             // 
             // fNameTxt
             // 
@@ -284,16 +256,6 @@
             this.DoB.TabIndex = 8;
             this.DoB.Value = new System.DateTime(2024, 3, 2, 12, 56, 47, 890);
             // 
-            // genderCB
-            // 
-            this.genderCB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.genderCB.FormattingEnabled = true;
-            this.genderCB.Location = new System.Drawing.Point(390, 230);
-            this.genderCB.Margin = new System.Windows.Forms.Padding(4, 10, 4, 4);
-            this.genderCB.Name = "genderCB";
-            this.genderCB.Size = new System.Drawing.Size(185, 24);
-            this.genderCB.TabIndex = 9;
-            // 
             // addStdBtn
             // 
             this.addStdBtn.BorderRadius = 10;
@@ -330,6 +292,44 @@
             this.deleteStdBtn.Size = new System.Drawing.Size(185, 36);
             this.deleteStdBtn.TabIndex = 18;
             this.deleteStdBtn.Text = "Delete Student";
+            // 
+            // viewStdBtn
+            // 
+            this.viewStdBtn.BorderRadius = 10;
+            this.viewStdBtn.CheckedState.Parent = this.viewStdBtn;
+            this.viewStdBtn.CustomImages.Parent = this.viewStdBtn;
+            this.viewStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.viewStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.viewStdBtn.ForeColor = System.Drawing.Color.White;
+            this.viewStdBtn.HoverState.Parent = this.viewStdBtn;
+            this.viewStdBtn.Location = new System.Drawing.Point(390, 48);
+            this.viewStdBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.viewStdBtn.Name = "viewStdBtn";
+            this.viewStdBtn.ShadowDecoration.Parent = this.viewStdBtn;
+            this.viewStdBtn.Size = new System.Drawing.Size(185, 36);
+            this.viewStdBtn.TabIndex = 11;
+            this.viewStdBtn.Text = "View Students";
+            this.viewStdBtn.Click += new System.EventHandler(this.viewStdBtn_Click);
+            // 
+            // updateStdBtn
+            // 
+            this.updateStdBtn.BorderRadius = 10;
+            this.updateStdBtn.CheckedState.Parent = this.updateStdBtn;
+            this.updateStdBtn.CustomImages.Parent = this.updateStdBtn;
+            this.updateStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updateStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.updateStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.updateStdBtn.ForeColor = System.Drawing.Color.White;
+            this.updateStdBtn.HoverState.Parent = this.updateStdBtn;
+            this.updateStdBtn.Location = new System.Drawing.Point(197, 48);
+            this.updateStdBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.updateStdBtn.Name = "updateStdBtn";
+            this.updateStdBtn.ShadowDecoration.Parent = this.updateStdBtn;
+            this.updateStdBtn.Size = new System.Drawing.Size(185, 36);
+            this.updateStdBtn.TabIndex = 10;
+            this.updateStdBtn.Text = "Update Student";
+            this.updateStdBtn.Click += new System.EventHandler(this.updateStdBtn_Click);
             // 
             // ManageStudentsUC
             // 
