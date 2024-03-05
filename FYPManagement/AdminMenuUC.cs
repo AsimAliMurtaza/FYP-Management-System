@@ -19,7 +19,6 @@ namespace FYPManagement
             form = f;
         }
 
-
         private void mngStdBtn_Click(object sender, EventArgs e)
         {
             form.addStudentsControl();

@@ -12,7 +12,6 @@ namespace FYPManagement
         public string LastName { get; set; }
         public string Contact { get; set; }
         public string Email { get; set; }
-        public string dob { get; set; }
 
         public int gender { get; set; }
     }

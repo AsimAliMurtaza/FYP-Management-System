@@ -49,14 +49,15 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(27)))));
-            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.weightageUD, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.evalNameTxt, 1, 2);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.marksUD, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.evalNameTxt, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.weightageUD, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 1, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -72,8 +73,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 495);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(407, 495);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // weightageUD
@@ -91,10 +91,10 @@
             this.weightageUD.FocusedState.Parent = this.weightageUD;
             this.weightageUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weightageUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.weightageUD.Location = new System.Drawing.Point(191, 199);
+            this.weightageUD.Location = new System.Drawing.Point(138, 248);
             this.weightageUD.Name = "weightageUD";
             this.weightageUD.ShadowDecoration.Parent = this.weightageUD;
-            this.weightageUD.Size = new System.Drawing.Size(184, 43);
+            this.weightageUD.Size = new System.Drawing.Size(129, 43);
             this.weightageUD.TabIndex = 21;
             // 
             // evalNameTxt
@@ -112,14 +112,14 @@
             this.evalNameTxt.FocusedState.Parent = this.evalNameTxt;
             this.evalNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.evalNameTxt.HoverState.Parent = this.evalNameTxt;
-            this.evalNameTxt.Location = new System.Drawing.Point(193, 103);
+            this.evalNameTxt.Location = new System.Drawing.Point(140, 54);
             this.evalNameTxt.Margin = new System.Windows.Forms.Padding(5);
             this.evalNameTxt.Name = "evalNameTxt";
             this.evalNameTxt.PasswordChar = '\0';
             this.evalNameTxt.PlaceholderText = "Type of Evaluation";
             this.evalNameTxt.SelectedText = "";
             this.evalNameTxt.ShadowDecoration.Parent = this.evalNameTxt;
-            this.evalNameTxt.Size = new System.Drawing.Size(180, 39);
+            this.evalNameTxt.Size = new System.Drawing.Size(125, 39);
             this.evalNameTxt.TabIndex = 5;
             // 
             // guna2Button1
@@ -136,7 +136,7 @@
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 46);
+            this.guna2Button1.Size = new System.Drawing.Size(127, 46);
             this.guna2Button1.TabIndex = 19;
             this.guna2Button1.Text = "Back";
             this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
@@ -156,10 +156,10 @@
             this.marksUD.FocusedState.Parent = this.marksUD;
             this.marksUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.marksUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.marksUD.Location = new System.Drawing.Point(191, 150);
+            this.marksUD.Location = new System.Drawing.Point(138, 150);
             this.marksUD.Name = "marksUD";
             this.marksUD.ShadowDecoration.Parent = this.marksUD;
-            this.marksUD.Size = new System.Drawing.Size(184, 43);
+            this.marksUD.Size = new System.Drawing.Size(129, 43);
             this.marksUD.TabIndex = 20;
             // 
             // UpdateBtn
@@ -172,11 +172,11 @@
             this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.UpdateBtn.ForeColor = System.Drawing.Color.White;
             this.UpdateBtn.HoverState.Parent = this.UpdateBtn;
-            this.UpdateBtn.Location = new System.Drawing.Point(192, 298);
+            this.UpdateBtn.Location = new System.Drawing.Point(139, 347);
             this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
-            this.UpdateBtn.Size = new System.Drawing.Size(182, 41);
+            this.UpdateBtn.Size = new System.Drawing.Size(127, 41);
             this.UpdateBtn.TabIndex = 12;
             this.UpdateBtn.Text = "Update Evaluation";
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
@@ -187,11 +187,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.guna2DataGridView1, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(378, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(407, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(386, 495);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(357, 495);
             this.tableLayoutPanel2.TabIndex = 11;
             // 
             // guna2DataGridView1
@@ -232,7 +232,7 @@
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(380, 489);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(351, 489);
             this.guna2DataGridView1.TabIndex = 0;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;

@@ -38,5 +38,15 @@ namespace FYPManagement
         {
             form.addAdminDashboardControl();
         }
+
+        private void assignPrjBtn_Click(object sender, EventArgs e)
+        {
+            form.addAssignProjectsControl();
+        }
+
+        private void assignAdvBtn_Click(object sender, EventArgs e)
+        {
+            form.addAssignAdvisorsControl();
+        }
     }
 }

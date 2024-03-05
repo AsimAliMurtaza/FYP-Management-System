@@ -46,20 +46,21 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(27)))));
-            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.backBtn, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.viewEvalBtn, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.updateEvalBtn, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.addEvalBtn, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.DeleteEvalBtn, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.doEvalBtn, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.evalNameTxt, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.marksUD, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.weightageUD, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.updateEvalBtn, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.DeleteEvalBtn, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.doEvalBtn, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.marksUD, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.evalNameTxt, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.weightageUD, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.addEvalBtn, 3, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -92,7 +93,7 @@
             this.backBtn.Margin = new System.Windows.Forms.Padding(4);
             this.backBtn.Name = "backBtn";
             this.backBtn.ShadowDecoration.Parent = this.backBtn;
-            this.backBtn.Size = new System.Drawing.Size(218, 44);
+            this.backBtn.Size = new System.Drawing.Size(173, 44);
             this.backBtn.TabIndex = 17;
             this.backBtn.Text = "Back";
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
@@ -111,7 +112,7 @@
             this.viewEvalBtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewEvalBtn.Name = "viewEvalBtn";
             this.viewEvalBtn.ShadowDecoration.Parent = this.viewEvalBtn;
-            this.viewEvalBtn.Size = new System.Drawing.Size(218, 44);
+            this.viewEvalBtn.Size = new System.Drawing.Size(173, 44);
             this.viewEvalBtn.TabIndex = 11;
             this.viewEvalBtn.Text = "View Evaluations";
             this.viewEvalBtn.Click += new System.EventHandler(this.viewEvalBtn_Click);
@@ -126,11 +127,11 @@
             this.updateEvalBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.updateEvalBtn.ForeColor = System.Drawing.Color.White;
             this.updateEvalBtn.HoverState.Parent = this.updateEvalBtn;
-            this.updateEvalBtn.Location = new System.Drawing.Point(230, 4);
+            this.updateEvalBtn.Location = new System.Drawing.Point(4, 108);
             this.updateEvalBtn.Margin = new System.Windows.Forms.Padding(4);
             this.updateEvalBtn.Name = "updateEvalBtn";
             this.updateEvalBtn.ShadowDecoration.Parent = this.updateEvalBtn;
-            this.updateEvalBtn.Size = new System.Drawing.Size(218, 44);
+            this.updateEvalBtn.Size = new System.Drawing.Size(173, 44);
             this.updateEvalBtn.TabIndex = 10;
             this.updateEvalBtn.Text = "Update Evaluation";
             this.updateEvalBtn.Click += new System.EventHandler(this.updateEvalBtn_Click);
@@ -145,11 +146,11 @@
             this.addEvalBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addEvalBtn.ForeColor = System.Drawing.Color.White;
             this.addEvalBtn.HoverState.Parent = this.addEvalBtn;
-            this.addEvalBtn.Location = new System.Drawing.Point(456, 316);
+            this.addEvalBtn.Location = new System.Drawing.Point(547, 316);
             this.addEvalBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addEvalBtn.Name = "addEvalBtn";
             this.addEvalBtn.ShadowDecoration.Parent = this.addEvalBtn;
-            this.addEvalBtn.Size = new System.Drawing.Size(218, 44);
+            this.addEvalBtn.Size = new System.Drawing.Size(173, 44);
             this.addEvalBtn.TabIndex = 12;
             this.addEvalBtn.Text = "Add Evaluation";
             this.addEvalBtn.Click += new System.EventHandler(this.addEvalBtn_Click);
@@ -164,11 +165,11 @@
             this.DeleteEvalBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DeleteEvalBtn.ForeColor = System.Drawing.Color.White;
             this.DeleteEvalBtn.HoverState.Parent = this.DeleteEvalBtn;
-            this.DeleteEvalBtn.Location = new System.Drawing.Point(456, 4);
+            this.DeleteEvalBtn.Location = new System.Drawing.Point(4, 212);
             this.DeleteEvalBtn.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteEvalBtn.Name = "DeleteEvalBtn";
             this.DeleteEvalBtn.ShadowDecoration.Parent = this.DeleteEvalBtn;
-            this.DeleteEvalBtn.Size = new System.Drawing.Size(218, 44);
+            this.DeleteEvalBtn.Size = new System.Drawing.Size(173, 44);
             this.DeleteEvalBtn.TabIndex = 16;
             this.DeleteEvalBtn.Text = "Remove Evaluation";
             // 
@@ -182,11 +183,11 @@
             this.doEvalBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.doEvalBtn.ForeColor = System.Drawing.Color.White;
             this.doEvalBtn.HoverState.Parent = this.doEvalBtn;
-            this.doEvalBtn.Location = new System.Drawing.Point(682, 4);
+            this.doEvalBtn.Location = new System.Drawing.Point(4, 316);
             this.doEvalBtn.Margin = new System.Windows.Forms.Padding(4);
             this.doEvalBtn.Name = "doEvalBtn";
             this.doEvalBtn.ShadowDecoration.Parent = this.doEvalBtn;
-            this.doEvalBtn.Size = new System.Drawing.Size(221, 44);
+            this.doEvalBtn.Size = new System.Drawing.Size(173, 44);
             this.doEvalBtn.TabIndex = 14;
             this.doEvalBtn.Text = "Evaluate Groups";
             this.doEvalBtn.Click += new System.EventHandler(this.doEvalBtn_Click);
@@ -206,14 +207,14 @@
             this.evalNameTxt.FocusedState.Parent = this.evalNameTxt;
             this.evalNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.evalNameTxt.HoverState.Parent = this.evalNameTxt;
-            this.evalNameTxt.Location = new System.Drawing.Point(231, 161);
+            this.evalNameTxt.Location = new System.Drawing.Point(367, 109);
             this.evalNameTxt.Margin = new System.Windows.Forms.Padding(5);
             this.evalNameTxt.Name = "evalNameTxt";
             this.evalNameTxt.PasswordChar = '\0';
             this.evalNameTxt.PlaceholderText = "Type of Evaluation";
             this.evalNameTxt.SelectedText = "";
             this.evalNameTxt.ShadowDecoration.Parent = this.evalNameTxt;
-            this.evalNameTxt.Size = new System.Drawing.Size(216, 42);
+            this.evalNameTxt.Size = new System.Drawing.Size(171, 42);
             this.evalNameTxt.TabIndex = 5;
             // 
             // marksUD
@@ -231,10 +232,10 @@
             this.marksUD.FocusedState.Parent = this.marksUD;
             this.marksUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.marksUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.marksUD.Location = new System.Drawing.Point(229, 211);
+            this.marksUD.Location = new System.Drawing.Point(365, 211);
             this.marksUD.Name = "marksUD";
             this.marksUD.ShadowDecoration.Parent = this.marksUD;
-            this.marksUD.Size = new System.Drawing.Size(220, 46);
+            this.marksUD.Size = new System.Drawing.Size(175, 46);
             this.marksUD.TabIndex = 19;
             // 
             // weightageUD
@@ -252,10 +253,10 @@
             this.weightageUD.FocusedState.Parent = this.weightageUD;
             this.weightageUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weightageUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.weightageUD.Location = new System.Drawing.Point(229, 263);
+            this.weightageUD.Location = new System.Drawing.Point(365, 315);
             this.weightageUD.Name = "weightageUD";
             this.weightageUD.ShadowDecoration.Parent = this.weightageUD;
-            this.weightageUD.Size = new System.Drawing.Size(220, 46);
+            this.weightageUD.Size = new System.Drawing.Size(175, 46);
             this.weightageUD.TabIndex = 20;
             // 
             // ManageEvaluationsUC

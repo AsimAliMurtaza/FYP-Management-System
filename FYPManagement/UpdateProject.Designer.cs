@@ -34,8 +34,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TitleTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.Descriptiontxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
@@ -51,9 +51,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.Controls.Add(this.TitleTxt, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.Descriptiontxt, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.Descriptiontxt, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -71,7 +71,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 456);
             this.tableLayoutPanel1.TabIndex = 6;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // TitleTxt
             // 
@@ -97,7 +96,6 @@
             this.TitleTxt.ShadowDecoration.Parent = this.TitleTxt;
             this.TitleTxt.Size = new System.Drawing.Size(116, 35);
             this.TitleTxt.TabIndex = 5;
-            this.TitleTxt.TextChanged += new System.EventHandler(this.TitleTxt_TextChanged);
             // 
             // Descriptiontxt
             // 
@@ -114,7 +112,7 @@
             this.Descriptiontxt.FocusedState.Parent = this.Descriptiontxt;
             this.Descriptiontxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Descriptiontxt.HoverState.Parent = this.Descriptiontxt;
-            this.Descriptiontxt.Location = new System.Drawing.Point(130, 140);
+            this.Descriptiontxt.Location = new System.Drawing.Point(130, 185);
             this.Descriptiontxt.Margin = new System.Windows.Forms.Padding(5);
             this.Descriptiontxt.Name = "Descriptiontxt";
             this.Descriptiontxt.PasswordChar = '\0';
@@ -123,26 +121,6 @@
             this.Descriptiontxt.ShadowDecoration.Parent = this.Descriptiontxt;
             this.Descriptiontxt.Size = new System.Drawing.Size(116, 35);
             this.Descriptiontxt.TabIndex = 6;
-            this.Descriptiontxt.TextChanged += new System.EventHandler(this.Descriptiontxt_TextChanged);
-            // 
-            // UpdateBtn
-            // 
-            this.UpdateBtn.BorderRadius = 10;
-            this.UpdateBtn.CheckedState.Parent = this.UpdateBtn;
-            this.UpdateBtn.CustomImages.Parent = this.UpdateBtn;
-            this.UpdateBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
-            this.UpdateBtn.HoverState.Parent = this.UpdateBtn;
-            this.UpdateBtn.Location = new System.Drawing.Point(129, 229);
-            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
-            this.UpdateBtn.Size = new System.Drawing.Size(118, 37);
-            this.UpdateBtn.TabIndex = 12;
-            this.UpdateBtn.Text = "Update Project";
-            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // guna2Button1
             // 
@@ -163,6 +141,25 @@
             this.guna2Button1.Text = "Back";
             this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
             // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.BorderRadius = 10;
+            this.UpdateBtn.CheckedState.Parent = this.UpdateBtn;
+            this.UpdateBtn.CustomImages.Parent = this.UpdateBtn;
+            this.UpdateBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UpdateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.UpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.UpdateBtn.HoverState.Parent = this.UpdateBtn;
+            this.UpdateBtn.Location = new System.Drawing.Point(129, 274);
+            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
+            this.UpdateBtn.Size = new System.Drawing.Size(118, 37);
+            this.UpdateBtn.TabIndex = 12;
+            this.UpdateBtn.Text = "Update Project";
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -175,7 +172,6 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(456, 456);
             this.tableLayoutPanel2.TabIndex = 8;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // guna2DataGridView1
             // 
@@ -239,7 +235,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // UpdateProject
             // 

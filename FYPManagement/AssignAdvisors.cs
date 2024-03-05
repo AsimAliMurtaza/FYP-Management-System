@@ -27,7 +27,7 @@ namespace FYPManagement
 
         private void BackBtn_Click(object sender, EventArgs e)
         {
-            form.addManageProjectControlUC();
+            form.addManageGroupsControl();
         }
 
         private void assignAdvisor()

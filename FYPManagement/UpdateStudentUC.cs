@@ -91,9 +91,8 @@ namespace FYPManagement
 
         private void ButtonUpdate_Click(object sender, EventArgs e)
         {
-            string dob = DOB.Value.ToString("yyyy-MM-dd");
             string regNo = RegNoTxt.Text;
-            Student student = new Student(regNo, FNameTxt.Text, LNametxt.Text, ContactTxt.Text, EmailTxt.Text, dob, int.Parse(GenderCB.SelectedValue.ToString()));
+            Student student = new Student(regNo, FNameTxt.Text, LNametxt.Text, ContactTxt.Text, EmailTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()));
             UpdateStudent(student);
         }
 
@@ -111,7 +110,7 @@ namespace FYPManagement
             cmd.Parameters.AddWithValue("@LastName", student.LastName);
             cmd.Parameters.AddWithValue("@Contact", student.Contact);
             cmd.Parameters.AddWithValue("@Email", student.Email);
-            cmd.Parameters.AddWithValue("@DateOfBirth", student.dob);
+            cmd.Parameters.AddWithValue("@DateOfBirth", DOB.Value);
             cmd.Parameters.AddWithValue("@Gender", student.gender);
             cmd.Parameters.AddWithValue("@RegistrationNo", student.RegistrationNumber);
             int rowsAffected = cmd.ExecuteNonQuery();
@@ -130,5 +129,6 @@ namespace FYPManagement
         {
             form.addStudentsControl();
         }
+
     }
 }

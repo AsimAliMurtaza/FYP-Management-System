@@ -27,8 +27,7 @@ namespace FYPManagement
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            string dob = DOB.Value.ToString("yyyy-MM-dd");
-            Advisor advisor = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedValue.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()), dob);
+            Advisor advisor = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedValue.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()));
             UpdateAdvisor(advisor);
         }
         private void UpdateAdvisor(Advisor advisor)
@@ -56,7 +55,7 @@ namespace FYPManagement
                     cmd.Parameters.AddWithValue("@LastName", advisor.LastName);
                     cmd.Parameters.AddWithValue("@Contact", advisor.Contact);
                     cmd.Parameters.AddWithValue("@Email", advisor.Email);
-                    cmd.Parameters.AddWithValue("@DateOfBirth", advisor.dob);
+                    cmd.Parameters.AddWithValue("@DateOfBirth", DOB.Value);
                     cmd.Parameters.AddWithValue("@Gender", advisor.gender);
                     cmd.Parameters.AddWithValue("@Designation", advisor.Designation);
                     cmd.Parameters.AddWithValue("@Salary", advisor.Salary);
@@ -168,61 +167,6 @@ namespace FYPManagement
         private void BackBtn_Click(object sender, EventArgs e)
         {
             form.addAdvisorsControl();
-        }
-
-        private void FNameTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LNameTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EmailTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ContactTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DOB_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GenderCB_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void designationsCB_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SalaryTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

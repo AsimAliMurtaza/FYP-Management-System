@@ -12,7 +12,7 @@ namespace FYPManagement
         public string Salary { get; set; }
 
 
-        public Advisor(string fName, string lName, string contact, string email, string designation, string salary, int gender, string dob)
+        public Advisor(string fName, string lName, string contact, string email, string designation, string salary, int gender)
         {
             this.FirstName = fName;
             this.LastName = lName;
@@ -21,7 +21,6 @@ namespace FYPManagement
             this.Designation = designation;
             this.Salary = salary;
             this.gender = gender;
-            this.dob = dob;
         }
      
     }

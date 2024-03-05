@@ -26,7 +26,7 @@ namespace FYPManagement
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            form.addManageProjectControlUC();
+            form.addManageGroupsControl();
         }
 
         private void displayProjects()
@@ -145,31 +145,6 @@ namespace FYPManagement
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

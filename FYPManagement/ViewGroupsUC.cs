@@ -48,15 +48,5 @@ namespace FYPManagement
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

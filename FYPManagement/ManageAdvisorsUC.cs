@@ -30,8 +30,7 @@ namespace FYPManagement
 
         private void addAdvBtn_Click(object sender, EventArgs e)
         {
-            string dob = DOB.Value.ToString("yyyy-MM-dd");
-            Advisor advisor = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedValue.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()), dob);
+            Advisor advisor = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedValue.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()));
             addAdvisor(advisor);
         }
         private void addAdvisor(Advisor advisor)
@@ -43,7 +42,7 @@ namespace FYPManagement
             cmd.Parameters.AddWithValue("@LastName", advisor.LastName);
             cmd.Parameters.AddWithValue("@Contact", advisor.Contact);
             cmd.Parameters.AddWithValue("@Email", advisor.Email);
-            cmd.Parameters.AddWithValue("@DateOfBirth", advisor.dob);
+            cmd.Parameters.AddWithValue("@DateOfBirth", DOB.Value);
             cmd.Parameters.AddWithValue("@Gender", advisor.gender);
             cmd.ExecuteNonQuery();
 

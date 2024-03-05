@@ -33,6 +33,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.viewGrpsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.AddToGrpBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.assignPrjBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.assignAdvBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,15 +43,16 @@
             this.backBtn.BorderRadius = 10;
             this.backBtn.CheckedState.Parent = this.backBtn;
             this.backBtn.CustomImages.Parent = this.backBtn;
+            this.backBtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(41)))));
             this.backBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.backBtn.ForeColor = System.Drawing.Color.White;
             this.backBtn.HoverState.Parent = this.backBtn;
-            this.backBtn.Location = new System.Drawing.Point(4, 334);
+            this.backBtn.Location = new System.Drawing.Point(4, 400);
             this.backBtn.Margin = new System.Windows.Forms.Padding(4);
             this.backBtn.Name = "backBtn";
             this.backBtn.ShadowDecoration.Parent = this.backBtn;
-            this.backBtn.Size = new System.Drawing.Size(179, 36);
+            this.backBtn.Size = new System.Drawing.Size(179, 63);
             this.backBtn.TabIndex = 17;
             this.backBtn.Text = "Back";
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
@@ -84,8 +87,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.viewGrpsBtn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.AddToGrpBtn, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.backBtn, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.createGrpBtn, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.assignPrjBtn, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.assignAdvBtn, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.backBtn, 0, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -139,6 +144,44 @@
             this.AddToGrpBtn.Text = "Add Student to Group";
             this.AddToGrpBtn.Click += new System.EventHandler(this.AddToGrpBtn_Click);
             // 
+            // assignPrjBtn
+            // 
+            this.assignPrjBtn.BorderRadius = 10;
+            this.assignPrjBtn.CheckedState.Parent = this.assignPrjBtn;
+            this.assignPrjBtn.CustomImages.Parent = this.assignPrjBtn;
+            this.assignPrjBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.assignPrjBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.assignPrjBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.assignPrjBtn.ForeColor = System.Drawing.Color.White;
+            this.assignPrjBtn.HoverState.Parent = this.assignPrjBtn;
+            this.assignPrjBtn.Location = new System.Drawing.Point(378, 268);
+            this.assignPrjBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.assignPrjBtn.Name = "assignPrjBtn";
+            this.assignPrjBtn.ShadowDecoration.Parent = this.assignPrjBtn;
+            this.assignPrjBtn.Size = new System.Drawing.Size(179, 58);
+            this.assignPrjBtn.TabIndex = 18;
+            this.assignPrjBtn.Text = "Assign Projects";
+            this.assignPrjBtn.Click += new System.EventHandler(this.assignPrjBtn_Click);
+            // 
+            // assignAdvBtn
+            // 
+            this.assignAdvBtn.BorderRadius = 10;
+            this.assignAdvBtn.CheckedState.Parent = this.assignAdvBtn;
+            this.assignAdvBtn.CustomImages.Parent = this.assignAdvBtn;
+            this.assignAdvBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.assignAdvBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.assignAdvBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.assignAdvBtn.ForeColor = System.Drawing.Color.White;
+            this.assignAdvBtn.HoverState.Parent = this.assignAdvBtn;
+            this.assignAdvBtn.Location = new System.Drawing.Point(378, 334);
+            this.assignAdvBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.assignAdvBtn.Name = "assignAdvBtn";
+            this.assignAdvBtn.ShadowDecoration.Parent = this.assignAdvBtn;
+            this.assignAdvBtn.Size = new System.Drawing.Size(179, 58);
+            this.assignAdvBtn.TabIndex = 19;
+            this.assignAdvBtn.Text = "Assign Advisors";
+            this.assignAdvBtn.Click += new System.EventHandler(this.assignAdvBtn_Click);
+            // 
             // ManageGroupsUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,5 +201,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2Button viewGrpsBtn;
         private Guna.UI2.WinForms.Guna2Button AddToGrpBtn;
+        private Guna.UI2.WinForms.Guna2Button assignAdvBtn;
+        private Guna.UI2.WinForms.Guna2Button assignPrjBtn;
     }
 }

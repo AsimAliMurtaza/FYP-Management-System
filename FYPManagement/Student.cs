@@ -11,14 +11,13 @@ namespace FYPManagement
         public string RegistrationNumber { get; set; }
         
 
-        public Student(string regNo, string fName, string lName, string contact, string email, string dob, int gender)
+        public Student(string regNo, string fName, string lName, string contact, string email, int gender)
         {
             RegistrationNumber = regNo;
             FirstName = fName;
             LastName = lName;
             Contact = contact;
             Email = email;
-            this.dob = dob;
             this.gender = gender;
         }
     }

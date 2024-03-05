@@ -26,21 +26,6 @@ namespace FYPManagement
             form.addManageGroupsControl();
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void createdOn_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void createGrpBtn_Click(object sender, EventArgs e)
         {
             makeGroup();
@@ -54,9 +39,8 @@ namespace FYPManagement
             }
             try
             {
-                string craeatedOnDate = createdOn.Value.ToString("yyyy-MM-dd");
                 SqlCommand cmd = new SqlCommand("INSERT INTO [Group] (Created_On) VALUES (@Created_On)", con);
-                cmd.Parameters.AddWithValue("@Created_On", craeatedOnDate);
+                cmd.Parameters.AddWithValue("@Created_On", createdOn.Value);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Group Created Successfully");
             }

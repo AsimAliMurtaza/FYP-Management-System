@@ -33,11 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.remStdCB = new System.Windows.Forms.ComboBox();
-            this.RemStdBtn = new Guna.UI2.WinForms.Guna2Button();
             this.studentCB = new System.Windows.Forms.ComboBox();
             this.groupCB = new System.Windows.Forms.ComboBox();
             this.addToGrpBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.RemStdBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.remStdCB = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
@@ -54,11 +54,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.remStdCB, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.RemStdBtn, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.studentCB, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.groupCB, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.addToGrpBtn, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.studentCB, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.groupCB, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.addToGrpBtn, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.RemStdBtn, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.remStdCB, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -95,44 +95,13 @@
             this.guna2Button1.Text = "Back";
             this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
             // 
-            // remStdCB
-            // 
-            this.remStdCB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.remStdCB.DropDownHeight = 110;
-            this.remStdCB.FormattingEnabled = true;
-            this.remStdCB.IntegralHeight = false;
-            this.remStdCB.Location = new System.Drawing.Point(4, 274);
-            this.remStdCB.Margin = new System.Windows.Forms.Padding(4);
-            this.remStdCB.Name = "remStdCB";
-            this.remStdCB.Size = new System.Drawing.Size(157, 24);
-            this.remStdCB.TabIndex = 16;
-            // 
-            // RemStdBtn
-            // 
-            this.RemStdBtn.BorderRadius = 10;
-            this.RemStdBtn.CheckedState.Parent = this.RemStdBtn;
-            this.RemStdBtn.CustomImages.Parent = this.RemStdBtn;
-            this.RemStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RemStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.RemStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.RemStdBtn.ForeColor = System.Drawing.Color.White;
-            this.RemStdBtn.HoverState.Parent = this.RemStdBtn;
-            this.RemStdBtn.Location = new System.Drawing.Point(169, 274);
-            this.RemStdBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.RemStdBtn.Name = "RemStdBtn";
-            this.RemStdBtn.ShadowDecoration.Parent = this.RemStdBtn;
-            this.RemStdBtn.Size = new System.Drawing.Size(157, 46);
-            this.RemStdBtn.TabIndex = 15;
-            this.RemStdBtn.Text = "Remove Student";
-            this.RemStdBtn.Click += new System.EventHandler(this.RemStdBtn_Click);
-            // 
             // studentCB
             // 
             this.studentCB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.studentCB.DropDownHeight = 110;
             this.studentCB.FormattingEnabled = true;
             this.studentCB.IntegralHeight = false;
-            this.studentCB.Location = new System.Drawing.Point(4, 112);
+            this.studentCB.Location = new System.Drawing.Point(169, 58);
             this.studentCB.Margin = new System.Windows.Forms.Padding(4);
             this.studentCB.Name = "studentCB";
             this.studentCB.Size = new System.Drawing.Size(157, 24);
@@ -144,7 +113,7 @@
             this.groupCB.DropDownHeight = 110;
             this.groupCB.FormattingEnabled = true;
             this.groupCB.IntegralHeight = false;
-            this.groupCB.Location = new System.Drawing.Point(4, 166);
+            this.groupCB.Location = new System.Drawing.Point(169, 112);
             this.groupCB.Margin = new System.Windows.Forms.Padding(4);
             this.groupCB.Name = "groupCB";
             this.groupCB.Size = new System.Drawing.Size(157, 24);
@@ -160,7 +129,7 @@
             this.addToGrpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addToGrpBtn.ForeColor = System.Drawing.Color.White;
             this.addToGrpBtn.HoverState.Parent = this.addToGrpBtn;
-            this.addToGrpBtn.Location = new System.Drawing.Point(169, 112);
+            this.addToGrpBtn.Location = new System.Drawing.Point(169, 166);
             this.addToGrpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addToGrpBtn.Name = "addToGrpBtn";
             this.addToGrpBtn.ShadowDecoration.Parent = this.addToGrpBtn;
@@ -168,6 +137,37 @@
             this.addToGrpBtn.TabIndex = 12;
             this.addToGrpBtn.Text = "Add Student";
             this.addToGrpBtn.Click += new System.EventHandler(this.addToGrpBtn_Click);
+            // 
+            // RemStdBtn
+            // 
+            this.RemStdBtn.BorderRadius = 10;
+            this.RemStdBtn.CheckedState.Parent = this.RemStdBtn;
+            this.RemStdBtn.CustomImages.Parent = this.RemStdBtn;
+            this.RemStdBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RemStdBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.RemStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RemStdBtn.ForeColor = System.Drawing.Color.White;
+            this.RemStdBtn.HoverState.Parent = this.RemStdBtn;
+            this.RemStdBtn.Location = new System.Drawing.Point(169, 328);
+            this.RemStdBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.RemStdBtn.Name = "RemStdBtn";
+            this.RemStdBtn.ShadowDecoration.Parent = this.RemStdBtn;
+            this.RemStdBtn.Size = new System.Drawing.Size(157, 46);
+            this.RemStdBtn.TabIndex = 15;
+            this.RemStdBtn.Text = "Remove Student";
+            this.RemStdBtn.Click += new System.EventHandler(this.RemStdBtn_Click);
+            // 
+            // remStdCB
+            // 
+            this.remStdCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.remStdCB.DropDownHeight = 110;
+            this.remStdCB.FormattingEnabled = true;
+            this.remStdCB.IntegralHeight = false;
+            this.remStdCB.Location = new System.Drawing.Point(169, 274);
+            this.remStdCB.Margin = new System.Windows.Forms.Padding(4);
+            this.remStdCB.Name = "remStdCB";
+            this.remStdCB.Size = new System.Drawing.Size(157, 24);
+            this.remStdCB.TabIndex = 16;
             // 
             // tableLayoutPanel2
             // 

@@ -88,30 +88,5 @@ namespace FYPManagement
         {
             form.addGroupControlUC();
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void TitleTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Descriptiontxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

@@ -28,10 +28,6 @@ namespace FYPManagement
         {
             form.addAdminDashboardControl();
         }
-        private void AddToGrpBtn_Click(object sender, EventArgs e)
-        {
-            form.addStudentsToGroupControls();
-        }
         private void updateStdBtn_Click(object sender, EventArgs e)
         {
             form.addStudentUpdateControls();
@@ -40,16 +36,11 @@ namespace FYPManagement
         {
             form.addStudentViewControls();
         }
-        private void createGrpBtn_Click(object sender, EventArgs e)
-        {
-            form.addCreateGroupControls();
-        }
 
         private void addStdBtn_Click(object sender, EventArgs e)
         {
-            string dob = DoB.Value.ToString("yyyy-MM-dd");
             string regNo = RegNoTxt.Text;
-            Student student = new Student(regNo, fNameTxt.Text, LNameTxt.Text, ContactTxt.Text, emailTxt.Text, dob, int.Parse(genderCB.SelectedValue.ToString()));
+            Student student = new Student(regNo, fNameTxt.Text, LNameTxt.Text, ContactTxt.Text, emailTxt.Text, int.Parse(genderCB.SelectedValue.ToString()));
             addStudent(student);
         }
 
@@ -62,7 +53,7 @@ namespace FYPManagement
             cmd.Parameters.AddWithValue("@LastName", student.LastName);
             cmd.Parameters.AddWithValue("@Contact", student.Contact);
             cmd.Parameters.AddWithValue("@Email", student.Email);
-            cmd.Parameters.AddWithValue("@DateOfBirth", student.dob);
+            cmd.Parameters.AddWithValue("@DateOfBirth", DoB.Value);
             cmd.Parameters.AddWithValue("@Gender", student.gender);
             cmd.ExecuteNonQuery();
 
@@ -104,9 +95,5 @@ namespace FYPManagement
 
         }
 
-        private void viewGrpsBtn_Click(object sender, EventArgs e)
-        {
-            form.addGroupsViewUC();
-        }
     }
 }
