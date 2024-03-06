@@ -60,8 +60,9 @@ namespace FYPManagement
             try
             {
                 SqlCommand cmd = new SqlCommand("SELECT Student.RegistrationNo, Person.FirstName, Person.LastName, Person.Contact, Person.Email, Person.DateOfBirth, Person.Gender " +
-                                                    "FROM Student " +
-                                                    "INNER JOIN Person ON Student.Id = Person.Id", con);
+                                "FROM Student " +
+                                "INNER JOIN Person ON Student.Id = Person.Id " +
+                                "WHERE NOT Person.FirstName LIKE '%-deleted'", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -93,7 +94,19 @@ namespace FYPManagement
         {
             string regNo = RegNoTxt.Text;
             Student student = new Student(regNo, FNameTxt.Text, LNametxt.Text, ContactTxt.Text, EmailTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()));
-            UpdateStudent(student);
+            if(student.FirstName == "" || student.LastName == "" || student.Contact == "" || student.Email == "" || student.RegistrationNumber == "")
+            {
+                MessageBox.Show("Please fill all the fields.");
+                return;
+            }
+            if(Utilities.IsPhone(ContactTxt.Text) && Utilities.IsEmail(EmailTxt.Text) && Utilities.IsName(FNameTxt.Text) && Utilities.IsName(LNametxt.Text))
+            {
+                UpdateStudent(student);
+            }
+            else
+            {
+                MessageBox.Show("Invalid input");
+            }
         }
 
         private void UpdateStudent(Student student)
@@ -130,5 +143,22 @@ namespace FYPManagement
             form.addStudentsControl();
         }
 
+        private void FNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (!Utilities.IsName(FNameTxt.Text))
+            {
+                MessageBox.Show("Invalid First Name");
+                return;
+            }
+        }
+
+        private void LNametxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsName(LNametxt.Text))
+            {
+                MessageBox.Show("Invalid Last Name");
+                return;
+            }
+        }
     }
 }

@@ -28,7 +28,16 @@ namespace FYPManagement
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
             Advisor advisor = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedValue.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()));
-            UpdateAdvisor(advisor);
+            if (Utilities.IsName(advisor.FirstName) && Utilities.IsName(advisor.LastName) && Utilities.IsEmail(advisor.Email) && Utilities.IsPhone(advisor.Contact) && Utilities.IsNumeric(advisor.Salary))
+            {
+                UpdateAdvisor(advisor);
+            }
+            else
+            {   
+                MessageBox.Show("Invalid Input");
+                return;
+            }
+            
         }
         private void UpdateAdvisor(Advisor advisor)
         {
@@ -106,7 +115,8 @@ namespace FYPManagement
                                   FROM 
                                     Advisor 
                                   INNER JOIN 
-                                    Person ON Advisor.Id = Person.Id", con);
+                                    Person ON Advisor.Id = Person.Id 
+                                    WHERE  Person.FirstName NOT LIKE '%-deleted'", con);
 
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -167,6 +177,33 @@ namespace FYPManagement
         private void BackBtn_Click(object sender, EventArgs e)
         {
             form.addAdvisorsControl();
+        }
+
+        private void FNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (!Utilities.IsName(FNameTxt.Text))
+            {
+                MessageBox.Show("Invalid First Name");
+                return;
+            }
+        }
+
+        private void LNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (!Utilities.IsName(LNameTxt.Text))
+            {
+                MessageBox.Show("Invalid Last Name");
+                return;
+            }
+        }
+
+        private void SalaryTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (!Utilities.IsNumeric(SalaryTxt.Text))
+            {
+                MessageBox.Show("Invalid Salary");
+                return;
+            }
         }
     }
 }

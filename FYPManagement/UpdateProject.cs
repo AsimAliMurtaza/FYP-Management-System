@@ -26,7 +26,23 @@ namespace FYPManagement
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            updateProject();
+            string title = TitleTxt.Text;
+            string description = Descriptiontxt.Text;
+
+            if (title == "" || description == "")
+            {
+                MessageBox.Show("Please fill all the fields");
+            }
+            if (!Utilities.IsName(title))
+            {
+                MessageBox.Show("Invalid Title");
+                return;
+            }
+            else
+            {
+                updateProject();
+            }
+            
         }
 
         private void updateProject()
@@ -72,7 +88,7 @@ namespace FYPManagement
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Project", con);
+                SqlCommand cmd = new SqlCommand("SELECT Id, Title, Description FROM Project WHERE Title NOT LIKE '%-deleted'", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -87,6 +103,15 @@ namespace FYPManagement
         private void BackBtn_Click(object sender, EventArgs e)
         {
             form.addGroupControlUC();
+        }
+
+        private void TitleTxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsName(TitleTxt.Text))
+            {
+                MessageBox.Show("Invalid Title");
+                return;
+            }
         }
     }
 }

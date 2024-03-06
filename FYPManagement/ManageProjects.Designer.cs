@@ -170,6 +170,7 @@
             this.PrjTitletxt.ShadowDecoration.Parent = this.PrjTitletxt;
             this.PrjTitletxt.Size = new System.Drawing.Size(240, 44);
             this.PrjTitletxt.TabIndex = 5;
+            this.PrjTitletxt.TextChanged += new System.EventHandler(this.PrjTitletxt_TextChanged);
             // 
             // PrjDescTxt
             // 

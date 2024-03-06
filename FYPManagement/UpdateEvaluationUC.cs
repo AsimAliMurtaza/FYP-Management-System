@@ -26,7 +26,19 @@ namespace FYPManagement
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            updateEvaluation();
+            if (evalNameTxt.Text == "" || marksUD.Value == 0 || weightageUD.Value == 0)
+            {
+                MessageBox.Show("Please fill all the fields");
+            }
+            if(Utilities.IsName(evalNameTxt.Text))
+            {
+                updateEvaluation();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Name");
+                return;
+            }
         }
 
         private void updateEvaluation()
@@ -73,7 +85,7 @@ namespace FYPManagement
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Evaluation", con);
+                SqlCommand cmd = new SqlCommand("SELECT Id, Name, TotalMarks, TotalWeightage FROM Evaluation WHERE Name NOT LIKE '%-deleted'", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -88,6 +100,15 @@ namespace FYPManagement
         private void BackBtn_Click(object sender, EventArgs e)
         {
             form.addManageEvaluationsControl();
+        }
+
+        private void evalNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsName(evalNameTxt.Text))
+            {
+                MessageBox.Show("Invalid Name");
+                return;
+            }
         }
     }
 }

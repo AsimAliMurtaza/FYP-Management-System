@@ -189,6 +189,7 @@
     <Compile Include="UpdateStudentUC.Designer.cs">
       <DependentUpon>UpdateStudentUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities.cs" />
     <Compile Include="ViewAdvisorsUC.cs">
       <SubType>UserControl</SubType>
     </Compile>

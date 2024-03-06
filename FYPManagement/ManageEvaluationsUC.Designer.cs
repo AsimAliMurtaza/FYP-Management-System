@@ -219,6 +219,7 @@
             this.evalNameTxt.ShadowDecoration.Parent = this.evalNameTxt;
             this.evalNameTxt.Size = new System.Drawing.Size(171, 42);
             this.evalNameTxt.TabIndex = 5;
+            this.evalNameTxt.TextChanged += new System.EventHandler(this.evalNameTxt_TextChanged);
             // 
             // weightageUD
             // 

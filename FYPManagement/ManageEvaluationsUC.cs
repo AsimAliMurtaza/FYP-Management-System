@@ -23,14 +23,18 @@ namespace FYPManagement
 
         private void addEvalBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(evalNameTxt.Text))
+            if (evalNameTxt.Text == "" || marksUD.Value == 0 || weightageUD.Value == 0)
             {
                 MessageBox.Show("Please fill all the fields");
             }
-            else
+            if (Utilities.IsName(evalNameTxt.Text))
             {
                 addEvaluation();
-
+            }
+            else
+            {
+                MessageBox.Show("Invalid Name");
+                return;
             }
         }
 
@@ -79,6 +83,15 @@ namespace FYPManagement
         private void DeleteEvalBtn_Click(object sender, EventArgs e)
         {
             form.addDeleteEvaluationControl();
+        }
+
+        private void evalNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsName(evalNameTxt.Text))
+            {
+                MessageBox.Show("Invalid Name");
+                return;
+            }
         }
     }
 }

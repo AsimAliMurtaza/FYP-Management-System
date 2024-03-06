@@ -33,9 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.TitleTxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Descriptiontxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.Descriptiontxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
@@ -96,31 +96,7 @@
             this.TitleTxt.ShadowDecoration.Parent = this.TitleTxt;
             this.TitleTxt.Size = new System.Drawing.Size(116, 35);
             this.TitleTxt.TabIndex = 5;
-            // 
-            // Descriptiontxt
-            // 
-            this.Descriptiontxt.BorderRadius = 12;
-            this.Descriptiontxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Descriptiontxt.DefaultText = "";
-            this.Descriptiontxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Descriptiontxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Descriptiontxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Descriptiontxt.DisabledState.Parent = this.Descriptiontxt;
-            this.Descriptiontxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Descriptiontxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Descriptiontxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Descriptiontxt.FocusedState.Parent = this.Descriptiontxt;
-            this.Descriptiontxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Descriptiontxt.HoverState.Parent = this.Descriptiontxt;
-            this.Descriptiontxt.Location = new System.Drawing.Point(130, 185);
-            this.Descriptiontxt.Margin = new System.Windows.Forms.Padding(5);
-            this.Descriptiontxt.Name = "Descriptiontxt";
-            this.Descriptiontxt.PasswordChar = '\0';
-            this.Descriptiontxt.PlaceholderText = "Description";
-            this.Descriptiontxt.SelectedText = "";
-            this.Descriptiontxt.ShadowDecoration.Parent = this.Descriptiontxt;
-            this.Descriptiontxt.Size = new System.Drawing.Size(116, 35);
-            this.Descriptiontxt.TabIndex = 6;
+            this.TitleTxt.TextChanged += new System.EventHandler(this.TitleTxt_TextChanged);
             // 
             // guna2Button1
             // 
@@ -159,6 +135,31 @@
             this.UpdateBtn.TabIndex = 12;
             this.UpdateBtn.Text = "Update Project";
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            // 
+            // Descriptiontxt
+            // 
+            this.Descriptiontxt.BorderRadius = 12;
+            this.Descriptiontxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Descriptiontxt.DefaultText = "";
+            this.Descriptiontxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Descriptiontxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Descriptiontxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Descriptiontxt.DisabledState.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Descriptiontxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Descriptiontxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Descriptiontxt.FocusedState.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Descriptiontxt.HoverState.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.Location = new System.Drawing.Point(130, 185);
+            this.Descriptiontxt.Margin = new System.Windows.Forms.Padding(5);
+            this.Descriptiontxt.Name = "Descriptiontxt";
+            this.Descriptiontxt.PasswordChar = '\0';
+            this.Descriptiontxt.PlaceholderText = "Description";
+            this.Descriptiontxt.SelectedText = "";
+            this.Descriptiontxt.ShadowDecoration.Parent = this.Descriptiontxt;
+            this.Descriptiontxt.Size = new System.Drawing.Size(116, 35);
+            this.Descriptiontxt.TabIndex = 6;
             // 
             // tableLayoutPanel2
             // 

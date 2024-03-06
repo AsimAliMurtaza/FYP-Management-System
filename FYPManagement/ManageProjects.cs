@@ -30,6 +30,11 @@ namespace FYPManagement
             {
                 MessageBox.Show("Please fill all the fields");
             }
+            if(!Utilities.IsName(title))
+            {
+                MessageBox.Show("Invalid Title");
+                return;
+            }
             else
             {
                 addProject(title, description);
@@ -77,5 +82,15 @@ namespace FYPManagement
         {
             form.addDeleteProjectControl();
         }
+
+        private void PrjTitletxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsName(PrjTitletxt.Text))
+            {
+                MessageBox.Show("Invalid Title");
+                return;
+            }
+        }
+
     }
 }

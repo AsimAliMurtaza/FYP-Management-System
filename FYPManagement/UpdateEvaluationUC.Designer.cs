@@ -32,16 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.weightageUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.evalNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.marksUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.evalNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.weightageUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksUD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -75,52 +75,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(407, 495);
             this.tableLayoutPanel1.TabIndex = 9;
-            // 
-            // weightageUD
-            // 
-            this.weightageUD.BackColor = System.Drawing.Color.Transparent;
-            this.weightageUD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.weightageUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.weightageUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.weightageUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.weightageUD.DisabledState.Parent = this.weightageUD;
-            this.weightageUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.weightageUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.weightageUD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.weightageUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.weightageUD.FocusedState.Parent = this.weightageUD;
-            this.weightageUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightageUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.weightageUD.Location = new System.Drawing.Point(138, 248);
-            this.weightageUD.Name = "weightageUD";
-            this.weightageUD.ShadowDecoration.Parent = this.weightageUD;
-            this.weightageUD.Size = new System.Drawing.Size(129, 43);
-            this.weightageUD.TabIndex = 21;
-            // 
-            // evalNameTxt
-            // 
-            this.evalNameTxt.BorderRadius = 12;
-            this.evalNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.evalNameTxt.DefaultText = "";
-            this.evalNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.evalNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.evalNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.evalNameTxt.DisabledState.Parent = this.evalNameTxt;
-            this.evalNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.evalNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.evalNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.evalNameTxt.FocusedState.Parent = this.evalNameTxt;
-            this.evalNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.evalNameTxt.HoverState.Parent = this.evalNameTxt;
-            this.evalNameTxt.Location = new System.Drawing.Point(140, 54);
-            this.evalNameTxt.Margin = new System.Windows.Forms.Padding(5);
-            this.evalNameTxt.Name = "evalNameTxt";
-            this.evalNameTxt.PasswordChar = '\0';
-            this.evalNameTxt.PlaceholderText = "Type of Evaluation";
-            this.evalNameTxt.SelectedText = "";
-            this.evalNameTxt.ShadowDecoration.Parent = this.evalNameTxt;
-            this.evalNameTxt.Size = new System.Drawing.Size(125, 39);
-            this.evalNameTxt.TabIndex = 5;
             // 
             // guna2Button1
             // 
@@ -161,6 +115,53 @@
             this.marksUD.ShadowDecoration.Parent = this.marksUD;
             this.marksUD.Size = new System.Drawing.Size(129, 43);
             this.marksUD.TabIndex = 20;
+            // 
+            // evalNameTxt
+            // 
+            this.evalNameTxt.BorderRadius = 12;
+            this.evalNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.evalNameTxt.DefaultText = "";
+            this.evalNameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.evalNameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.evalNameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.evalNameTxt.DisabledState.Parent = this.evalNameTxt;
+            this.evalNameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.evalNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.evalNameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.evalNameTxt.FocusedState.Parent = this.evalNameTxt;
+            this.evalNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.evalNameTxt.HoverState.Parent = this.evalNameTxt;
+            this.evalNameTxt.Location = new System.Drawing.Point(140, 54);
+            this.evalNameTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.evalNameTxt.Name = "evalNameTxt";
+            this.evalNameTxt.PasswordChar = '\0';
+            this.evalNameTxt.PlaceholderText = "Type of Evaluation";
+            this.evalNameTxt.SelectedText = "";
+            this.evalNameTxt.ShadowDecoration.Parent = this.evalNameTxt;
+            this.evalNameTxt.Size = new System.Drawing.Size(125, 39);
+            this.evalNameTxt.TabIndex = 5;
+            this.evalNameTxt.TextChanged += new System.EventHandler(this.evalNameTxt_TextChanged);
+            // 
+            // weightageUD
+            // 
+            this.weightageUD.BackColor = System.Drawing.Color.Transparent;
+            this.weightageUD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.weightageUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.weightageUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.weightageUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.weightageUD.DisabledState.Parent = this.weightageUD;
+            this.weightageUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.weightageUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.weightageUD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weightageUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.weightageUD.FocusedState.Parent = this.weightageUD;
+            this.weightageUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weightageUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.weightageUD.Location = new System.Drawing.Point(138, 248);
+            this.weightageUD.Name = "weightageUD";
+            this.weightageUD.ShadowDecoration.Parent = this.weightageUD;
+            this.weightageUD.Size = new System.Drawing.Size(129, 43);
+            this.weightageUD.TabIndex = 21;
             // 
             // UpdateBtn
             // 
@@ -266,8 +267,8 @@
             this.Name = "UpdateEvaluationUC";
             this.Size = new System.Drawing.Size(764, 495);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.marksUD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);

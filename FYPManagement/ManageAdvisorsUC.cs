@@ -31,7 +31,15 @@ namespace FYPManagement
         private void addAdvBtn_Click(object sender, EventArgs e)
         {
             Advisor advisor = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedValue.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()));
-            addAdvisor(advisor);
+            if(Utilities.IsName(advisor.FirstName) && Utilities.IsName(advisor.LastName) && Utilities.IsEmail(advisor.Email) && Utilities.IsPhone(advisor.Contact) && Utilities.IsNumeric(advisor.Salary))
+            {
+                addAdvisor(advisor);
+            }
+            else
+            {
+                MessageBox.Show("Invalid Input");
+                return;
+            }
         }
         private void addAdvisor(Advisor advisor)
         {
@@ -105,6 +113,33 @@ namespace FYPManagement
         private void delBtn_Click(object sender, EventArgs e)
         {
             form.addDeleteAdvisorControl();
+        }
+
+        private void FNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsName(FNameTxt.Text))
+            {
+                MessageBox.Show("Invalid First Name");
+                return;
+            }
+        }
+
+        private void LNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (!Utilities.IsName(LNameTxt.Text))
+            {
+                MessageBox.Show("Invalid Last Name");
+                return;
+            }
+        }
+
+        private void SalaryTxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsNumeric(SalaryTxt.Text))
+            {
+                MessageBox.Show("Invalid Salary");
+                return;
+            }
         }
     }
 }

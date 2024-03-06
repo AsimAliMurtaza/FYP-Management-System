@@ -148,6 +148,7 @@
             this.FNameTxt.ShadowDecoration.Parent = this.FNameTxt;
             this.FNameTxt.Size = new System.Drawing.Size(213, 41);
             this.FNameTxt.TabIndex = 4;
+            this.FNameTxt.TextChanged += new System.EventHandler(this.FNameTxt_TextChanged);
             // 
             // LNameTxt
             // 
@@ -173,6 +174,7 @@
             this.LNameTxt.ShadowDecoration.Parent = this.LNameTxt;
             this.LNameTxt.Size = new System.Drawing.Size(213, 41);
             this.LNameTxt.TabIndex = 5;
+            this.LNameTxt.TextChanged += new System.EventHandler(this.LNameTxt_TextChanged);
             // 
             // EmailTxt
             // 
@@ -265,6 +267,7 @@
             this.SalaryTxt.ShadowDecoration.Parent = this.SalaryTxt;
             this.SalaryTxt.Size = new System.Drawing.Size(213, 41);
             this.SalaryTxt.TabIndex = 0;
+            this.SalaryTxt.TextChanged += new System.EventHandler(this.SalaryTxt_TextChanged);
             // 
             // GenderCB
             // 

@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Collections.Specialized.BitVector32;
@@ -41,7 +42,17 @@ namespace FYPManagement
         {
             string regNo = RegNoTxt.Text;
             Student student = new Student(regNo, fNameTxt.Text, LNameTxt.Text, ContactTxt.Text, emailTxt.Text, int.Parse(genderCB.SelectedValue.ToString()));
-            addStudent(student);
+           
+            if (Utilities.IsName(fNameTxt.Text) && Utilities.IsName(LNameTxt.Text) && Utilities.IsPhone(ContactTxt.Text) && Utilities.IsEmail(emailTxt.Text))
+            {
+                addStudent(student);
+            }
+            else
+            {
+                MessageBox.Show("Invalid input");
+            }
+           
+
         }
 
         private void addStudent(Student student)
@@ -98,6 +109,24 @@ namespace FYPManagement
         private void deleteStdBtn_Click(object sender, EventArgs e)
         {
             form.addDeleteStudentControl();
+        }
+
+        private void fNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if (!Utilities.IsName(fNameTxt.Text))
+            {
+                MessageBox.Show("First name should be alphabetic");
+                return;
+            }
+        }
+
+        private void LNameTxt_TextChanged(object sender, EventArgs e)
+        {
+            if(!Utilities.IsName(LNameTxt.Text))
+            {
+                MessageBox.Show("Last name should be alphabetic");
+                return;
+            }
         }
     }
 }

@@ -208,6 +208,7 @@
             this.fNameTxt.ShadowDecoration.Parent = this.fNameTxt;
             this.fNameTxt.Size = new System.Drawing.Size(183, 39);
             this.fNameTxt.TabIndex = 5;
+            this.fNameTxt.TextChanged += new System.EventHandler(this.fNameTxt_TextChanged);
             // 
             // LNameTxt
             // 
@@ -233,6 +234,7 @@
             this.LNameTxt.ShadowDecoration.Parent = this.LNameTxt;
             this.LNameTxt.Size = new System.Drawing.Size(183, 39);
             this.LNameTxt.TabIndex = 6;
+            this.LNameTxt.TextChanged += new System.EventHandler(this.LNameTxt_TextChanged);
             // 
             // ContactTxt
             // 
