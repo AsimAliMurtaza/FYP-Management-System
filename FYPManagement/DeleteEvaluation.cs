@@ -12,14 +12,19 @@ using System.Windows.Forms;
 
 namespace FYPManagement
 {
-    public partial class ViewEvaluationsUC : UserControl
+    public partial class DeleteEvaluation : UserControl
     {
         AdvisorForm form;
-        public ViewEvaluationsUC(AdvisorForm form)
+        public DeleteEvaluation(AdvisorForm form)
         {
             InitializeComponent();
             this.form = form;
             displayEvaluations();
+        }
+
+        private void delBtn_Click(object sender, EventArgs e)
+        {
+            softDeleteEvaluation();
         }
 
         private void displayEvaluations()
@@ -32,7 +37,6 @@ namespace FYPManagement
             try
             {
                 SqlCommand cmd = new SqlCommand("SELECT Id, Name, TotalMarks, TotalWeightage FROM Evaluation WHERE Name NOT LIKE '%-deleted'", con);
-
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -44,14 +48,31 @@ namespace FYPManagement
             }
         }
 
-        private void BackBtn_Click(object sender, EventArgs e)
+        private void softDeleteEvaluation()
         {
-            form.addManageEvaluationsControl();
+            var con = Configuration.getInstance().getConnection();
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            try
+            {
+                SqlCommand cmd = new SqlCommand("UPDATE Evaluation SET Name = @Name + '-deleted' WHERE Id = @id", con);
+                cmd.Parameters.AddWithValue("@id", guna2DataGridView1.SelectedRows[0].Cells[0].Value);
+                cmd.Parameters.AddWithValue("@Name", guna2DataGridView1.SelectedRows[0].Cells[1].Value);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Evaluation Deleted Successfully");
+                displayEvaluations();
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show("Error: " + er.Message);
+            }
         }
 
-        private void guna2DataGridView1_VisibleChanged(object sender, EventArgs e)
+        private void backBtn_Click(object sender, EventArgs e)
         {
-            displayEvaluations();
+            form.addManageEvaluationsControl();
         }
     }
 }

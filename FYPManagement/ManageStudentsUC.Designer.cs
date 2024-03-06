@@ -156,6 +156,7 @@
             this.deleteStdBtn.Size = new System.Drawing.Size(185, 41);
             this.deleteStdBtn.TabIndex = 18;
             this.deleteStdBtn.Text = "Delete Student";
+            this.deleteStdBtn.Click += new System.EventHandler(this.deleteStdBtn_Click);
             // 
             // RegNoTxt
             // 

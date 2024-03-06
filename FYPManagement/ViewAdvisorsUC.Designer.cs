@@ -55,6 +55,7 @@
             this.BackBtn.Size = new System.Drawing.Size(78, 59);
             this.BackBtn.TabIndex = 21;
             this.BackBtn.Text = "Back";
+            this.BackBtn.VisibleChanged += new System.EventHandler(this.guna2DataGridView1_VisibleChanged);
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // guna2DataGridView1
@@ -119,6 +120,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.VisibleChanged += new System.EventHandler(this.guna2DataGridView1_VisibleChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -139,6 +141,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.50045F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(869, 486);
             this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel1.VisibleChanged += new System.EventHandler(this.guna2DataGridView1_VisibleChanged);
             // 
             // ViewAdvisorsUC
             // 

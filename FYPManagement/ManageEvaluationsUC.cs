@@ -75,5 +75,10 @@ namespace FYPManagement
         {
             form.addEvaluateGroupsControl();
         }
+
+        private void DeleteEvalBtn_Click(object sender, EventArgs e)
+        {
+            form.addDeleteEvaluationControl();
+        }
     }
 }

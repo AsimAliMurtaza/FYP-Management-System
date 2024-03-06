@@ -41,7 +41,7 @@
             this.designationsCB = new System.Windows.Forms.ComboBox();
             this.addAdvBtn = new Guna.UI2.WinForms.Guna2Button();
             this.BackBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.delBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             this.tableLayoutPanel1.Controls.Add(this.designationsCB, 3, 8);
             this.tableLayoutPanel1.Controls.Add(this.addAdvBtn, 3, 9);
             this.tableLayoutPanel1.Controls.Add(this.BackBtn, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.delBtn, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -332,23 +332,24 @@
             this.BackBtn.Text = "Back";
             this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
-            // guna2Button1
+            // delBtn
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(4, 259);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(215, 43);
-            this.guna2Button1.TabIndex = 26;
-            this.guna2Button1.Text = "Delete Advisor";
+            this.delBtn.BorderRadius = 10;
+            this.delBtn.CheckedState.Parent = this.delBtn;
+            this.delBtn.CustomImages.Parent = this.delBtn;
+            this.delBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.delBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.delBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.delBtn.ForeColor = System.Drawing.Color.White;
+            this.delBtn.HoverState.Parent = this.delBtn;
+            this.delBtn.Location = new System.Drawing.Point(4, 259);
+            this.delBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.delBtn.Name = "delBtn";
+            this.delBtn.ShadowDecoration.Parent = this.delBtn;
+            this.delBtn.Size = new System.Drawing.Size(215, 43);
+            this.delBtn.TabIndex = 26;
+            this.delBtn.Text = "Delete Advisor";
+            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
             // 
             // ManageAdvisorsUC
             // 
@@ -378,6 +379,6 @@
         private Guna.UI2.WinForms.Guna2Button updateAdvbtn;
         private System.Windows.Forms.ComboBox designationsCB;
         private Guna.UI2.WinForms.Guna2Button BackBtn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button delBtn;
     }
 }

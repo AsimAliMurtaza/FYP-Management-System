@@ -30,7 +30,7 @@ namespace FYPManagement
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Project", con);
+                SqlCommand cmd = new SqlCommand("SELECT Id, Title, Description FROM Project WHERE Title NOT LIKE '%-deleted'", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -45,6 +45,11 @@ namespace FYPManagement
         private void BackBtn_Click(object sender, EventArgs e)
         {
             form.addGroupControlUC();
+        }
+
+        private void guna2DataGridView1_VisibleChanged(object sender, EventArgs e)
+        {
+            displayProjects();
         }
     }
 }

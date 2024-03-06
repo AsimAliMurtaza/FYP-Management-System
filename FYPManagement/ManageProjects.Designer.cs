@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.backBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.PrjDescTxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PrjTitletxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.addPrjBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.DeleteProjectBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updatePrjBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.backBtn = new Guna.UI2.WinForms.Guna2Button();
             this.viewPrjBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.DeleteProjectBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.PrjTitletxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PrjDescTxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.addPrjBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,25 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1001, 438);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // updatePrjBtn
+            // 
+            this.updatePrjBtn.BorderRadius = 10;
+            this.updatePrjBtn.CheckedState.Parent = this.updatePrjBtn;
+            this.updatePrjBtn.CustomImages.Parent = this.updatePrjBtn;
+            this.updatePrjBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.updatePrjBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.updatePrjBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.updatePrjBtn.ForeColor = System.Drawing.Color.White;
+            this.updatePrjBtn.HoverState.Parent = this.updatePrjBtn;
+            this.updatePrjBtn.Location = new System.Drawing.Point(4, 274);
+            this.updatePrjBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.updatePrjBtn.Name = "updatePrjBtn";
+            this.updatePrjBtn.ShadowDecoration.Parent = this.updatePrjBtn;
+            this.updatePrjBtn.Size = new System.Drawing.Size(242, 46);
+            this.updatePrjBtn.TabIndex = 10;
+            this.updatePrjBtn.Text = "Update Project";
+            this.updatePrjBtn.Click += new System.EventHandler(this.updatePrjBtn_Click);
+            // 
             // backBtn
             // 
             this.backBtn.BorderRadius = 10;
@@ -89,30 +108,43 @@
             this.backBtn.Text = "Back";
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
-            // PrjDescTxt
+            // viewPrjBtn
             // 
-            this.PrjDescTxt.BorderRadius = 12;
-            this.PrjDescTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PrjDescTxt.DefaultText = "";
-            this.PrjDescTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PrjDescTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PrjDescTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PrjDescTxt.DisabledState.Parent = this.PrjDescTxt;
-            this.PrjDescTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PrjDescTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PrjDescTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PrjDescTxt.FocusedState.Parent = this.PrjDescTxt;
-            this.PrjDescTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PrjDescTxt.HoverState.Parent = this.PrjDescTxt;
-            this.PrjDescTxt.Location = new System.Drawing.Point(505, 167);
-            this.PrjDescTxt.Margin = new System.Windows.Forms.Padding(5);
-            this.PrjDescTxt.Name = "PrjDescTxt";
-            this.PrjDescTxt.PasswordChar = '\0';
-            this.PrjDescTxt.PlaceholderText = "Project Description";
-            this.PrjDescTxt.SelectedText = "";
-            this.PrjDescTxt.ShadowDecoration.Parent = this.PrjDescTxt;
-            this.PrjDescTxt.Size = new System.Drawing.Size(240, 44);
-            this.PrjDescTxt.TabIndex = 6;
+            this.viewPrjBtn.BorderRadius = 10;
+            this.viewPrjBtn.CheckedState.Parent = this.viewPrjBtn;
+            this.viewPrjBtn.CustomImages.Parent = this.viewPrjBtn;
+            this.viewPrjBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewPrjBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.viewPrjBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.viewPrjBtn.ForeColor = System.Drawing.Color.White;
+            this.viewPrjBtn.HoverState.Parent = this.viewPrjBtn;
+            this.viewPrjBtn.Location = new System.Drawing.Point(4, 58);
+            this.viewPrjBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.viewPrjBtn.Name = "viewPrjBtn";
+            this.viewPrjBtn.ShadowDecoration.Parent = this.viewPrjBtn;
+            this.viewPrjBtn.Size = new System.Drawing.Size(242, 46);
+            this.viewPrjBtn.TabIndex = 11;
+            this.viewPrjBtn.Text = "View Projects";
+            this.viewPrjBtn.Click += new System.EventHandler(this.viewPrjBtn_Click);
+            // 
+            // DeleteProjectBtn
+            // 
+            this.DeleteProjectBtn.BorderRadius = 10;
+            this.DeleteProjectBtn.CheckedState.Parent = this.DeleteProjectBtn;
+            this.DeleteProjectBtn.CustomImages.Parent = this.DeleteProjectBtn;
+            this.DeleteProjectBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeleteProjectBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.DeleteProjectBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DeleteProjectBtn.ForeColor = System.Drawing.Color.White;
+            this.DeleteProjectBtn.HoverState.Parent = this.DeleteProjectBtn;
+            this.DeleteProjectBtn.Location = new System.Drawing.Point(4, 166);
+            this.DeleteProjectBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.DeleteProjectBtn.Name = "DeleteProjectBtn";
+            this.DeleteProjectBtn.ShadowDecoration.Parent = this.DeleteProjectBtn;
+            this.DeleteProjectBtn.Size = new System.Drawing.Size(242, 46);
+            this.DeleteProjectBtn.TabIndex = 18;
+            this.DeleteProjectBtn.Text = "Delete Project";
+            this.DeleteProjectBtn.Click += new System.EventHandler(this.DeleteProjectBtn_Click);
             // 
             // PrjTitletxt
             // 
@@ -139,6 +171,31 @@
             this.PrjTitletxt.Size = new System.Drawing.Size(240, 44);
             this.PrjTitletxt.TabIndex = 5;
             // 
+            // PrjDescTxt
+            // 
+            this.PrjDescTxt.BorderRadius = 12;
+            this.PrjDescTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PrjDescTxt.DefaultText = "";
+            this.PrjDescTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PrjDescTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PrjDescTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PrjDescTxt.DisabledState.Parent = this.PrjDescTxt;
+            this.PrjDescTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PrjDescTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PrjDescTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PrjDescTxt.FocusedState.Parent = this.PrjDescTxt;
+            this.PrjDescTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PrjDescTxt.HoverState.Parent = this.PrjDescTxt;
+            this.PrjDescTxt.Location = new System.Drawing.Point(505, 167);
+            this.PrjDescTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.PrjDescTxt.Name = "PrjDescTxt";
+            this.PrjDescTxt.PasswordChar = '\0';
+            this.PrjDescTxt.PlaceholderText = "Project Description";
+            this.PrjDescTxt.SelectedText = "";
+            this.PrjDescTxt.ShadowDecoration.Parent = this.PrjDescTxt;
+            this.PrjDescTxt.Size = new System.Drawing.Size(240, 44);
+            this.PrjDescTxt.TabIndex = 6;
+            // 
             // addPrjBtn
             // 
             this.addPrjBtn.BorderRadius = 10;
@@ -157,62 +214,6 @@
             this.addPrjBtn.TabIndex = 12;
             this.addPrjBtn.Text = "Add Project";
             this.addPrjBtn.Click += new System.EventHandler(this.addPrjBtn_Click);
-            // 
-            // DeleteProjectBtn
-            // 
-            this.DeleteProjectBtn.BorderRadius = 10;
-            this.DeleteProjectBtn.CheckedState.Parent = this.DeleteProjectBtn;
-            this.DeleteProjectBtn.CustomImages.Parent = this.DeleteProjectBtn;
-            this.DeleteProjectBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeleteProjectBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.DeleteProjectBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DeleteProjectBtn.ForeColor = System.Drawing.Color.White;
-            this.DeleteProjectBtn.HoverState.Parent = this.DeleteProjectBtn;
-            this.DeleteProjectBtn.Location = new System.Drawing.Point(4, 166);
-            this.DeleteProjectBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.DeleteProjectBtn.Name = "DeleteProjectBtn";
-            this.DeleteProjectBtn.ShadowDecoration.Parent = this.DeleteProjectBtn;
-            this.DeleteProjectBtn.Size = new System.Drawing.Size(242, 46);
-            this.DeleteProjectBtn.TabIndex = 18;
-            this.DeleteProjectBtn.Text = "Delete Project";
-            // 
-            // updatePrjBtn
-            // 
-            this.updatePrjBtn.BorderRadius = 10;
-            this.updatePrjBtn.CheckedState.Parent = this.updatePrjBtn;
-            this.updatePrjBtn.CustomImages.Parent = this.updatePrjBtn;
-            this.updatePrjBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.updatePrjBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.updatePrjBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.updatePrjBtn.ForeColor = System.Drawing.Color.White;
-            this.updatePrjBtn.HoverState.Parent = this.updatePrjBtn;
-            this.updatePrjBtn.Location = new System.Drawing.Point(4, 274);
-            this.updatePrjBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.updatePrjBtn.Name = "updatePrjBtn";
-            this.updatePrjBtn.ShadowDecoration.Parent = this.updatePrjBtn;
-            this.updatePrjBtn.Size = new System.Drawing.Size(242, 46);
-            this.updatePrjBtn.TabIndex = 10;
-            this.updatePrjBtn.Text = "Update Project";
-            this.updatePrjBtn.Click += new System.EventHandler(this.updatePrjBtn_Click);
-            // 
-            // viewPrjBtn
-            // 
-            this.viewPrjBtn.BorderRadius = 10;
-            this.viewPrjBtn.CheckedState.Parent = this.viewPrjBtn;
-            this.viewPrjBtn.CustomImages.Parent = this.viewPrjBtn;
-            this.viewPrjBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewPrjBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.viewPrjBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.viewPrjBtn.ForeColor = System.Drawing.Color.White;
-            this.viewPrjBtn.HoverState.Parent = this.viewPrjBtn;
-            this.viewPrjBtn.Location = new System.Drawing.Point(4, 58);
-            this.viewPrjBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.viewPrjBtn.Name = "viewPrjBtn";
-            this.viewPrjBtn.ShadowDecoration.Parent = this.viewPrjBtn;
-            this.viewPrjBtn.Size = new System.Drawing.Size(242, 46);
-            this.viewPrjBtn.TabIndex = 11;
-            this.viewPrjBtn.Text = "View Projects";
-            this.viewPrjBtn.Click += new System.EventHandler(this.viewPrjBtn_Click);
             // 
             // ManageProjects
             // 

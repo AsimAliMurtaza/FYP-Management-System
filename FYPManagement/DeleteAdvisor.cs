@@ -12,15 +12,21 @@ using System.Windows.Forms;
 
 namespace FYPManagement
 {
-    public partial class ViewAdvisorsUC : UserControl
+    public partial class DeleteAdvisor : UserControl
     {
         AdvisorForm form;
-        public ViewAdvisorsUC(AdvisorForm f)
+        public DeleteAdvisor(AdvisorForm form)
         {
             InitializeComponent();
-            form = f;
+            this.form = form;
             DisplayAdvisors();
         }
+
+        private void delBtn_Click(object sender, EventArgs e)
+        {
+            softDeleteAdvisor();
+        }
+
         private void DisplayAdvisors()
         {
             var con = Configuration.getInstance().getConnection();
@@ -57,14 +63,34 @@ namespace FYPManagement
             }
         }
 
-        private void BackBtn_Click(object sender, EventArgs e)
+        private void softDeleteAdvisor()
         {
-            form.addAdvisorsControl();
+            var con = Configuration.getInstance().getConnection();
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            try
+            {
+                SqlCommand cmd = new SqlCommand("UPDATE Person SET FirstName = @FirstName + '-deleted' WHERE FirstName= @FirstName AND LastName = @LastName AND Email = @Email AND Contact = @Contact", con);
+                cmd.Parameters.AddWithValue("@FirstName", guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                cmd.Parameters.AddWithValue("@LastName", guna2DataGridView1.SelectedRows[0].Cells[1].Value.ToString());
+                cmd.Parameters.AddWithValue("@Contact", guna2DataGridView1.SelectedRows[0].Cells[2].Value.ToString());
+                cmd.Parameters.AddWithValue("@Email", guna2DataGridView1.SelectedRows[0].Cells[3].Value.ToString());
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Advisor Deleted Successfully");
+                DisplayAdvisors();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
-        private void guna2DataGridView1_VisibleChanged(object sender, EventArgs e)
+        private void backBtn_Click(object sender, EventArgs e)
         {
-            DisplayAdvisors();
+            form.addAdvisorsControl();
         }
     }
 }

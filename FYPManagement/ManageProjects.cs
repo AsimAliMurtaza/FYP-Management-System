@@ -72,5 +72,10 @@ namespace FYPManagement
         {
             form.addUpdateProjectControl();
         }
+
+        private void DeleteProjectBtn_Click(object sender, EventArgs e)
+        {
+            form.addDeleteProjectControl();
+        }
     }
 }

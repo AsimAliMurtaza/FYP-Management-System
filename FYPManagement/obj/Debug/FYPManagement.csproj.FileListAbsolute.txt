@@ -29,3 +29,7 @@ D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ManageEvaluati
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.ViewEvaluationsUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.UpdateEvaluationUC.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.EvaluateGroupsUC.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.DeleteStudent.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.DeleteAdvisor.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.DeleteProject.resources
+D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.DeleteEvaluation.resources

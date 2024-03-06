@@ -32,12 +32,12 @@
             this.backBtn = new Guna.UI2.WinForms.Guna2Button();
             this.viewEvalBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateEvalBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.addEvalBtn = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteEvalBtn = new Guna.UI2.WinForms.Guna2Button();
             this.doEvalBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.evalNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.marksUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.evalNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.weightageUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.addEvalBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marksUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).BeginInit();
@@ -136,25 +136,6 @@
             this.updateEvalBtn.Text = "Update Evaluation";
             this.updateEvalBtn.Click += new System.EventHandler(this.updateEvalBtn_Click);
             // 
-            // addEvalBtn
-            // 
-            this.addEvalBtn.BorderRadius = 10;
-            this.addEvalBtn.CheckedState.Parent = this.addEvalBtn;
-            this.addEvalBtn.CustomImages.Parent = this.addEvalBtn;
-            this.addEvalBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addEvalBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.addEvalBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.addEvalBtn.ForeColor = System.Drawing.Color.White;
-            this.addEvalBtn.HoverState.Parent = this.addEvalBtn;
-            this.addEvalBtn.Location = new System.Drawing.Point(547, 316);
-            this.addEvalBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.addEvalBtn.Name = "addEvalBtn";
-            this.addEvalBtn.ShadowDecoration.Parent = this.addEvalBtn;
-            this.addEvalBtn.Size = new System.Drawing.Size(173, 44);
-            this.addEvalBtn.TabIndex = 12;
-            this.addEvalBtn.Text = "Add Evaluation";
-            this.addEvalBtn.Click += new System.EventHandler(this.addEvalBtn_Click);
-            // 
             // DeleteEvalBtn
             // 
             this.DeleteEvalBtn.BorderRadius = 10;
@@ -172,6 +153,7 @@
             this.DeleteEvalBtn.Size = new System.Drawing.Size(173, 44);
             this.DeleteEvalBtn.TabIndex = 16;
             this.DeleteEvalBtn.Text = "Remove Evaluation";
+            this.DeleteEvalBtn.Click += new System.EventHandler(this.DeleteEvalBtn_Click);
             // 
             // doEvalBtn
             // 
@@ -191,6 +173,27 @@
             this.doEvalBtn.TabIndex = 14;
             this.doEvalBtn.Text = "Evaluate Groups";
             this.doEvalBtn.Click += new System.EventHandler(this.doEvalBtn_Click);
+            // 
+            // marksUD
+            // 
+            this.marksUD.BackColor = System.Drawing.Color.Transparent;
+            this.marksUD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.marksUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.marksUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.marksUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.marksUD.DisabledState.Parent = this.marksUD;
+            this.marksUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.marksUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.marksUD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.marksUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.marksUD.FocusedState.Parent = this.marksUD;
+            this.marksUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.marksUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.marksUD.Location = new System.Drawing.Point(365, 211);
+            this.marksUD.Name = "marksUD";
+            this.marksUD.ShadowDecoration.Parent = this.marksUD;
+            this.marksUD.Size = new System.Drawing.Size(175, 46);
+            this.marksUD.TabIndex = 19;
             // 
             // evalNameTxt
             // 
@@ -217,27 +220,6 @@
             this.evalNameTxt.Size = new System.Drawing.Size(171, 42);
             this.evalNameTxt.TabIndex = 5;
             // 
-            // marksUD
-            // 
-            this.marksUD.BackColor = System.Drawing.Color.Transparent;
-            this.marksUD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.marksUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.marksUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.marksUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.marksUD.DisabledState.Parent = this.marksUD;
-            this.marksUD.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.marksUD.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.marksUD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.marksUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.marksUD.FocusedState.Parent = this.marksUD;
-            this.marksUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.marksUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.marksUD.Location = new System.Drawing.Point(365, 211);
-            this.marksUD.Name = "marksUD";
-            this.marksUD.ShadowDecoration.Parent = this.marksUD;
-            this.marksUD.Size = new System.Drawing.Size(175, 46);
-            this.marksUD.TabIndex = 19;
-            // 
             // weightageUD
             // 
             this.weightageUD.BackColor = System.Drawing.Color.Transparent;
@@ -258,6 +240,25 @@
             this.weightageUD.ShadowDecoration.Parent = this.weightageUD;
             this.weightageUD.Size = new System.Drawing.Size(175, 46);
             this.weightageUD.TabIndex = 20;
+            // 
+            // addEvalBtn
+            // 
+            this.addEvalBtn.BorderRadius = 10;
+            this.addEvalBtn.CheckedState.Parent = this.addEvalBtn;
+            this.addEvalBtn.CustomImages.Parent = this.addEvalBtn;
+            this.addEvalBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addEvalBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.addEvalBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addEvalBtn.ForeColor = System.Drawing.Color.White;
+            this.addEvalBtn.HoverState.Parent = this.addEvalBtn;
+            this.addEvalBtn.Location = new System.Drawing.Point(547, 316);
+            this.addEvalBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.addEvalBtn.Name = "addEvalBtn";
+            this.addEvalBtn.ShadowDecoration.Parent = this.addEvalBtn;
+            this.addEvalBtn.Size = new System.Drawing.Size(173, 44);
+            this.addEvalBtn.TabIndex = 12;
+            this.addEvalBtn.Text = "Add Evaluation";
+            this.addEvalBtn.Click += new System.EventHandler(this.addEvalBtn_Click);
             // 
             // ManageEvaluationsUC
             // 

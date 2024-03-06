@@ -32,6 +32,10 @@ namespace FYPManagement
         ViewEvaluationsUC viewEvaluationsUC;
         UpdateEvaluationUC updateEvaluationUC;
         EvaluateGroupsUC evaluateGroupsUC;
+        DeleteStudent deleteStudentUC;
+        DeleteAdvisor deleteAdvisorUC;
+        DeleteProject deleteProjectUC;
+        DeleteEvaluation deleteEvaluationUC;
         public AdvisorForm()
         {
             InitializeComponent();
@@ -55,6 +59,10 @@ namespace FYPManagement
             viewEvaluationsUC = new ViewEvaluationsUC(this) { Dock = DockStyle.Fill };
             updateEvaluationUC = new UpdateEvaluationUC(this) { Dock = DockStyle.Fill };
             evaluateGroupsUC = new EvaluateGroupsUC(this) { Dock = DockStyle.Fill };
+            deleteStudentUC = new DeleteStudent(this) { Dock = DockStyle.Fill };
+            deleteAdvisorUC = new DeleteAdvisor(this) { Dock = DockStyle.Fill };
+            deleteProjectUC = new DeleteProject(this) { Dock = DockStyle.Fill };
+            deleteEvaluationUC = new DeleteEvaluation(this) { Dock = DockStyle.Fill };
 
         }
 
@@ -142,6 +150,12 @@ namespace FYPManagement
             MainPanel.Controls.Add(assignProjects);
         }
 
+        public void addDeleteAdvisorControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(deleteAdvisorUC);
+        }
+
         public void addUpdateProjectControl()
         {
             MainPanel.Controls.Clear();
@@ -176,6 +190,24 @@ namespace FYPManagement
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(evaluateGroupsUC);
+        }
+
+        public void addDeleteStudentControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(deleteStudentUC);
+        }
+
+        public void addDeleteProjectControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(deleteProjectUC);
+        }
+
+        public void addDeleteEvaluationControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(deleteEvaluationUC);
         }
 
         private void AdvisorForm_Load(object sender, EventArgs e)

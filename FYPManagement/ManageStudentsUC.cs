@@ -95,5 +95,9 @@ namespace FYPManagement
 
         }
 
+        private void deleteStdBtn_Click(object sender, EventArgs e)
+        {
+            form.addDeleteStudentControl();
+        }
     }
 }

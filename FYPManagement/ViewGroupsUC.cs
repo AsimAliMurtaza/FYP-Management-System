@@ -48,5 +48,10 @@ namespace FYPManagement
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void tableLayoutPanel1_VisibleChanged(object sender, EventArgs e)
+        {
+            displayGroups();
+        }
     }
 }

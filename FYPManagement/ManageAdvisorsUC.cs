@@ -101,5 +101,10 @@ namespace FYPManagement
         {
             form.addAdvisorUpdateControlUC();
         }
+
+        private void delBtn_Click(object sender, EventArgs e)
+        {
+            form.addDeleteAdvisorControl();
+        }
     }
 }
