@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,6 +38,8 @@ namespace FYPManagement
         DeleteAdvisor deleteAdvisorUC;
         DeleteProject deleteProjectUC;
         DeleteEvaluation deleteEvaluationUC;
+        ManageReports manageReports;
+
         public AdvisorForm()
         {
             InitializeComponent();
@@ -63,7 +67,20 @@ namespace FYPManagement
             deleteAdvisorUC = new DeleteAdvisor(this) { Dock = DockStyle.Fill };
             deleteProjectUC = new DeleteProject(this) { Dock = DockStyle.Fill };
             deleteEvaluationUC = new DeleteEvaluation(this) { Dock = DockStyle.Fill };
+            manageReports = new ManageReports(this) { Dock = DockStyle.Fill };
 
+            // Set up the timer
+            timer1.Interval = 1000; // 1000 milliseconds = 1 second
+            timer1.Tick += Timer1_Tick;
+            timer1.Start();
+
+        }
+
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            // Update the Label with the current time
+            Clock.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt");
         }
 
         public void addStudentsControl()
@@ -210,15 +227,17 @@ namespace FYPManagement
             MainPanel.Controls.Add(deleteEvaluationUC);
         }
 
+        public void manageReportsControl()
+        {
+            MainPanel.Controls.Clear();
+            MainPanel.Controls.Add(manageReports);
+        }
+
         private void AdvisorForm_Load(object sender, EventArgs e)
         {
             MainPanel.Controls.Clear();
             MainPanel.Controls.Add(adminMenuUC);
         }
 
-        private void adminHeader_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

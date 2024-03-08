@@ -31,10 +31,9 @@ namespace FYPManagement
             try
             {
                 SqlCommand cmd = new SqlCommand("SELECT Student.RegistrationNo, Person.FirstName, Person.LastName, Person.Contact, Person.Email, Person.DateOfBirth, Person.Gender " +
-                                  "FROM Student " +
-                                  "INNER JOIN Person ON Student.Id = Person.Id " +
-                                  "WHERE NOT Person.FirstName LIKE '%-deleted'", con);
-
+                                "FROM Student " +
+                                "INNER JOIN Person ON Student.Id = Person.Id " +
+                                "WHERE NOT Person.FirstName LIKE '%-deleted'", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);

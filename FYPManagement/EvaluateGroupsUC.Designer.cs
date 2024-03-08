@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EvaluateGroupsUC));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -52,7 +53,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.backBtn, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.backBtn, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.EvalIDCB, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.evalDate, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.groupIDCB, 0, 2);
@@ -62,8 +63,7 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -87,11 +87,11 @@
             this.backBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.backBtn.ForeColor = System.Drawing.Color.White;
             this.backBtn.HoverState.Parent = this.backBtn;
-            this.backBtn.Location = new System.Drawing.Point(4, 454);
+            this.backBtn.Location = new System.Drawing.Point(4, 444);
             this.backBtn.Margin = new System.Windows.Forms.Padding(4);
             this.backBtn.Name = "backBtn";
             this.backBtn.ShadowDecoration.Parent = this.backBtn;
-            this.backBtn.Size = new System.Drawing.Size(217, 42);
+            this.backBtn.Size = new System.Drawing.Size(217, 52);
             this.backBtn.TabIndex = 19;
             this.backBtn.Text = "Back";
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
@@ -110,7 +110,7 @@
             this.EvalIDCB.HoverState.Parent = this.EvalIDCB;
             this.EvalIDCB.ItemHeight = 30;
             this.EvalIDCB.ItemsAppearance.Parent = this.EvalIDCB;
-            this.EvalIDCB.Location = new System.Drawing.Point(228, 103);
+            this.EvalIDCB.Location = new System.Drawing.Point(228, 113);
             this.EvalIDCB.Name = "EvalIDCB";
             this.EvalIDCB.ShadowDecoration.Parent = this.EvalIDCB;
             this.EvalIDCB.Size = new System.Drawing.Size(220, 36);
@@ -122,12 +122,12 @@
             this.evalDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.evalDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.evalDate.HoverState.Parent = this.evalDate;
-            this.evalDate.Location = new System.Drawing.Point(228, 203);
+            this.evalDate.Location = new System.Drawing.Point(228, 223);
             this.evalDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.evalDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.evalDate.Name = "evalDate";
             this.evalDate.ShadowDecoration.Parent = this.evalDate;
-            this.evalDate.Size = new System.Drawing.Size(220, 44);
+            this.evalDate.Size = new System.Drawing.Size(220, 49);
             this.evalDate.TabIndex = 23;
             this.evalDate.Value = new System.DateTime(2024, 3, 4, 21, 56, 1, 244);
             // 
@@ -145,7 +145,7 @@
             this.groupIDCB.HoverState.Parent = this.groupIDCB;
             this.groupIDCB.ItemHeight = 30;
             this.groupIDCB.ItemsAppearance.Parent = this.groupIDCB;
-            this.groupIDCB.Location = new System.Drawing.Point(3, 103);
+            this.groupIDCB.Location = new System.Drawing.Point(3, 113);
             this.groupIDCB.Name = "groupIDCB";
             this.groupIDCB.ShadowDecoration.Parent = this.groupIDCB;
             this.groupIDCB.Size = new System.Drawing.Size(219, 36);
@@ -166,10 +166,10 @@
             this.ObtmarksUD.FocusedState.Parent = this.ObtmarksUD;
             this.ObtmarksUD.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ObtmarksUD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.ObtmarksUD.Location = new System.Drawing.Point(3, 203);
+            this.ObtmarksUD.Location = new System.Drawing.Point(3, 223);
             this.ObtmarksUD.Name = "ObtmarksUD";
             this.ObtmarksUD.ShadowDecoration.Parent = this.ObtmarksUD;
-            this.ObtmarksUD.Size = new System.Drawing.Size(219, 44);
+            this.ObtmarksUD.Size = new System.Drawing.Size(219, 49);
             this.ObtmarksUD.TabIndex = 20;
             // 
             // EvaluateBtn
@@ -182,11 +182,13 @@
             this.EvaluateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.EvaluateBtn.ForeColor = System.Drawing.Color.White;
             this.EvaluateBtn.HoverState.Parent = this.EvaluateBtn;
-            this.EvaluateBtn.Location = new System.Drawing.Point(229, 304);
+            this.EvaluateBtn.Image = ((System.Drawing.Image)(resources.GetObject("EvaluateBtn.Image")));
+            this.EvaluateBtn.ImageSize = new System.Drawing.Size(40, 40);
+            this.EvaluateBtn.Location = new System.Drawing.Point(229, 334);
             this.EvaluateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.EvaluateBtn.Name = "EvaluateBtn";
             this.EvaluateBtn.ShadowDecoration.Parent = this.EvaluateBtn;
-            this.EvaluateBtn.Size = new System.Drawing.Size(218, 42);
+            this.EvaluateBtn.Size = new System.Drawing.Size(218, 47);
             this.EvaluateBtn.TabIndex = 12;
             this.EvaluateBtn.Text = "Evaluate Group";
             this.EvaluateBtn.Click += new System.EventHandler(this.EvaluateBtn_Click);

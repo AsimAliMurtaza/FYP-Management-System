@@ -61,7 +61,7 @@ namespace FYPManagement
             {
                 SqlCommand cmd = new SqlCommand("SELECT Student.RegistrationNo, Person.FirstName, Person.LastName, Person.Contact, Person.Email, Person.DateOfBirth, Person.Gender " +
                                 "FROM Student " +
-                                "INNER JOIN Person ON Student.Id = Person.Id " +
+                                "LEFT JOIN Person ON Student.Id = Person.Id " +
                                 "WHERE NOT Person.FirstName LIKE '%-deleted'", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -69,9 +69,9 @@ namespace FYPManagement
 
                 guna2DataGridView1.DataSource = dt;
         }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                throw;
             }
         }
 
@@ -145,11 +145,11 @@ namespace FYPManagement
 
         private void FNameTxt_TextChanged(object sender, EventArgs e)
         {
-            if (!Utilities.IsName(FNameTxt.Text))
+            /*if (!Utilities.IsName(FNameTxt.Text))
             {
                 MessageBox.Show("Invalid First Name");
                 return;
-            }
+            }*/
         }
 
         private void LNametxt_TextChanged(object sender, EventArgs e)

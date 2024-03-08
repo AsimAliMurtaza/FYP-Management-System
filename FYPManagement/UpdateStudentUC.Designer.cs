@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateStudentUC));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.RegNoTxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,26 +52,23 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(20)))), ((int)(((byte)(27)))));
-            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.RegNoTxt, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.FNameTxt, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.EmailTxt, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.LNametxt, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.ContactTxt, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.DOB, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.GenderCB, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.RegNoTxt, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.FNameTxt, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.EmailTxt, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.LNametxt, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ContactTxt, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.DOB, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.GenderCB, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.UpdateBtn, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 6);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -91,11 +89,11 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(4, 375);
+            this.guna2Button1.Location = new System.Drawing.Point(4, 364);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(93, 46);
+            this.guna2Button1.Size = new System.Drawing.Size(195, 57);
             this.guna2Button1.TabIndex = 19;
             this.guna2Button1.Text = "Back";
             this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
@@ -115,7 +113,7 @@
             this.RegNoTxt.FocusedState.Parent = this.RegNoTxt;
             this.RegNoTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.RegNoTxt.HoverState.Parent = this.RegNoTxt;
-            this.RegNoTxt.Location = new System.Drawing.Point(106, 58);
+            this.RegNoTxt.Location = new System.Drawing.Point(5, 65);
             this.RegNoTxt.Margin = new System.Windows.Forms.Padding(5);
             this.RegNoTxt.Name = "RegNoTxt";
             this.RegNoTxt.PasswordChar = '\0';
@@ -123,7 +121,7 @@
             this.RegNoTxt.PlaceholderText = "Registeration Number";
             this.RegNoTxt.SelectedText = "";
             this.RegNoTxt.ShadowDecoration.Parent = this.RegNoTxt;
-            this.RegNoTxt.Size = new System.Drawing.Size(91, 43);
+            this.RegNoTxt.Size = new System.Drawing.Size(193, 50);
             this.RegNoTxt.TabIndex = 4;
             // 
             // FNameTxt
@@ -141,14 +139,14 @@
             this.FNameTxt.FocusedState.Parent = this.FNameTxt;
             this.FNameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.FNameTxt.HoverState.Parent = this.FNameTxt;
-            this.FNameTxt.Location = new System.Drawing.Point(207, 58);
+            this.FNameTxt.Location = new System.Drawing.Point(208, 65);
             this.FNameTxt.Margin = new System.Windows.Forms.Padding(5);
             this.FNameTxt.Name = "FNameTxt";
             this.FNameTxt.PasswordChar = '\0';
             this.FNameTxt.PlaceholderText = "First Name";
             this.FNameTxt.SelectedText = "";
             this.FNameTxt.ShadowDecoration.Parent = this.FNameTxt;
-            this.FNameTxt.Size = new System.Drawing.Size(91, 43);
+            this.FNameTxt.Size = new System.Drawing.Size(193, 50);
             this.FNameTxt.TabIndex = 5;
             this.FNameTxt.TextChanged += new System.EventHandler(this.FNameTxt_TextChanged);
             // 
@@ -167,14 +165,14 @@
             this.EmailTxt.FocusedState.Parent = this.EmailTxt;
             this.EmailTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.EmailTxt.HoverState.Parent = this.EmailTxt;
-            this.EmailTxt.Location = new System.Drawing.Point(207, 111);
+            this.EmailTxt.Location = new System.Drawing.Point(208, 125);
             this.EmailTxt.Margin = new System.Windows.Forms.Padding(5);
             this.EmailTxt.Name = "EmailTxt";
             this.EmailTxt.PasswordChar = '\0';
             this.EmailTxt.PlaceholderText = "Email";
             this.EmailTxt.SelectedText = "";
             this.EmailTxt.ShadowDecoration.Parent = this.EmailTxt;
-            this.EmailTxt.Size = new System.Drawing.Size(91, 43);
+            this.EmailTxt.Size = new System.Drawing.Size(193, 50);
             this.EmailTxt.TabIndex = 7;
             // 
             // LNametxt
@@ -192,14 +190,14 @@
             this.LNametxt.FocusedState.Parent = this.LNametxt;
             this.LNametxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LNametxt.HoverState.Parent = this.LNametxt;
-            this.LNametxt.Location = new System.Drawing.Point(106, 111);
+            this.LNametxt.Location = new System.Drawing.Point(5, 125);
             this.LNametxt.Margin = new System.Windows.Forms.Padding(5);
             this.LNametxt.Name = "LNametxt";
             this.LNametxt.PasswordChar = '\0';
             this.LNametxt.PlaceholderText = "Last Name";
             this.LNametxt.SelectedText = "";
             this.LNametxt.ShadowDecoration.Parent = this.LNametxt;
-            this.LNametxt.Size = new System.Drawing.Size(91, 43);
+            this.LNametxt.Size = new System.Drawing.Size(193, 50);
             this.LNametxt.TabIndex = 6;
             this.LNametxt.TextChanged += new System.EventHandler(this.LNametxt_TextChanged);
             // 
@@ -218,14 +216,14 @@
             this.ContactTxt.FocusedState.Parent = this.ContactTxt;
             this.ContactTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ContactTxt.HoverState.Parent = this.ContactTxt;
-            this.ContactTxt.Location = new System.Drawing.Point(106, 164);
+            this.ContactTxt.Location = new System.Drawing.Point(5, 185);
             this.ContactTxt.Margin = new System.Windows.Forms.Padding(5);
             this.ContactTxt.Name = "ContactTxt";
             this.ContactTxt.PasswordChar = '\0';
             this.ContactTxt.PlaceholderText = "Contact";
             this.ContactTxt.SelectedText = "";
             this.ContactTxt.ShadowDecoration.Parent = this.ContactTxt;
-            this.ContactTxt.Size = new System.Drawing.Size(91, 43);
+            this.ContactTxt.Size = new System.Drawing.Size(193, 50);
             this.ContactTxt.TabIndex = 0;
             // 
             // DOB
@@ -235,13 +233,13 @@
             this.DOB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DOB.HoverState.Parent = this.DOB;
-            this.DOB.Location = new System.Drawing.Point(206, 163);
+            this.DOB.Location = new System.Drawing.Point(207, 184);
             this.DOB.Margin = new System.Windows.Forms.Padding(4);
             this.DOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DOB.Name = "DOB";
             this.DOB.ShadowDecoration.Parent = this.DOB;
-            this.DOB.Size = new System.Drawing.Size(93, 45);
+            this.DOB.Size = new System.Drawing.Size(195, 52);
             this.DOB.TabIndex = 8;
             this.DOB.Value = new System.DateTime(2024, 3, 2, 12, 56, 47, 890);
             // 
@@ -252,10 +250,10 @@
             this.GenderCB.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.GenderCB.Location = new System.Drawing.Point(105, 216);
+            this.GenderCB.Location = new System.Drawing.Point(4, 244);
             this.GenderCB.Margin = new System.Windows.Forms.Padding(4);
             this.GenderCB.Name = "GenderCB";
-            this.GenderCB.Size = new System.Drawing.Size(93, 24);
+            this.GenderCB.Size = new System.Drawing.Size(195, 24);
             this.GenderCB.TabIndex = 9;
             // 
             // UpdateBtn
@@ -268,11 +266,13 @@
             this.UpdateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.UpdateBtn.ForeColor = System.Drawing.Color.White;
             this.UpdateBtn.HoverState.Parent = this.UpdateBtn;
-            this.UpdateBtn.Location = new System.Drawing.Point(206, 269);
+            this.UpdateBtn.Image = ((System.Drawing.Image)(resources.GetObject("UpdateBtn.Image")));
+            this.UpdateBtn.ImageSize = new System.Drawing.Size(25, 25);
+            this.UpdateBtn.Location = new System.Drawing.Point(207, 304);
             this.UpdateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.UpdateBtn.Name = "UpdateBtn";
             this.UpdateBtn.ShadowDecoration.Parent = this.UpdateBtn;
-            this.UpdateBtn.Size = new System.Drawing.Size(93, 45);
+            this.UpdateBtn.Size = new System.Drawing.Size(195, 52);
             this.UpdateBtn.TabIndex = 12;
             this.UpdateBtn.Text = "Update Student";
             this.UpdateBtn.Click += new System.EventHandler(this.ButtonUpdate_Click);
@@ -293,31 +293,31 @@
             // guna2DataGridView1
             // 
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridView1.ColumnHeadersHeight = 20;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));

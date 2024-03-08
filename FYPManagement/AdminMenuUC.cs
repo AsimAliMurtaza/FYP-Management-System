@@ -43,5 +43,10 @@ namespace FYPManagement
         {
             form.addManageEvaluationsControl();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            form.manageReportsControl();
+        }
     }
 }

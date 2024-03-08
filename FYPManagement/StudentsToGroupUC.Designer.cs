@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentsToGroupUC));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -129,6 +130,7 @@
             this.addToGrpBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addToGrpBtn.ForeColor = System.Drawing.Color.White;
             this.addToGrpBtn.HoverState.Parent = this.addToGrpBtn;
+            this.addToGrpBtn.Image = ((System.Drawing.Image)(resources.GetObject("addToGrpBtn.Image")));
             this.addToGrpBtn.Location = new System.Drawing.Point(169, 166);
             this.addToGrpBtn.Margin = new System.Windows.Forms.Padding(4);
             this.addToGrpBtn.Name = "addToGrpBtn";
@@ -148,6 +150,7 @@
             this.RemStdBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.RemStdBtn.ForeColor = System.Drawing.Color.White;
             this.RemStdBtn.HoverState.Parent = this.RemStdBtn;
+            this.RemStdBtn.Image = ((System.Drawing.Image)(resources.GetObject("RemStdBtn.Image")));
             this.RemStdBtn.Location = new System.Drawing.Point(169, 328);
             this.RemStdBtn.Margin = new System.Windows.Forms.Padding(4);
             this.RemStdBtn.Name = "RemStdBtn";

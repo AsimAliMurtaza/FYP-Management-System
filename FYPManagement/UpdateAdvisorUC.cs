@@ -27,6 +27,7 @@ namespace FYPManagement
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
+            
             Advisor advisor = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedValue.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedValue.ToString()));
             if (Utilities.IsName(advisor.FirstName) && Utilities.IsName(advisor.LastName) && Utilities.IsEmail(advisor.Email) && Utilities.IsPhone(advisor.Contact) && Utilities.IsNumeric(advisor.Salary))
             {
@@ -48,12 +49,12 @@ namespace FYPManagement
                 {
                     con.Open();
                 }
-
+                DataGridViewRow selectedRow = guna2DataGridView1.SelectedRows[0];
                 SqlCommand cmdd = new SqlCommand("SELECT Id FROM Person WHERE FirstName = @FirstName AND LastName = @LastName AND Contact = @Contact AND Email = @Email", con); // Pass the connection object
-                cmdd.Parameters.AddWithValue("@FirstName", advisor.FirstName);
-                cmdd.Parameters.AddWithValue("@LastName", advisor.LastName);
-                cmdd.Parameters.AddWithValue("@Contact", advisor.Contact);
-                cmdd.Parameters.AddWithValue("@Email", advisor.Email);
+                cmdd.Parameters.AddWithValue("@FirstName", selectedRow.Cells["FirstName"].Value.ToString());
+                cmdd.Parameters.AddWithValue("@LastName", selectedRow.Cells["LastName"].Value.ToString());
+                cmdd.Parameters.AddWithValue("@Contact", selectedRow.Cells["Contact"].Value.ToString());
+                cmdd.Parameters.AddWithValue("@Email", selectedRow.Cells["Email"].Value.ToString());
                 int id = (int)cmdd.ExecuteScalar();
                 if (id > 0)
                 {
@@ -171,6 +172,8 @@ namespace FYPManagement
                 GenderCB.SelectedItem = selectedRow.Cells["Gender"].Value.ToString();
                 designationsCB.SelectedItem = selectedRow.Cells["Designation"].Value.ToString();
                 SalaryTxt.Text = selectedRow.Cells["Salary"].Value.ToString();
+                //oldData = new Advisor(FNameTxt.Text, LNameTxt.Text, ContactTxt.Text, EmailTxt.Text, designationsCB.SelectedItem.ToString(), SalaryTxt.Text, int.Parse(GenderCB.SelectedItem.ToString()));
+
             }
         }
 
@@ -204,6 +207,17 @@ namespace FYPManagement
                 MessageBox.Show("Invalid Salary");
                 return;
             }
+        }
+
+        private void UpdateAdvisorUC_VisibleChanged(object sender, EventArgs e)
+        {
+            DisplayAdvisors();
+        }
+
+
+        private void UpdateAdvisorUC_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

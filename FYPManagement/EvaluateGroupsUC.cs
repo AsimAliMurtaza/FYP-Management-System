@@ -39,14 +39,14 @@ namespace FYPManagement
             }
             SqlCommand cmd = new SqlCommand("SELECT Id, Created_On FROM [Group]", con);
             SqlDataReader reader = cmd.ExecuteReader();
-            Dictionary<string, int> groups = new Dictionary<string, int>();
+            Dictionary<int, string> groups = new Dictionary<int, string>();
             while (reader.Read())
             {
-                groups.Add(reader.GetDateTime(1).ToString(), reader.GetInt32(0));
+                groups.Add(reader.GetInt32(0), reader.GetDateTime(1).ToString());
             }
             groupIDCB.DataSource = new BindingSource(groups, null);
-            groupIDCB.DisplayMember = "Value";
-            groupIDCB.ValueMember = "Key";
+            groupIDCB.DisplayMember = "Key";
+            groupIDCB.ValueMember = "Value";
             reader.Close();
         }
         void setEvalComboBox()
@@ -79,7 +79,7 @@ namespace FYPManagement
             try
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO GroupEvaluation (GroupId, EvaluationId, ObtainedMarks, EvaluationDate) VALUES (@groupId, @evalId, @obtainedMarks, @evalDate)", con);
-                cmd.Parameters.AddWithValue("@groupId", ((KeyValuePair<string, int>)groupIDCB.SelectedItem).Value);
+                cmd.Parameters.AddWithValue("@groupId", ((KeyValuePair<int, string>)groupIDCB.SelectedItem).Key);
                 cmd.Parameters.AddWithValue("@evalId", ((KeyValuePair<int, string>)EvalIDCB.SelectedItem).Key);
                 cmd.Parameters.AddWithValue("@obtainedMarks", ObtmarksUD.Value);
                 cmd.Parameters.AddWithValue("@evalDate", evalDate.Value);
