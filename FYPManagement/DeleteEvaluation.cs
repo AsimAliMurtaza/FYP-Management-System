@@ -74,5 +74,10 @@ namespace FYPManagement
         {
             form.addManageEvaluationsControl();
         }
+
+        private void DeleteEvaluation_VisibleChanged(object sender, EventArgs e)
+        {
+            displayEvaluations();
+        }
     }
 }

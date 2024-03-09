@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageReports));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.rep4Btn = new Guna.UI2.WinForms.Guna2Button();
-            this.rep3Btn = new Guna.UI2.WinForms.Guna2Button();
-            this.rep2Btn = new Guna.UI2.WinForms.Guna2Button();
-            this.rep1Btn = new Guna.UI2.WinForms.Guna2Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.backBtn = new Guna.UI2.WinForms.Guna2Button();
             this.rep5Btn = new Guna.UI2.WinForms.Guna2Button();
+            this.rep3Btn = new Guna.UI2.WinForms.Guna2Button();
+            this.rep1Btn = new Guna.UI2.WinForms.Guna2Button();
+            this.backBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.rep4Btn = new Guna.UI2.WinForms.Guna2Button();
+            this.rep2Btn = new Guna.UI2.WinForms.Guna2Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -85,25 +85,26 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(146, 401);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // rep4Btn
+            // rep5Btn
             // 
-            this.rep4Btn.BorderRadius = 20;
-            this.rep4Btn.CheckedState.Parent = this.rep4Btn;
-            this.rep4Btn.CustomImages.Parent = this.rep4Btn;
-            this.rep4Btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rep4Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.rep4Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.rep4Btn.ForeColor = System.Drawing.Color.White;
-            this.rep4Btn.HoverState.Parent = this.rep4Btn;
-            this.rep4Btn.Image = ((System.Drawing.Image)(resources.GetObject("rep4Btn.Image")));
-            this.rep4Btn.ImageSize = new System.Drawing.Size(30, 30);
-            this.rep4Btn.Location = new System.Drawing.Point(4, 202);
-            this.rep4Btn.Margin = new System.Windows.Forms.Padding(4);
-            this.rep4Btn.Name = "rep4Btn";
-            this.rep4Btn.ShadowDecoration.Parent = this.rep4Btn;
-            this.rep4Btn.Size = new System.Drawing.Size(138, 58);
-            this.rep4Btn.TabIndex = 4;
-            this.rep4Btn.Text = "REPORT4";
+            this.rep5Btn.BorderRadius = 20;
+            this.rep5Btn.CheckedState.Parent = this.rep5Btn;
+            this.rep5Btn.CustomImages.Parent = this.rep5Btn;
+            this.rep5Btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rep5Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.rep5Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.rep5Btn.ForeColor = System.Drawing.Color.White;
+            this.rep5Btn.HoverState.Parent = this.rep5Btn;
+            this.rep5Btn.Image = ((System.Drawing.Image)(resources.GetObject("rep5Btn.Image")));
+            this.rep5Btn.ImageSize = new System.Drawing.Size(30, 30);
+            this.rep5Btn.Location = new System.Drawing.Point(4, 268);
+            this.rep5Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.rep5Btn.Name = "rep5Btn";
+            this.rep5Btn.ShadowDecoration.Parent = this.rep5Btn;
+            this.rep5Btn.Size = new System.Drawing.Size(138, 58);
+            this.rep5Btn.TabIndex = 5;
+            this.rep5Btn.Text = "REPORT5";
+            this.rep5Btn.Click += new System.EventHandler(this.rep5Btn_Click_1);
             // 
             // rep3Btn
             // 
@@ -126,27 +127,6 @@
             this.rep3Btn.Text = "REPORT3";
             this.rep3Btn.Click += new System.EventHandler(this.rep3Btn_Click);
             // 
-            // rep2Btn
-            // 
-            this.rep2Btn.BorderRadius = 20;
-            this.rep2Btn.CheckedState.Parent = this.rep2Btn;
-            this.rep2Btn.CustomImages.Parent = this.rep2Btn;
-            this.rep2Btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rep2Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.rep2Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.rep2Btn.ForeColor = System.Drawing.Color.White;
-            this.rep2Btn.HoverState.Parent = this.rep2Btn;
-            this.rep2Btn.Image = ((System.Drawing.Image)(resources.GetObject("rep2Btn.Image")));
-            this.rep2Btn.ImageSize = new System.Drawing.Size(30, 30);
-            this.rep2Btn.Location = new System.Drawing.Point(4, 70);
-            this.rep2Btn.Margin = new System.Windows.Forms.Padding(4);
-            this.rep2Btn.Name = "rep2Btn";
-            this.rep2Btn.ShadowDecoration.Parent = this.rep2Btn;
-            this.rep2Btn.Size = new System.Drawing.Size(138, 58);
-            this.rep2Btn.TabIndex = 2;
-            this.rep2Btn.Text = "REPORT2";
-            this.rep2Btn.Click += new System.EventHandler(this.rep2Btn_Click);
-            // 
             // rep1Btn
             // 
             this.rep1Btn.BorderRadius = 20;
@@ -168,18 +148,6 @@
             this.rep1Btn.Text = "REPORT1";
             this.rep1Btn.Click += new System.EventHandler(this.viewRep1_Click);
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(155, 52);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(695, 401);
-            this.tableLayoutPanel2.TabIndex = 2;
-            // 
             // backBtn
             // 
             this.backBtn.BorderRadius = 10;
@@ -199,25 +167,59 @@
             this.backBtn.Text = "Back";
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
-            // rep5Btn
+            // rep4Btn
             // 
-            this.rep5Btn.BorderRadius = 20;
-            this.rep5Btn.CheckedState.Parent = this.rep5Btn;
-            this.rep5Btn.CustomImages.Parent = this.rep5Btn;
-            this.rep5Btn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rep5Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.rep5Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.rep5Btn.ForeColor = System.Drawing.Color.White;
-            this.rep5Btn.HoverState.Parent = this.rep5Btn;
-            this.rep5Btn.Image = ((System.Drawing.Image)(resources.GetObject("rep5Btn.Image")));
-            this.rep5Btn.ImageSize = new System.Drawing.Size(30, 30);
-            this.rep5Btn.Location = new System.Drawing.Point(4, 268);
-            this.rep5Btn.Margin = new System.Windows.Forms.Padding(4);
-            this.rep5Btn.Name = "rep5Btn";
-            this.rep5Btn.ShadowDecoration.Parent = this.rep5Btn;
-            this.rep5Btn.Size = new System.Drawing.Size(138, 58);
-            this.rep5Btn.TabIndex = 5;
-            this.rep5Btn.Text = "REPORT5";
+            this.rep4Btn.BorderRadius = 20;
+            this.rep4Btn.CheckedState.Parent = this.rep4Btn;
+            this.rep4Btn.CustomImages.Parent = this.rep4Btn;
+            this.rep4Btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rep4Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.rep4Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.rep4Btn.ForeColor = System.Drawing.Color.White;
+            this.rep4Btn.HoverState.Parent = this.rep4Btn;
+            this.rep4Btn.Image = ((System.Drawing.Image)(resources.GetObject("rep4Btn.Image")));
+            this.rep4Btn.ImageSize = new System.Drawing.Size(30, 30);
+            this.rep4Btn.Location = new System.Drawing.Point(4, 202);
+            this.rep4Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.rep4Btn.Name = "rep4Btn";
+            this.rep4Btn.ShadowDecoration.Parent = this.rep4Btn;
+            this.rep4Btn.Size = new System.Drawing.Size(138, 58);
+            this.rep4Btn.TabIndex = 4;
+            this.rep4Btn.Text = "REPORT4";
+            this.rep4Btn.Click += new System.EventHandler(this.rep4Btn_Click);
+            // 
+            // rep2Btn
+            // 
+            this.rep2Btn.BorderRadius = 20;
+            this.rep2Btn.CheckedState.Parent = this.rep2Btn;
+            this.rep2Btn.CustomImages.Parent = this.rep2Btn;
+            this.rep2Btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rep2Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.rep2Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.rep2Btn.ForeColor = System.Drawing.Color.White;
+            this.rep2Btn.HoverState.Parent = this.rep2Btn;
+            this.rep2Btn.Image = ((System.Drawing.Image)(resources.GetObject("rep2Btn.Image")));
+            this.rep2Btn.ImageSize = new System.Drawing.Size(30, 30);
+            this.rep2Btn.Location = new System.Drawing.Point(4, 70);
+            this.rep2Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.rep2Btn.Name = "rep2Btn";
+            this.rep2Btn.ShadowDecoration.Parent = this.rep2Btn;
+            this.rep2Btn.Size = new System.Drawing.Size(138, 58);
+            this.rep2Btn.TabIndex = 2;
+            this.rep2Btn.Text = "REPORT2";
+            this.rep2Btn.Click += new System.EventHandler(this.rep2Btn_Click);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(155, 52);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(695, 401);
+            this.tableLayoutPanel2.TabIndex = 2;
             // 
             // ManageReports
             // 

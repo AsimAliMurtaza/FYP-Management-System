@@ -102,5 +102,10 @@ namespace FYPManagement
         {
             form.addStudentsControl();
         }
+
+        private void DeleteStudent_VisibleChanged(object sender, EventArgs e)
+        {
+            DisplayStudents();
+        }
     }
 }

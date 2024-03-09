@@ -56,7 +56,7 @@ namespace FYPManagement
             {
                 con.Open();
             }
-            SqlCommand cmd = new SqlCommand("SELECT Id, Name FROM [Evaluation]", con);
+            SqlCommand cmd = new SqlCommand("SELECT Id, Name FROM [Evaluation] WHERE Name NOT LIKE '%-deleted'", con);
             SqlDataReader reader = cmd.ExecuteReader();
             Dictionary<int, string> groups = new Dictionary<int, string>();
             while (reader.Read())
@@ -111,6 +111,11 @@ namespace FYPManagement
         private void backBtn_Click(object sender, EventArgs e)
         {
             form.addManageEvaluationsControl();
+        }
+
+        private void EvaluateGroupsUC_VisibleChanged(object sender, EventArgs e)
+        {
+            displayEvaluatedGroups();
         }
     }
 }

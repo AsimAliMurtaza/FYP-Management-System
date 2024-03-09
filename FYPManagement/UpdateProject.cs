@@ -113,5 +113,10 @@ namespace FYPManagement
                 return;
             }
         }
+
+        private void UpdateProject_VisibleChanged(object sender, EventArgs e)
+        {
+            displayProjects();
+        }
     }
 }

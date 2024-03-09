@@ -85,7 +85,6 @@ D:\DB\FYP-Management-System\FYPManagement\bin\Debug\pt\Microsoft.ReportViewer.Wi
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.LoginForm.resources
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\BouncyCastle.Crypto.dll
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\itext.barcodes.dll
 D:\DB\FYP-Management-System\FYPManagement\bin\Debug\itext.bouncy-castle-connector.dll
@@ -149,3 +148,4 @@ D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.viewReport2.re
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.viewReport3.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.viewReport4.resources
 D:\DB\FYP-Management-System\FYPManagement\obj\Debug\FYPManagement.viewReport5.resources
+D:\DB\FYP-Management-System\FYPManagement\bin\Debug\itextsharp.xmlworker.dll

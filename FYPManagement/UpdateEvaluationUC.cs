@@ -110,5 +110,10 @@ namespace FYPManagement
                 return;
             }
         }
+
+        private void UpdateEvaluationUC_VisibleChanged(object sender, EventArgs e)
+        {
+            displayEvaluations();
+        }
     }
 }

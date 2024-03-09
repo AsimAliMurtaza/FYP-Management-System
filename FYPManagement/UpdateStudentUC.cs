@@ -160,5 +160,10 @@ namespace FYPManagement
                 return;
             }
         }
+
+        private void UpdateStudentUC_VisibleChanged(object sender, EventArgs e)
+        {
+            DisplayStudents();
+        }
     }
 }

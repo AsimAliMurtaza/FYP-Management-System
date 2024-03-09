@@ -34,12 +34,8 @@ namespace FYPManagement
             da.Fill(dt);
             guna2DataGridView1.DataSource = dt;
         }
-        private void evaluationReport_VisibleChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void rep1Btn_Click(object sender, EventArgs e)
+        private void rep2Btn_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "PDF files (.pdf)|.pdf";
@@ -124,12 +120,8 @@ namespace FYPManagement
             }
         }
 
-        private void viewRep1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void viewReport1_VisibleChanged(object sender, EventArgs e)
+        private void viewReport2_VisibleChanged(object sender, EventArgs e)
         {
             if (Visible)
                 loadData();

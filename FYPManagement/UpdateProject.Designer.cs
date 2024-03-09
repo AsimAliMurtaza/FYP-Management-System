@@ -37,10 +37,10 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.Descriptiontxt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -166,6 +166,32 @@
             this.Descriptiontxt.Size = new System.Drawing.Size(195, 40);
             this.Descriptiontxt.TabIndex = 6;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.label1.Location = new System.Drawing.Point(3, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 50);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Title";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.label2.Location = new System.Drawing.Point(3, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 50);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Description";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -242,32 +268,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.label1.Location = new System.Drawing.Point(3, 100);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 50);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Title";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.label2.Location = new System.Drawing.Point(3, 200);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 50);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Description";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // UpdateProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -276,6 +276,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UpdateProject";
             this.Size = new System.Drawing.Size(834, 456);
+            this.VisibleChanged += new System.EventHandler(this.UpdateProject_VisibleChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

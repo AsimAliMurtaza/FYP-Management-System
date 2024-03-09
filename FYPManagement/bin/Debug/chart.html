@@ -1,0 +1,29 @@
+
+                    <canvas id='myChart' width='400' height='300'></canvas>
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js'></script>
+                    <script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
+                        var myChart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                datasets: [{
+                                    label: 'Evaluations',
+                                    data: [{ x: '04/03/2024 9:56:01 pm', y: 1 },{ x: '04/03/2024 9:56:01 pm', y: 1 },]
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    x: {
+                                        type: 'time',
+                                        time: {
+                                            unit: 'day'
+                                        }
+                                    },
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+                

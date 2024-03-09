@@ -50,6 +50,8 @@
             this.guna2VSeparator8 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator9 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator10 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marksUD)).BeginInit();
@@ -208,6 +210,8 @@
             this.tableLayoutPanel1.Controls.Add(this.guna2VSeparator8, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.guna2VSeparator9, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.guna2VSeparator10, 0, 9);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(200, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -396,6 +400,32 @@
             this.guna2VSeparator10.Size = new System.Drawing.Size(132, 46);
             this.guna2VSeparator10.TabIndex = 30;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.label2.Location = new System.Drawing.Point(141, 156);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(278, 52);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Total Marks";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.label1.Location = new System.Drawing.Point(141, 260);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(278, 52);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Weightage";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ManageEvaluationsUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -406,6 +436,7 @@
             this.Size = new System.Drawing.Size(907, 520);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marksUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).EndInit();
             this.ResumeLayout(false);
@@ -435,5 +466,7 @@
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator8;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator9;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator10;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

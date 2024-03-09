@@ -49,8 +49,8 @@
             this.guna2VSeparator4 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator5 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator6 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2VSeparator7 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator8 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.guna2VSeparator7 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -426,14 +426,6 @@
             this.guna2VSeparator6.Size = new System.Drawing.Size(62, 50);
             this.guna2VSeparator6.TabIndex = 18;
             // 
-            // guna2VSeparator7
-            // 
-            this.guna2VSeparator7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2VSeparator7.Location = new System.Drawing.Point(3, 395);
-            this.guna2VSeparator7.Name = "guna2VSeparator7";
-            this.guna2VSeparator7.Size = new System.Drawing.Size(62, 51);
-            this.guna2VSeparator7.TabIndex = 19;
-            // 
             // guna2VSeparator8
             // 
             this.guna2VSeparator8.Dock = System.Windows.Forms.DockStyle.Left;
@@ -441,6 +433,14 @@
             this.guna2VSeparator8.Name = "guna2VSeparator8";
             this.guna2VSeparator8.Size = new System.Drawing.Size(62, 50);
             this.guna2VSeparator8.TabIndex = 20;
+            // 
+            // guna2VSeparator7
+            // 
+            this.guna2VSeparator7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2VSeparator7.Location = new System.Drawing.Point(3, 395);
+            this.guna2VSeparator7.Name = "guna2VSeparator7";
+            this.guna2VSeparator7.Size = new System.Drawing.Size(62, 51);
+            this.guna2VSeparator7.TabIndex = 19;
             // 
             // ManageStudentsUC
             // 

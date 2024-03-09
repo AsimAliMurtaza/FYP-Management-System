@@ -38,7 +38,7 @@ namespace FYPManagement
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Project", con);
+                SqlCommand cmd = new SqlCommand("SELECT Id, Title, Description FROM Project WHERE Title NOT LIKE '%-deleted'", con);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -145,6 +145,13 @@ namespace FYPManagement
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void AssignProjects_VisibleChanged(object sender, EventArgs e)
+        {
+            displayGroups();
+            displayProjects();
+            displayAssignedProjects();
         }
     }
 }

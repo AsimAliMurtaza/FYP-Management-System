@@ -29,22 +29,28 @@ namespace FYPManagement
         {
             var con = Configuration.getInstance().getConnection();
             SqlCommand cmd = new SqlCommand(@"SELECT 
-    AVG(CAST(ge.ObtainedMarks AS FLOAT)) AS AverageMarks
-FROM 
-    GroupEvaluation ge
-JOIN 
-    Evaluation e ON ge.EvaluationId = e.Id;
-", con);
+                                                S.RegistrationNo,
+                                                CONCAT(P.FirstName, ' ', P.LastName) AS FullName,
+                                                G.Id AS GroupID,
+                                                E.Name AS EvaluationName,
+                                                GE.ObtainedMarks AS GroupEvaluationMarks,
+                                                E.TotalMarks AS TotalEvaluationMarks
+                                            FROM 
+                                                Student S
+                                            INNER JOIN 
+                                                Person P ON S.Id = P.Id
+                                            INNER JOIN 
+                                                GroupStudent GS ON S.Id = GS.StudentId
+                                            INNER JOIN 
+                                                [Group] G ON GS.GroupId = G.Id
+                                            INNER JOIN 
+                                                GroupEvaluation GE ON G.Id = GE.GroupId
+                                            INNER JOIN 
+                                                Evaluation E ON GE.EvaluationId = E.Id", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
             guna2DataGridView1.DataSource = dt;
-        }
-
-        private void viewReport3_VisibleChanged(object sender, EventArgs e)
-        {
-            if (Visible)
-                loadData();
         }
 
         private void rep3Btn_Click(object sender, EventArgs e)
@@ -95,27 +101,31 @@ JOIN
 
                 // Add a spacer line between header and data table
                 document.Add(new Paragraph(" "));
-                // Add the evaluation data table to the PDF document
-                PdfPTable pdfTable = new PdfPTable(guna2DataGridView1.Columns.Count);
+
+                // Add the data table
+                PdfPTable pdfTable = new PdfPTable(guna2DataGridView1.ColumnCount);
                 pdfTable.DefaultCell.Padding = 3;
                 pdfTable.WidthPercentage = 100;
                 pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;
 
-                // Add table headers
-                foreach (DataColumn column in guna2DataGridView1.Columns)
+                // Data cell styles
+                foreach (DataGridViewColumn column in guna2DataGridView1.Columns)
                 {
-                    PdfPCell headerCell = new PdfPCell(new Phrase(column.ColumnName));
-                    headerCell.BackgroundColor = new BaseColor(150, 150, 150);
-                    headerCell.Padding = 5f;
-                    pdfTable.AddCell(headerCell);
+                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                    cell.BackgroundColor = new BaseColor(150, 150, 150); // Set background color
+                    cell.Padding = 5f; // Add padding
+                    pdfTable.AddCell(cell);
                 }
 
-                // Add data rows
-                foreach (DataRow row in guna2DataGridView1.Rows)
+                foreach (DataGridViewRow row in guna2DataGridView1.Rows)
                 {
-                    foreach (object cellValue in row.ItemArray)
+                    foreach (DataGridViewCell cell in row.Cells)
                     {
-                        PdfPCell dataCell = new PdfPCell(new Phrase(cellValue != null ? cellValue.ToString() : ""));
+                        // Check for null before accessing the Value property
+                        object cellValue = cell.Value;
+                        string cellText = cellValue != null ? cellValue.ToString() : "";
+
+                        PdfPCell dataCell = new PdfPCell(new Phrase(cellText));
                         dataCell.Padding = 5f;
                         pdfTable.AddCell(dataCell);
                     }
@@ -124,9 +134,21 @@ JOIN
                 document.Add(pdfTable);
                 document.Close();
 
-                Console.WriteLine("PDF file generated");
-
+                MessageBox.Show("PDF file has been created!");
             }
+        }
+
+
+        private void viewReport3_VisibleChanged(object sender, EventArgs e)
+        {
+            if (Visible)
+                loadData();
+        }
+
+        private void viewReport3_VisibleChanged_1(object sender, EventArgs e)
+        {
+            if (Visible)
+                loadData();
         }
     }
 }

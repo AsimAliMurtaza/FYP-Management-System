@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.RegNoTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.FNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.EmailTxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -42,6 +41,7 @@
             this.DOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.GenderCB = new System.Windows.Forms.ComboBox();
             this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
@@ -78,25 +78,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(406, 425);
             this.tableLayoutPanel1.TabIndex = 4;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(41)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(4, 364);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(195, 57);
-            this.guna2Button1.TabIndex = 19;
-            this.guna2Button1.Text = "Back";
-            this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // RegNoTxt
             // 
@@ -277,6 +258,25 @@
             this.UpdateBtn.Text = "Update Student";
             this.UpdateBtn.Click += new System.EventHandler(this.ButtonUpdate_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(54)))), ((int)(((byte)(41)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(4, 364);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(195, 57);
+            this.guna2Button1.TabIndex = 19;
+            this.guna2Button1.Text = "Back";
+            this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -362,6 +362,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UpdateStudentUC";
             this.Size = new System.Drawing.Size(787, 425);
+            this.VisibleChanged += new System.EventHandler(this.UpdateStudentUC_VisibleChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();

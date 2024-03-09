@@ -168,6 +168,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "DeleteAdvisor";
             this.Size = new System.Drawing.Size(795, 418);
+            this.VisibleChanged += new System.EventHandler(this.DeleteAdvisor_VisibleChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);

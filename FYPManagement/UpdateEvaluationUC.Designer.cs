@@ -38,10 +38,10 @@
             this.evalNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.weightageUD = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.UpdateBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marksUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weightageUD)).BeginInit();
@@ -186,6 +186,32 @@
             this.UpdateBtn.Text = "Update Evaluation";
             this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.label1.Location = new System.Drawing.Point(3, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 55);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Total Marks";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.label2.Location = new System.Drawing.Point(3, 275);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 55);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Total Weightage";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
@@ -262,32 +288,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.label1.Location = new System.Drawing.Point(3, 165);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 55);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Total Marks";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.label2.Location = new System.Drawing.Point(3, 275);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 55);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Total Weightage";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // UpdateEvaluationUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,6 +296,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UpdateEvaluationUC";
             this.Size = new System.Drawing.Size(764, 495);
+            this.VisibleChanged += new System.EventHandler(this.UpdateEvaluationUC_VisibleChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.marksUD)).EndInit();

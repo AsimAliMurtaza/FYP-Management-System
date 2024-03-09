@@ -80,5 +80,10 @@ namespace FYPManagement
         {
             softDeleteProject();
         }
+
+        private void DeleteProject_VisibleChanged(object sender, EventArgs e)
+        {
+            displayProjects();
+        }
     }
 }

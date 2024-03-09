@@ -92,5 +92,10 @@ namespace FYPManagement
         {
             form.addAdvisorsControl();
         }
+
+        private void DeleteAdvisor_VisibleChanged(object sender, EventArgs e)
+        {
+            DisplayAdvisors();
+        }
     }
 }

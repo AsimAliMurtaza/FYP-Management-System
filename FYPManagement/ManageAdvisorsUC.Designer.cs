@@ -35,6 +35,7 @@
             this.delBtn = new Guna.UI2.WinForms.Guna2Button();
             this.BackBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.FNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.LNameTxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.ContactTxt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,7 +46,6 @@
             this.addAdvBtn = new Guna.UI2.WinForms.Guna2Button();
             this.GenderCB = new System.Windows.Forms.ComboBox();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator4 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2VSeparator5 = new Guna.UI2.WinForms.Guna2VSeparator();
@@ -202,6 +202,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(822, 519);
             this.tableLayoutPanel1.TabIndex = 3;
+            // 
+            // guna2VSeparator2
+            // 
+            this.guna2VSeparator2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2VSeparator2.Location = new System.Drawing.Point(3, 3);
+            this.guna2VSeparator2.Name = "guna2VSeparator2";
+            this.guna2VSeparator2.Size = new System.Drawing.Size(59, 58);
+            this.guna2VSeparator2.TabIndex = 16;
             // 
             // FNameTxt
             // 
@@ -402,14 +410,6 @@
             this.guna2VSeparator1.Name = "guna2VSeparator1";
             this.guna2VSeparator1.Size = new System.Drawing.Size(59, 58);
             this.guna2VSeparator1.TabIndex = 15;
-            // 
-            // guna2VSeparator2
-            // 
-            this.guna2VSeparator2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(3, 3);
-            this.guna2VSeparator2.Name = "guna2VSeparator2";
-            this.guna2VSeparator2.Size = new System.Drawing.Size(59, 58);
-            this.guna2VSeparator2.TabIndex = 16;
             // 
             // guna2VSeparator3
             // 

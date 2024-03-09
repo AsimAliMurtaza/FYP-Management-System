@@ -258,5 +258,10 @@ namespace FYPManagement
                 RemStdBtn.Enabled = false;
             }
         }
+
+        private void StudentsToGroupUC_VisibleChanged(object sender, EventArgs e)
+        {
+            DisplayGroupStudents();
+        }
     }
 }

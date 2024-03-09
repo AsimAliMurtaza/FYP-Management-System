@@ -33,6 +33,7 @@
             this.createGrpBtn = new Guna.UI2.WinForms.Guna2Button();
             this.createdOn = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             this.tableLayoutPanel1.Controls.Add(this.createGrpBtn, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.createdOn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.guna2Button1, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -118,6 +120,19 @@
             this.guna2Button1.Text = "Back";
             this.guna2Button1.Click += new System.EventHandler(this.BackBtn_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.label2.Location = new System.Drawing.Point(392, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(340, 85);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Group Creation Date";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CreateGroupUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -126,6 +141,7 @@
             this.Name = "CreateGroupUC";
             this.Size = new System.Drawing.Size(1052, 571);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -136,5 +152,6 @@
         private Guna.UI2.WinForms.Guna2Button createGrpBtn;
         private Guna.UI2.WinForms.Guna2DateTimePicker createdOn;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label2;
     }
 }
