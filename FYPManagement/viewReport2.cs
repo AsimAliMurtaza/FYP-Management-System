@@ -28,7 +28,7 @@ namespace FYPManagement
         void loadData()
         {
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("SELECT    P.Id AS ProjectId,    P.Title AS ProjectTitle,    AB.AdvisorId AS AdvisorId,    CONCAT(PeAdvisor.FirstName, ' ', PeAdvisor.LastName) AS AdvisorName,    GS.StudentId AS StudentId,    CONCAT(PeStudent.FirstName, ' ', PeStudent.LastName) AS StudentName FROM    Project P LEFT JOIN    ProjectAdvisor AB ON P.Id = AB.ProjectId LEFT JOIN    Person PeAdvisor ON AB.AdvisorId = PeAdvisor.Id LEFT JOIN    GroupProject GP ON P.Id = GP.ProjectId LEFT JOIN    GroupStudent GS ON GP.GroupId = GS.GroupId LEFT JOIN    Person PeStudent ON GS.StudentId = PeStudent.Id ORDER BY    P.Id, AB.AdvisorId, GS.StudentId;", con);
+            SqlCommand cmd = new SqlCommand("SELECT    P.Id AS ProjectId,    P.Title AS ProjectTitle,    AB.AdvisorId AS AdvisorId,    CONCAT(PeAdvisor.FirstName, ' ', PeAdvisor.LastName) AS AdvisorName,    GS.StudentId AS StudentId,    CONCAT(PeStudent.FirstName, ' ', PeStudent.LastName) AS StudentName FROM    Project P LEFT JOIN    ProjectAdvisor AB ON P.Id = AB.ProjectId LEFT JOIN    Person PeAdvisor ON AB.AdvisorId = PeAdvisor.Id LEFT JOIN    GroupProject GP ON P.Id = GP.ProjectId LEFT JOIN    GroupStudent GS ON GP.GroupId = GS.GroupId LEFT JOIN    Person PeStudent ON GS.StudentId = PeStudent.Id WHERE P.Title NOT LIKE '%-deleted' ORDER BY    P.Id, AB.AdvisorId, GS.StudentId ;", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -116,7 +116,7 @@ namespace FYPManagement
                 document.Add(pdfTable);
                 document.Close();
 
-                MessageBox.Show("PDF file has been created!");
+                MessageBox.Show("Report Generated");
             }
         }
 

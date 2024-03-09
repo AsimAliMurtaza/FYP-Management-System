@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.EvaluateBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.rep1Btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -60,8 +60,8 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.49533F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.50467F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 296F));
-            this.tableLayoutPanel2.Controls.Add(this.EvaluateBtn, 1, 0);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 298F));
+            this.tableLayoutPanel2.Controls.Add(this.rep1Btn, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 292);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -71,27 +71,28 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(723, 79);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // EvaluateBtn
+            // rep1Btn
             // 
-            this.EvaluateBtn.BorderRadius = 10;
-            this.EvaluateBtn.CheckedState.Parent = this.EvaluateBtn;
-            this.EvaluateBtn.CustomImages.Parent = this.EvaluateBtn;
-            this.EvaluateBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EvaluateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
-            this.EvaluateBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.EvaluateBtn.ForeColor = System.Drawing.Color.White;
-            this.EvaluateBtn.HoverState.Parent = this.EvaluateBtn;
-            this.EvaluateBtn.Location = new System.Drawing.Point(309, 4);
-            this.EvaluateBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.EvaluateBtn.Name = "EvaluateBtn";
-            this.EvaluateBtn.ShadowDecoration.Parent = this.EvaluateBtn;
-            this.EvaluateBtn.Size = new System.Drawing.Size(113, 40);
-            this.EvaluateBtn.TabIndex = 13;
-            this.EvaluateBtn.Text = "Evaluate Group";
-            this.EvaluateBtn.Click += new System.EventHandler(this.rep1Btn_Click);
+            this.rep1Btn.BorderRadius = 10;
+            this.rep1Btn.CheckedState.Parent = this.rep1Btn;
+            this.rep1Btn.CustomImages.Parent = this.rep1Btn;
+            this.rep1Btn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rep1Btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(192)))), ((int)(((byte)(99)))));
+            this.rep1Btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.rep1Btn.ForeColor = System.Drawing.Color.White;
+            this.rep1Btn.HoverState.Parent = this.rep1Btn;
+            this.rep1Btn.Location = new System.Drawing.Point(307, 4);
+            this.rep1Btn.Margin = new System.Windows.Forms.Padding(4);
+            this.rep1Btn.Name = "rep1Btn";
+            this.rep1Btn.ShadowDecoration.Parent = this.rep1Btn;
+            this.rep1Btn.Size = new System.Drawing.Size(113, 40);
+            this.rep1Btn.TabIndex = 13;
+            this.rep1Btn.Text = "Generate";
+            this.rep1Btn.Click += new System.EventHandler(this.rep1Btn_Click);
             // 
             // guna2DataGridView1
             // 
+            this.guna2DataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -121,6 +122,7 @@
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(3, 3);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
+            this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
@@ -141,7 +143,7 @@
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 20;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -170,6 +172,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2Button EvaluateBtn;
+        private Guna.UI2.WinForms.Guna2Button rep1Btn;
     }
 }

@@ -35,7 +35,7 @@ namespace FYPManagement
         {
             tableLayoutPanel2.Controls.Clear();
             tableLayoutPanel2.Controls.Add(viewReport1);
-            rep1Btn.Dock = DockStyle.Fill;
+            viewReport1.Dock = DockStyle.Fill;
         }
 
         private void rep2Btn_Click(object sender, EventArgs e)

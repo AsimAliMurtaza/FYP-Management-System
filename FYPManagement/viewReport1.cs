@@ -65,7 +65,7 @@ namespace FYPManagement
                 headerCell1.BackgroundColor = new BaseColor(200, 200, 200); // Set background color
                 headerTable.AddCell(headerCell1);
 
-                PdfPCell headerCell2 = new PdfPCell(new Phrase("Advisors Report"));
+                PdfPCell headerCell2 = new PdfPCell(new Phrase("Students Report"));
                 headerCell2.HorizontalAlignment = Element.ALIGN_CENTER;
                 headerCell2.PaddingBottom = 10f;
                 headerCell2.BackgroundColor = new BaseColor(200, 200, 200);
@@ -120,13 +120,8 @@ namespace FYPManagement
                 document.Add(pdfTable);
                 document.Close();
 
-                MessageBox.Show("PDF file has been created!");
+                MessageBox.Show("Report Generated");
             }
-        }
-
-        private void viewRep1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void viewReport1_VisibleChanged(object sender, EventArgs e)
