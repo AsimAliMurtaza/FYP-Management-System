@@ -31,6 +31,7 @@ namespace FYPManagement
             SqlCommand cmd = new SqlCommand(@"SELECT 
                                                 S.RegistrationNo,
                                                 CONCAT(P.FirstName, ' ', P.LastName) AS FullName,
+                                                P.Contact, P.Email,
                                                 G.Id AS GroupID,
                                                 E.Name AS EvaluationName,
                                                 GE.ObtainedMarks AS GroupEvaluationMarks,
@@ -79,7 +80,7 @@ namespace FYPManagement
                 headerCell1.BackgroundColor = new BaseColor(200, 200, 200); // Set background color
                 headerTable.AddCell(headerCell1);
 
-                PdfPCell headerCell2 = new PdfPCell(new Phrase("Student Report"));
+                PdfPCell headerCell2 = new PdfPCell(new Phrase("Student Bio-Data Report"));
                 headerCell2.HorizontalAlignment = Element.ALIGN_CENTER;
                 headerCell2.PaddingBottom = 10f;
                 headerCell2.BackgroundColor = new BaseColor(200, 200, 200);
